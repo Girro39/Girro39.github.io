@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fumeancats</title>
+    <script src="https://kit.fontawesome.com/1bcfc05642.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .title,
+        .underline {
+            text-align: center;
+            font-family: 微軟正黑體;
+        }
+
+        .title::after {
+            content: "__";
+            display: block;
+            color: rgb(255, 166, 0);
+            padding-bottom: 15px;
+        }
+
+        .container {
+            width: 960px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 220px;
+            margin: 10px;
+            text-align: center;
+
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+        .item img:hover {
+            opacity: .6;
+        }
+
+        p {
+            font-family: "Microsoft JhengHei";
+            font-size: 15px;
+            height: auto;
+        }
+
+        .page {
+            width: 960px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .page a {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 微軟正黑體;
+            margin: 15px;
+        }
+
+
+
+
+        .final {
+            background-color: rgb(224, 224, 224);
+            padding: 35px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .information {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .information .inforitem {
+            width: 600px;
+            padding: 50px;
+        }
+
+        .information .inforitem a {
+            width: 50%;
+            text-decoration: none;
+        }
+
+        .del {
+            text-decoration: line-through;
+            font-family: 微軟正黑體;
+        }
+
+        .price {
+            font-family: 微軟正黑體;
+            color: rgb(255, 196, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">新品上市</h1>
+    <div class="newlist container">
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=2">
+            <p class="name">黃阿瑪的後宮生活《等我回家的你》隨機送後宮出遊趣明信片
+            </p>
+            <h2 class="price">NT$277</h2>
+            <h4 class="del">NT$350</h4>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=3">
+            <p class="name">後宮氣球總動員 客制化手機殼 (三款材質可選 支援多型號)
+            </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=4">
+            <p class="name">後宮娃娃機款 客制化手機殼 (三款材質可選 支援多型號)
+            </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=5">
+            <p class="name">SOSO獨家款安全帽 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=6">
+            <p class="name">追風阿瑪(夜光版)安全帽 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=7">
+            <p class="name">後宮歡樂派對安全帽 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=8">
+            <p class="name">新年送元寶燙金貼紙 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=1">
+            <p class="name">純棉帽T後宮去旅行 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+    </div>
+    <div class="page">
+        <a href="#"><i class="fas fa-angle-double-left"></i></a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#"><i class="fas fa-angle-double-right"></i></a>
+    </div>
+
+
+    <h1 class="title">不想運動運動會</h1>
+    <div class="sport container">
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=5">
+            <p class="name">後宮運動會三折運動錢包-黑 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=6">
+            <p class="name">黃阿瑪打棒球坐姿娃娃8吋 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=7">
+            <p class="name">黃阿瑪第一棒老帽 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=8">
+            <p class="name">後宮打不倒棒球隊娃娃 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=1">
+            <p class="name">後宮MVP純棉運動毛巾 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=2">
+            <p class="name">後宮棒球隊公仔 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=3">
+            <p class="name">後宮棒球隊公仔-全套7入 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=4">
+            <p class="name">瑪瑪神宮繪馬祈福便利貼 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+    </div>
+    <div class="page">
+        <a href="#"><i class="fas fa-angle-double-left"></i></a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#"><i class="fas fa-angle-double-right"></i></a>
+    </div>
+
+
+    <h1 class="title">CreASEnse客制化手機殼 </h1>
+    <div class="phone container">
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=5">
+            <p class="name">後宮氣球總動員 客制化手機殼 (三款材質可選 支援多型號) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=6">
+            <p class="name">後宮娃娃機款 客制化手機殼 (三款材質可選 支援多型號) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=7">
+            <p class="name">後宮捲捲睡 客制化手機殼 (三款材質可選 支援多型號) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=8">
+            <p class="name">瑪上招財 客制化手機殼 (三款材質可選 支援多型號) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=1">
+            <p class="name">阿瑪與三腳 客制化手機殼 (兩款材質可選 支援多型號) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=2">
+            <p class="name">阿瑪貼窗氣噗噗 客制化手機殼 (三款材質可選 支援多型號) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=3">
+            <p class="name">星際後宮夢遊 客制化手機殼 (四款材質可選 支援多型號) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=4">
+            <p class="name">後宮趴趴小花款 客制化手機殼 (三款材質可選 支援多型號) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+    </div>
+    <div class="page">
+        <a href="#"><i class="fas fa-angle-double-left"></i></a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#"><i class="fas fa-angle-double-right"></i></a>
+    </div>
+
+
+    <h1 class="title">聯名寢具 </h1>
+    <div class="sleep container">
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=5">
+            <p class="name">【HOYACASA聯名系列】抗菌天絲兩用被床包組(單人/雙人/加大) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=6">
+            <p class="name">【HOYACASA聯名系列】水洗冬被運動系列-藍色(單人/雙人)</p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=7">
+            <p class="name">【HOYACASA聯名系列】水洗冬被運動系列-米色(單人/雙人) </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/200/200/?random=8">
+            <p class="name">【HOYACASA聯名系列】水洗枕運動系列-米色 </p>
+            <h2 class="price">NT$200</h2>
+        </div>
+    </div>
+    <div class="page">
+        <a href="#"><i class="fas fa-angle-double-left"></i></a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#"><i class="fas fa-angle-double-right"></i></a>
+    </div>
+
+
+    <div class="information">
+        <div class="inforitem">
+            <ul>
+                <li><a href="#">品牌故事</a></li>
+                <li><a href="#">退貨退款須知</a></li>
+                <li><a href="#">會員招募 </a></li>
+                <li><a href="#"> 常見問題</a></li>
+                <li><a href="#"> 反詐騙公告</a></li>
+            </ul>
+        </div>
+        <div class="inforitem">
+            <a href="#">聯繫我們</a>
+            <ul>
+                <li>服務時間：週一至週五 10:00-18:30 </li>
+                <li><a href="#">LINE@閒聊區(只有阿瑪在，小幫手不在)</a></li>
+                <li>客服信箱 ：fumeanstore@gmail.com
+                </li>
+                <li>授權合作信箱 ：fumeanstudio@gmail.com
+                </li>
+                <li>批發合作信箱 ：fumeancats@gmail.com </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="final">
+        黃阿瑪的後宮生活© 2019 FUMEANCATS .All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
