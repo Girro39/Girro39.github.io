@@ -13,19 +13,24 @@
             margin: 0;
             padding: 0;
             list-style: none;
+            font-family: andy-money, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Noto Sans TC, Noto Sans SC, sans-serif;
         }
 
-        .title,
-        .underline {
+        .title {
+            color: #666;
+            font-size: 22px;
+            letter-spacing: 6px;
             text-align: center;
-            font-family: 微軟正黑體;
+            display: block;
+            padding-top: 30px;
         }
 
         .title::after {
-            content: "__";
+            content: "____";
             display: block;
-            color: rgb(255, 166, 0);
-            padding-bottom: 15px;
+            color: #FDD000;
+            padding-bottom: 30px;
+            font-family: serif;
         }
 
         .container {
@@ -50,33 +55,35 @@
             opacity: .6;
         }
 
-        p {
+        .name {
+            margin: 5px;
             font-family: "Microsoft JhengHei";
             font-size: 15px;
-            height: auto;
+        }
+
+        .price {
+            margin: 10px;
+            color: #FDD000;
+            font-size: 16px;
+        }
+
+        .del {
+            color: rgb(196, 220, 255);
+            text-decoration: line-through;
+            font-size: 10px;
         }
 
         .page {
             width: 960px;
             margin: auto;
             text-align: center;
+            padding: 15px;
         }
 
         .page a {
             text-decoration: none;
             font-size: 20px;
-            font-family: 微軟正黑體;
             margin: 15px;
-        }
-
-
-
-
-        .final {
-            background-color: rgb(224, 224, 224);
-            padding: 35px;
-            font-size: 13px;
-            text-align: center;
         }
 
         .information {
@@ -94,14 +101,11 @@
             text-decoration: none;
         }
 
-        .del {
-            text-decoration: line-through;
-            font-family: 微軟正黑體;
-        }
-
-        .price {
-            font-family: 微軟正黑體;
-            color: rgb(255, 196, 0);
+        .final {
+            background-color: rgb(224, 224, 224);
+            padding: 35px;
+            font-size: 13px;
+            text-align: center;
         }
     </style>
 </head>
@@ -309,6 +313,7 @@
 
     <div class="information">
         <div class="inforitem">
+            <a href="#" class="titleli">相關資訊</a>
             <ul>
                 <li><a href="#">品牌故事</a></li>
                 <li><a href="#">退貨退款須知</a></li>
@@ -318,7 +323,7 @@
             </ul>
         </div>
         <div class="inforitem">
-            <a href="#">聯繫我們</a>
+            <a href="#" class="titleli">聯繫我們</a>
             <ul>
                 <li>服務時間：週一至週五 10:00-18:30 </li>
                 <li><a href="#">LINE@閒聊區(只有阿瑪在，小幫手不在)</a></li>
