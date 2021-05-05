@@ -17,19 +17,20 @@
         }
 
         .title::after {
-            content: "____";
+            width: 35px;
+            padding-top: 25px;
+            border-bottom: 4px solid #FDD000;
             display: block;
-            color: #FDD000;
-            padding-bottom: 30px;
+            margin: auto;
+            content: "";
         }
 
         .title {
+            margin-top: 40px;
             color: #666;
             font-size: 22px;
-            letter-spacing: 6px;
+            letter-spacing: 8px;
             text-align: center;
-            display: block;
-            padding-top: 30px;
         }
 
 
@@ -64,13 +65,13 @@
         .price {
             margin: 10px;
             color: #FDD000;
-            font-size: 16px;
+            font-size: 18px;
         }
 
         .del {
-            color: rgb(196, 220, 255);
+            color: #888888;
             text-decoration: line-through;
-            font-size: 10px;
+            font-size: 14px;
         }
 
         .page {
@@ -82,29 +83,55 @@
 
         .page a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
             margin: 15px;
         }
 
         .information {
-            width: 960px;
-            height: 300px;
+            width: 1200px;
+            border-top: .5px solid #ccc;
+            padding: 20px;
+            margin: auto;
             display: flex;
             flex-wrap: wrap;
         }
 
         .information .inforitem {
-            width: 480px;
+            width: 50%;
             box-sizing: border-box;
+            line-height: 1.6;
         }
+
+
+        .titleli {
+            font-size: 22px;
+        }
+
+        .right {
+            padding-left: 90px;
+        }
+
+        .left {
+            padding-left: 20px;
+        }
+
+
 
         .information .inforitem a {
             width: 50%;
             text-decoration: none;
         }
 
+        a:active {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        }
+
         .final {
-            background-color: rgb(224, 224, 224);
+            background-color: #F7F7F7;
             padding: 35px;
             font-size: 13px;
             text-align: center;
@@ -314,8 +341,8 @@
 
 
     <div class="information">
-        <div class="inforitem">
-            <a href="#" class="titleli">相關資訊</a>
+        <div class="inforitem left">
+            <p class="titleli">相關資訊</p>
             <ul>
                 <li><a href="#">品牌故事</a></li>
                 <li><a href="#">退貨退款須知</a></li>
@@ -324,7 +351,7 @@
                 <li><a href="#"> 反詐騙公告</a></li>
             </ul>
         </div>
-        <div class="inforitem">
+        <div class="inforitem right">
             <a href="#" class="titleli">聯繫我們</a>
             <ul>
                 <li>服務時間：週一至週五 10:00-18:30 </li>
@@ -333,7 +360,7 @@
                 </li>
                 <li>授權合作信箱 ：fumeanstudio@gmail.com
                 </li>
-                <li>批發合作信箱 ：fumeancats@gmail.com </li>
+                <li><b>批發合作信箱 ：fumeancats@gmail.com </b></li>
             </ul>
         </div>
     </div>
