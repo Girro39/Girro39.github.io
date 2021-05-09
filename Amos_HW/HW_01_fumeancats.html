@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             list-style: none;
+            /* outline: 1px solid pink; */
             font-family: andy-money, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Noto Sans TC, Noto Sans SC, sans-serif;
         }
 
@@ -24,13 +25,18 @@
             text-align: center;
         }
 
+
         .title::after {
             width: 35px;
             padding-top: 20px;
             border-bottom: 4px solid #FDD000;
             display: block;
             margin: auto;
-            content: "";
+            content: '';
+        }
+
+        .container a {
+            text-decoration: none;
         }
 
         .container {
@@ -39,6 +45,7 @@
             display: flex;
             flex-wrap: wrap;
         }
+
 
         .item {
             width: 220px;
@@ -49,6 +56,18 @@
 
         .item img {
             width: 100%;
+        }
+
+        .afterimg {
+            display: none;
+        }
+
+        .item:hover .beforeimg {
+            display: none;
+        }
+
+        .item:hover .afterimg {
+            display: block;
         }
 
 
@@ -92,7 +111,7 @@
         }
 
         .information .inforitem {
-            width: 50%;
+            width: 480px;
             box-sizing: border-box;
             line-height: 1.6;
         }
@@ -157,53 +176,85 @@
 <body>
     <h2 class="title">新品上市</h2>
     <div class="newlist container">
-        <div class="item">
-            <img src="./pic/600x (1).png" class="p1">
-            <h4 class="name">黃阿瑪的後宮生活《等我回家的你》隨機送後宮出遊趣明信片
-            </h4>
-            <p class="price">NT$277</p>
-            <del>NT$350</del>
-        </div>
-        <div class="item">
-            <img src="./pic/600x (2).png" class="p2">
-            <h4 class="name">後宮氣球總動員 客制化手機殼 (三款材質可選 支援多型號)
-            </h4>
-            <p class="price">NT$399~NT$499</p>
-        </div>
+        <a href="#">
+            <div class="item">
+                <div class="beforeimg">
+                    <img src="./pic/600x (1).png">
+                </div>
+                <div class="afterimg">
+                    <img src="./pic2/800x1.jpg">
+                </div>
+
+                <h4 class="name">黃阿瑪的後宮生活《等我回家的你》隨機送後宮出遊趣明信片
+                </h4>
+                <p class="price">NT$277</p>
+                <del>NT$350</del>
+            </div>
+        </a>
+        <a href="">
+            <div class="item">
+                <div class="beforeimg">
+                    <img src="./pic/600x (2).png" class="p2">
+                </div>
+                <div class="afterimg">
+                    <img src="./pic2/800x2.jpg">
+                </div>
+
+                <h4 class="name">後宮氣球總動員 客制化手機殼 (三款材質可選 支援多型號)
+                </h4>
+                <p class="price">NT$399~NT$499</p>
+        </a>
+    </div>
+    <a href="">
         <div class="item">
             <img src="./pic/600x (3).png" class="p3">
             <h4 class="name">後宮娃娃機款 客制化手機殼 (三款材質可選 支援多型號)
             </h4>
             <p class="price">NT$399~NT$499</p>
         </div>
+    </a>
+
+    <a href="">
         <div class="item">
             <img src="./pic/600x (4).png" class="p4">
             <h4 class="name">SOSO獨家款安全帽 </h4>
             <p class="price">NT$999</p>
             <del>NT$1,200</del>
         </div>
+    </a>
+
+    <a href="">
         <div class="item">
             <img src="./pic/600x (5).png" class="p5">
             <h4 class="name">追風阿瑪(夜光版)安全帽 </h4>
             <p class="price">NT$2,440</p>
             <del>NT$2,600</del>
         </div>
+    </a>
+
+    <a href="">
         <div class="item">
             <img src="./pic/600x (6).png" class="p6">
             <h4 class="name">後宮歡樂派對安全帽 </h4>
             <p class="price">NT$1,800</p>
             <del>NT$2,000</del>
         </div>
+    </a>
+
+    <a href="">
         <div class="item">
             <img src="./pic/600x (7).png" class="p7">
             <h4 class="name">新年送元寶燙金貼紙 </h4>
             <p class="price">NT$120</p>
         </div>
+    </a>
+    <a href="">
         <div class="item">
             <img src="./pic/600x (8).png" class="p8">
             <h4 class="name">純棉帽T後宮去旅行 </h4>
             <p class="price">NT$1,380~NT$1,580</p>
         </div>
+    </a>
     </div>
     <div class="page">
         <a href="#"><i class="fas fa-angle-double-left"></i></a>
@@ -219,43 +270,43 @@
     <h2 class="title">不想運動運動會</h2>
     <div class="sport container">
         <div class="item">
-            <img src="./pic/600x (9).png">
+            <img src="./pic/600x (9).png" class="p9">
             <h4 class="name">後宮運動會三折運動錢包-黑 </h4>
             <p class="price pb">NT$990</p>
         </div>
         <div class="item">
-            <img src="./pic/600x (10).png">
+            <img src="./pic/600x (10).png" class="p10">
             <h4 class="name">黃阿瑪打棒球坐姿娃娃8吋 </h4>
             <p class="price pb">NT$890</p>
         </div>
         <div class="item">
-            <img src="./pic/600x (11).png">
+            <img src="./pic/600x (11).png" class="p11">
             <h4 class="name">黃阿瑪第一棒老帽 </h4>
             <p class="price pb">NT$790</p>
         </div>
         <div class="item">
-            <img src="./pic/600x (12).png">
+            <img src="./pic/600x (12).png" class="p12">
             <h4 class="name">後宮打不倒棒球隊娃娃 </h4>
             <p class="price pb">NT$590</p>
         </div>
         <div class="item">
-            <img src="./pic/600x (13).png">
+            <img src="./pic/600x (13).png" class="p13">
             <h4 class="name">後宮MVP純棉運動毛巾 </h4>
             <p class="price pb">NT$550</p>
         </div>
         <div class="item">
-            <img src="./pic/600x (14).png">
+            <img src="./pic/600x (14).png" class="p14">
             <h4 class="name">後宮棒球隊公仔 </h4>
             <p class="price pb">NT$490</p>
         </div>
         <div class="item">
-            <img src="./pic/600x (14).png">
+            <img src="./pic/600x (14).png" class="p15">
             <h4 class="name">後宮棒球隊公仔-全套7入 </h4>
             <p class="price">NT$3,100</p>
             <del>NT$3,430</del>
         </div>
         <div class="item">
-            <img src="./pic/600x (15).png">
+            <img src="./pic/600x (15).png" class="p16">
             <h4 class="name">瑪瑪神宮繪馬祈福便利貼 </h4>
             <p class="price pb">NT$160</p>
         </div>

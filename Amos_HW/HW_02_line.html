@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE | 始終陪伴在你身旁。</title>
+    <link rel="icon" href="./HW_02_pic/LINE_APP.png" type="image/x-icon" />
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://kit.fontawesome.com/1bcfc05642.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            /* outline: 1px solid red; */
+            list-style: none;
+        }
+
+        .head {
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #aaa;
+            background-color: #fff transparent 80%;
+            position: fixed;
+
+        }
+
+        label {
+            /* align-self: center; */
+        }
+
+        .navwrap {
+            background-color: #fff;
+            opacity: .6;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navitem {
+            margin: 30px 50px;
+            font-size: 15px;
+            font-style: bold;
+        }
+
+        a.navitem {
+            text-decoration: none;
+
+        }
+
+        .langcontainer {
+            display: flex;
+        }
+
+        #langselection {
+            align-self: center;
+        }
+
+        .banner {
+            width: 960px;
+            height: 600px;
+            margin: auto;
+            background: #ab5;
+            display: flex;
+            text-align: left;
+            justify-content: left;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 50px;
+            outline: 2px solid red;
+        }
+
+        .bannertxt h2 {
+            font-size: 50px;
+            line-height: 2.5;
+        }
+
+        .bannertxt p {
+            font-size: 20px;
+        }
+
+
+        .LIFE {
+            margin: 250px;
+            text-align: center;
+            line-height: 2.5;
+        }
+
+        .LIFE h2 {
+            font-size: 50px;
+        }
+
+        .lifecontainer {
+            width: 960px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            /* outline: 2px solid blue; */
+        }
+
+        .reversepic {
+            /* outline: 2px solid blue; */
+        }
+
+        .reversepic img {
+            border-right: 3px dashed #aff;
+            order: -1;
+        }
+
+
+
+        .lifepic img {
+            width: 480px;
+            box-sizing: border-box;
+            /* border: 2px solid yellow; */
+
+        }
+
+        .lifewords {
+
+            width: 480px;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 1.5;
+
+        }
+
+        .lifewords h3 {
+            font-size: 40px;
+        }
+
+        .lifewords small {
+            display: block;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <nav class="navwrap">
+            <a href="#" class="logo"><img src="./HW_02_pic/icon-title-pc.png" alt="lineicon" class="lineicon"></a>
+            <a href="#" class="navitem">Life on LINE</a>
+            <a href="#" class="navitem">通訊軟體</a>
+            <a href="#" class="navitem">服務總覽</a>
+            <div class="langcontainer">
+                <!-- <a href="#" class="language"> -->
+                <label for="langselection"><i class="fas fa-globe"></i></label>
+                <select name="languages" id="langselection">
+                    <option value="EN">EN</option>
+                    <option value="JP">JP</option>
+                    <option value="KR">KR</option>
+                    <option value="TW" selected>TW</option>
+                    <option value="TH">TH</option>
+                    <option value="ID">ID</option>
+                </select>
+                <!-- </a> -->
+            </div>
+        </nav>
+        <!-- <section>
+            <option value="#">EN</option>
+            <option value="#">JP</option>
+            <option value="#">KR</option>
+            <option value="#">TW</option>
+            <option value="#">TH</option>
+            <option value="#">ID</option>
+        </section> -->
+    </header>
+    <div class="banner">
+        <div class="bannertxt">
+            <h2><b>Life on LINE</b></h2>
+            <p>LINE始終陪伴在你身旁。</p>
+        </div>
+    </div>
+    <div class="LIFE">
+        <h2>Life on LINE</h2>
+        <p>超越通訊軟體，LINE為用戶建構全新的溝通型態與豐富的數位生活，成為用戶生活中不可或缺的平台。 </p>
+    </div>
+
+    <div class="linetodaycontainer lifecontainer">
+        <div class="lifeitem lifewords">
+            <h3>LINE TODAY </h3>
+            <small>隨點隨看 生活快充</small>
+            <p>最即時的新聞、影音、運動賽事和娛樂內容直播，讓你話題永不斷線，LINE TODAY陪伴您的每一天！ </p>
+        </div>
+        <div class="lifeitem lifepic">
+            <img src="./HW_02_pic/life01.png" alt="life01">
+        </div>
+    </div>
+
+    <div class="linearticlecontainer lifecontainer reversepic">
+        <div class="lifeitem lifepic">
+            <img src="./HW_02_pic/life02.png" alt="life02">
+        </div>
+
+        <div class="lifeitem lifewords">
+            <h3>LINE 貼文串</h3>
+            <small>探索樂趣，分享生活 </small>
+            <p>在貼文串追蹤你的最愛．有感內容不錯過。
+                打造你的個人閱知頻道，探索生活大小事。
+                分享所見所聞，串連人際、啟發創意的無限可能！</p>
+        </div>
+    </div>
+    <div class="linepaycontainer lifecontainer">
+        <div class="lifeitem lifewords">
+            <h3>LINE Pay</h3>
+            <small>付款、轉帳、生活繳費，輕鬆簡單又便利！</small>
+            <p>付款簡單又便利，還能輕鬆轉帳給LINE好友，動動手指輕鬆完成日常生活各種帳單繳費， 免出門省時又省力。 </p>
+        </div>
+        <div class="lifeitem lifepic">
+            <img src="./HW_02_pic/life03.png" alt="life03">
+        </div>
+    </div>
+
+    <div class="lineshoppincontainer lifecontainer reversepic">
+        <div class="lifeitem lifepic">
+            <img src="./HW_02_pic/life04.png" alt="life04">
+        </div>
+
+        <div class="lifeitem lifewords">
+            <h3>LINE購物</h3>
+            <small>先LINE購物再購物 </small>
+            <p>涵蓋各大購物、拍賣、精品、通路、旅遊、及票券商店，輕鬆貨比五百家，一站比價三千萬筆商品，再享LINE POINTS回饋賺不停！ </p>
+        </div>
+    </div>
+
+    <div class="linetvcontainer lifecontainer">
+        <div class="lifeitem lifewords">
+            <h3>LINE TV </h3>
+            <small>共享追劇生活 </small>
+            <p>和朋友一起追劇，不錯過最新、最熱門、最潮的話題大劇，即時分享娛樂影音，展開精彩生活故事，LINE TV是您的追劇第一選擇！ </p>
+        </div>
+        <div class="lifeitem lifepic">
+            <img src="./HW_02_pic/life05.png" alt="life05">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
