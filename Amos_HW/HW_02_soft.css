@@ -1,0 +1,50 @@
+.SOFT{
+    padding: 180px 0 180px;
+    background-color: #f7f8f9;
+}
+
+.soft {
+    text-align: center;
+    line-height: 2.5;
+}
+
+.soft h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.soft p {
+    font-size: 18px;
+    color:#616161;
+}
+
+
+
+.softcontainer {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.softpic{
+    width:90%;
+}
+.softitem{
+    width: 270px;
+    margin:25px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* outline: 1px solid blue;; */
+}
+.softitem h3{
+    margin: 20px 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.softitem p{
+    font-size: 12px;
+    line-height: 2;
+    color:#616161;
+}
+

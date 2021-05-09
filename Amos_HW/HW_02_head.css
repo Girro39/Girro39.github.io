@@ -1,0 +1,51 @@
+
+        .head {
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #aaa;
+            background-color: #ffffffAA;
+            position: fixed;
+
+        }
+        .logo{
+            align-self: center;
+            margin: 30px;
+        }
+        label {
+            align-self: center;
+        }
+
+        .navwrap {
+            background-color: #fff;
+            /* opacity: .6; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navitem {
+            color: #1E1E1E;
+            margin: 30px 50px;
+            font-size: 15px;
+            font-style: bolder;
+        }
+
+        a.navitem {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        a.navitem:active{
+            
+        }
+
+        .langcontainer {
+            display: flex;
+        }
+
+        #langselection {
+
+            align-self: center;
+            text-decoration: none;
+        }

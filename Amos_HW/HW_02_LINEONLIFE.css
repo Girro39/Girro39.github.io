@@ -1,0 +1,50 @@
+.LIFE {
+    margin: 250px;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.LIFE h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.lifecontainer {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.leftpic {
+    border-right: .5px dashed #ccc;
+}
+
+.rightpic {
+    border-left: .5px dashed #ccc;
+}
+
+
+.lifepic img {
+    width: 480px;    
+}
+
+.lifewords {
+    width: 480px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.5;
+
+}
+
+.lifewords h3 {
+    font-size: 40px;
+}
+
+.lifewords small {
+    display: block;
+    font-size: 18px;
+}
