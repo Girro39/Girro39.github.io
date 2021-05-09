@@ -22,17 +22,17 @@
             width: 960px;
             height: 600px;
             margin: auto;
-            background: #ab5;
+            background: url("HW_02_pic/banner.png") no-repeat center center /100% 100%;
             display: flex;
             text-align: left;
             justify-content: left;
             align-items: center;
             box-sizing: border-box;
             padding-left: 50px;
-            outline: 2px solid red;
         }
 
         .bannertxt h2 {
+            font-weight: bold;
             font-size: 50px;
             line-height: 2.5;
         }
@@ -52,7 +52,7 @@
             margin-bottom: 180px
         }
 
-        .service h2 {
+        .service h3 {
             font-size: 48px;
             color: #Fff;
             font-weight: bold;
@@ -64,7 +64,7 @@
     <header class="head">
         <a href="#" class="logo"><img src="./HW_02_pic/icon-title-pc.png" alt="lineicon" class="lineicon"></a>
         <nav class="navwrap">
-            <a href="#" class="navitem">Life on LINE</a>
+            <a href="#" class="navitem active">Life on LINE</a>
             <a href="#" class="navitem">通訊軟體</a>
             <a href="#" class="navitem">服務總覽</a>
         </nav>
@@ -80,7 +80,6 @@
                 <option value="TH">TH</option>
                 <option value="ID">ID</option>
             </select>
-            <!-- </a> -->
         </div>
 
     </header>
@@ -96,13 +95,20 @@
     </div>
 
     <div class="linetodaycontainer lifecontainer">
-        <div class="lifeitem lifewords">
+        <div class="lifeitem lifewords rightword">
+            <img src="./HW_02_pic/LINE_TODAY.png" alt="LINETODAY" class="simg">
             <h3>LINE TODAY </h3>
             <small>隨點隨看 生活快充</small>
             <p>最即時的新聞、影音、運動賽事和娛樂內容直播，讓你話題永不斷線，LINE TODAY陪伴您的每一天！ </p>
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-external-link-alt"></i>
+                        其他詳細資訊</a>
+                </li>
+            </ul>
         </div>
         <div class="lifeitem lifepic">
-            <img src="./HW_02_pic/life01.png" alt="life01" class="rightpic">
+            <img src="./HW_02_pic/life01.png" alt="life01">
         </div>
     </div>
 
@@ -110,23 +116,44 @@
         <div class="lifeitem lifepic">
             <img src="./HW_02_pic/life02.png" alt="life02" class="leftpic">
         </div>
-
         <div class="lifeitem lifewords">
+            <img src="./HW_02_pic/LINE_ARTICLE.png" alt="LINEARTICLE" class="simg">
             <h3>LINE 貼文串</h3>
             <small>探索樂趣，分享生活 </small>
             <p>在貼文串追蹤你的最愛．有感內容不錯過。
                 打造你的個人閱知頻道，探索生活大小事。
                 分享所見所聞，串連人際、啟發創意的無限可能！</p>
+            <ul>
+                <li>
+                    <a href="#"><i class="fas fa-external-link-alt"></i>
+                        其他詳細資訊</a>
+                </li>
+            </ul>
+
         </div>
     </div>
     <div class="linepaycontainer lifecontainer">
-        <div class="lifeitem lifewords">
+        <div class="lifeitem lifewords rightword">
+            <img src="./HW_02_pic/LINE_PAY.PNG" alt="LINEPAY" class="simg">
             <h3>LINE Pay</h3>
             <small>付款、轉帳、生活繳費，輕鬆簡單又便利！</small>
             <p>付款簡單又便利，還能輕鬆轉帳給LINE好友，動動手指輕鬆完成日常生活各種帳單繳費， 免出門省時又省力。 </p>
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-apple"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-google-play"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-external-link-alt"></i>
+                        其他詳細資訊</a>
+                </li>
+            </ul>
+
         </div>
         <div class="lifeitem lifepic">
-            <img src="./HW_02_pic/life03.png" alt="life03" class="rightpic">
+            <img src="./HW_02_pic/life03.png" alt="life03">
         </div>
     </div>
 
@@ -136,20 +163,48 @@
         </div>
 
         <div class="lifeitem lifewords">
+            <img src="./HW_02_pic/LINE_SHOPPING.png" alt="LINESHOPPING" class="simg">
             <h3>LINE購物</h3>
             <small>先LINE購物再購物 </small>
             <p>涵蓋各大購物、拍賣、精品、通路、旅遊、及票券商店，輕鬆貨比五百家，一站比價三千萬筆商品，再享LINE POINTS回饋賺不停！ </p>
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-apple"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-google-play"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-external-link-alt"></i>
+                        其他詳細資訊</a>
+                </li>
+            </ul>
+
         </div>
     </div>
 
     <div class="linetvcontainer lifecontainer">
-        <div class="lifeitem lifewords">
+        <div class="lifeitem lifewords rightword">
+            <img src="./HW_02_pic/LINE_TV.png" alt="LINETV" class="simg">
             <h3>LINE TV </h3>
             <small>共享追劇生活 </small>
             <p>和朋友一起追劇，不錯過最新、最熱門、最潮的話題大劇，即時分享娛樂影音，展開精彩生活故事，LINE TV是您的追劇第一選擇！ </p>
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-apple"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-google-play"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-external-link-alt"></i>
+                        其他詳細資訊</a>
+                </li>
+            </ul>
+
         </div>
         <div class="lifeitem lifepic">
-            <img src="./HW_02_pic/life05.png" alt="life05" class="rightpic">
+            <img src="./HW_02_pic/life05.png" alt="life05">
         </div>
     </div>
 
@@ -207,7 +262,7 @@
     </div>
 
     <div class="service">
-        <h2>企業服務</h2>
+        <h3>企業服務</h3>
     </div>
 
 
