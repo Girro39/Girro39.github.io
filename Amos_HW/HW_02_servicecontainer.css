@@ -40,16 +40,12 @@
     padding: 15px;
     margin: 10px;
 }
-.list ul li button:visited{
-    background-color: #00aa22;
-    color: #fff;
-}
+
 
 .list ul li button:active{
     background-color: #00aa22;
     color: #fff;
 }
-
 
 
 .items{
