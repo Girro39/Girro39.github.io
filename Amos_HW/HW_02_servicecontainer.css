@@ -1,3 +1,85 @@
+.servicetitle {
+    background-color: #F7F8F9;
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.servicetitle h2 {
+    font-size: 48px;
+    color: #000;
+    font-weight: bold;
+}
+
+
 .servicecontainer{
+    background-color: #F7F8F9;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.list{
+    width: 150px;   
+    display: flex;
+    flex-direction: column;
+    }
+
+.list ul{
+        position: sticky;
+        top: 150px;
+    }
+.list li {
+    width: 120px;
+}
+.list ul li button{
+    background-color: #F7F8F9;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 17px;
+    padding: 15px;
+    margin: 10px;
+}
+.list ul li button:visited{
+    background-color: #00aa22;
+    color: #fff;
+}
+
+.list ul li button:active{
+    background-color: #00aa22;
+    color: #fff;
+}
+
+
+
+.items{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sevices{
+    width: 260px;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column ;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+}
+.sevices h2{
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sevices p{
+    font-size: 12px;
+}
+
+.sevices img{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    border: 1px solid transparent;
 }
