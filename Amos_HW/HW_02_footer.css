@@ -21,7 +21,7 @@
 .foot i{
     font-size: 8px;
 }
-a+a::before{
+.link+.link::before{
     content: '|  ';
 }
 .finalfoot::after{
@@ -36,4 +36,24 @@ a+a::before{
     font-size: 12px;
     text-decoration: none;
     margin: 10px;
+}
+.app i{
+    font-size: 24px;
+    color: #000;
+}
+.app a{
+    margin: 10px;
+    text-decoration: none;
+}
+.familysites{
+    font-size:14px;
+}
+
+.app{
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
