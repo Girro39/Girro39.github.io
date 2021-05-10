@@ -5,6 +5,7 @@
             border-bottom: .5px solid rgb(224, 224, 224);
             background-color: #ffffffE5;
             position: fixed;
+            z-index: 1;
 
         }
         .logo{
