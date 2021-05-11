@@ -1,0 +1,48 @@
+@import url("./reset.css");
+.navcontainer .navlinkitems a .linkimg {
+  width: 22px;
+  height: 22px;
+}
+
+.navcontainer .navlinkitems a {
+  text-decoration: none;
+}
+
+.navcontainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+}
+
+.navcontainer .navitem {
+  padding: 15px 30px;
+}
+
+.navcontainer .navlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.navcontainer .navlinkitems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navcontainer .navlinkitems a {
+  margin: 10px;
+}
+/*# sourceMappingURL=HW_03_nav.css.map */

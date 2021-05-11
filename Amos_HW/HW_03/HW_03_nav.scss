@@ -1,0 +1,42 @@
+@import url("./reset.css");
+
+%navlinkimg{
+    width: 22px;
+    height: 22px;
+}
+
+%tdnone{
+    text-decoration: none;
+}
+
+.navcontainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    .navitem{
+        padding: 15px 30px;
+        // box-sizing: border-box;
+    }
+    .navlogo{
+        display: flex;
+        align-self: center;
+        img{
+            // width: 100%;
+        }        
+    }
+    .navlinkitems{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a{
+            @extend %tdnone;
+            margin: 10px;
+            .linkimg{
+                @extend %navlinkimg;
+            }
+        }
+    }
+    
+}
+
