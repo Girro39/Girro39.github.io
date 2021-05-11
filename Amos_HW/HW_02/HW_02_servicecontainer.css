@@ -96,8 +96,6 @@
 }
 .serhover a{
     width: 150px;
-    position: relative;
-    top: -100px;
     margin: 5px;
     font-size: 10px; 
     text-decoration: none;
