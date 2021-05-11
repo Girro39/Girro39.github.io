@@ -1,0 +1,156 @@
+$orange-color:#FDD000;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* outline: 1px solid pink; */
+    font-family: andy-money, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Noto Sans TC, Noto Sans SC, sans-serif;
+}
+
+.title {
+    margin-top: 40px;
+    color: #666;
+    font-size: 22px;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+
+.title::after {
+    width: 35px;
+    padding-top: 20px;
+    border-bottom: 4px solid $orange-color;
+    display: block;
+    margin: auto;
+    content: '';
+}
+
+
+
+.container {
+    a {    
+        text-decoration: none;
+    }
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.item {
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+    img {
+        width: 100%;
+    }
+}
+
+.afterimg {
+    display: none;
+}
+
+.item:hover .beforeimg {
+    display: none;
+}
+
+.item:hover .afterimg {
+    display: block;
+}
+
+
+.name {
+    margin: 10px 0;
+    font-family: "Microsoft JhengHei";
+    font-size: 13px;
+}
+
+.price {
+    margin: 10px;
+    color: $orange-color;
+    font-size: 16px;
+}
+
+del {
+    color: #888888;
+    font-size: 14px;
+}
+
+.page {
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    padding: 60px;
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        margin: 15px;
+    }
+}
+
+.information {
+    width: 1200px;
+    border-top: .5px solid #ccc;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    .inforitem {
+        width: 480px;
+        box-sizing: border-box;
+        line-height: 1.6;
+    }
+    .inforitem a {
+        color: #000;
+        width: 50%;
+        text-decoration: none;
+    }
+}
+
+.titleli {
+    font-size: 22px;
+}
+
+.right {
+    padding-left: 90px;
+}
+
+.left {
+    padding-left: 20px;
+}
+
+.pb {
+    color: #000;
+}
+
+
+a:active {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+.page a {
+    color: #888888;
+}
+
+.page a.active {
+    border-bottom-color: $orange-color;
+}
+
+
+#pageunder:hover {
+    color: tomato;
+}
+
+
+.final {
+    background-color: #F7F7F7;
+    padding: 35px;
+    font-size: 14px;
+    text-align: center;
+}
