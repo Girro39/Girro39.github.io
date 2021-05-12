@@ -1,5 +1,6 @@
 *{
-    font-family: Helvetica, Verdana, Arial, 微軟正黑體, "Microsoft JhengHei", "儷黑 Pro", "LiHei Pro", sans-serif;outline: 2px solid blue;
+    font-family: Helvetica, Verdana, Arial, 微軟正黑體, "Microsoft JhengHei", "儷黑 Pro", "LiHei Pro", sans-serif;
+    // outline: 2px solid blue;
 }
 .containerfun{
     width: 960px;
@@ -120,7 +121,7 @@
 }
 }
 
-.containersafe{
+.containereven{
     width: 960px;
     margin: auto;
     display: flex;
@@ -143,7 +144,6 @@
         font-weight: lighter;
         font-size: 125px;
         writing-mode: vertical-lr;
-        // padding-left: 10px;
     }
     .item {
         color: #fff;
@@ -247,7 +247,7 @@
 }
 
 
-.containercomfort{
+.containerodd{
     width: 960px;
     margin: auto;
     display: flex;

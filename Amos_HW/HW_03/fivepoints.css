@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
   font-family: Helvetica, Verdana, Arial, 微軟正黑體, "Microsoft JhengHei", "儷黑 Pro", "LiHei Pro", sans-serif;
-  outline: 2px solid blue;
 }
 
 .containerfun {
@@ -160,7 +159,7 @@
   font-size: 20px;
 }
 
-.containersafe {
+.containereven {
   width: 960px;
   margin: auto;
   display: -webkit-box;
@@ -175,7 +174,7 @@
   position: relative;
 }
 
-.containersafe .title {
+.containereven .title {
   width: 350px;
   background-color: #bb0404;
   display: -webkit-box;
@@ -189,7 +188,7 @@
           flex-direction: row-reverse;
 }
 
-.containersafe .title .number {
+.containereven .title .number {
   width: 110px;
   height: 135px;
   -webkit-box-sizing: border-box;
@@ -202,11 +201,11 @@
           writing-mode: vertical-lr;
 }
 
-.containersafe .title .item {
+.containereven .title .item {
   color: #fff;
 }
 
-.containersafe .title .titleh2 {
+.containereven .title .titleh2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 200px;
@@ -217,24 +216,24 @@
   margin: 20px 10px 20px 0;
 }
 
-.containersafe .title .txt {
+.containereven .title .txt {
   background-color: #000;
   width: 450px;
   padding: 20px 20px 20px;
   line-height: 1.7;
 }
 
-.containersafe .title .txt h3 {
+.containereven .title .txt h3 {
   font-size: 25px;
 }
 
-.containersafe .title .txt p {
+.containereven .title .txt p {
   font-weight: lighter;
   font-size: 18px;
   letter-spacing: 2px;
 }
 
-.containersafe .shadow {
+.containereven .shadow {
   width: 470px;
   height: 370px;
   background-color: #eeeeee;
@@ -246,7 +245,7 @@
       align-self: flex-end;
 }
 
-.containersafe .picture {
+.containereven .picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,15 +264,15 @@
   z-index: -1;
 }
 
-.containersafe .picture a {
+.containereven .picture a {
   text-decoration: none;
 }
 
-.containersafe .picture .you {
+.containereven .picture .you {
   width: 1%;
 }
 
-.containersafe .narrate {
+.containereven .narrate {
   width: 570px;
   padding: 10px 12px 20px;
   background-color: #eeeeee;
@@ -282,7 +281,7 @@
   right: 0;
 }
 
-.containersafe .narrate .because {
+.containereven .narrate .because {
   line-height: 2;
   font-weight: bold;
   color: #bb0404;
@@ -295,17 +294,17 @@
           align-items: center;
 }
 
-.containersafe .narrate .because::after {
+.containereven .narrate .because::after {
   content: ' ';
   width: 380px;
   border-bottom: 1px solid #bb0404;
 }
 
-.containersafe .narrate ul {
+.containereven .narrate ul {
   line-height: 1.2;
 }
 
-.containersafe .narrate ul p {
+.containereven .narrate ul p {
   padding: 1px 3px;
   display: inline-block;
   color: #fff;
@@ -313,20 +312,20 @@
   border-radius: 5px;
 }
 
-.containersafe .narrate ul li {
+.containereven .narrate ul li {
   color: #333333;
   padding-left: 20px;
   text-indent: -20px;
   font-size: 14px;
 }
 
-.containersafe .narrate ul li::before {
+.containereven .narrate ul li::before {
   content: '．';
   color: #bb0404;
   font-size: 20px;
 }
 
-.containercomfort {
+.containerodd {
   width: 960px;
   margin: auto;
   display: -webkit-box;
@@ -339,7 +338,7 @@
   position: relative;
 }
 
-.containercomfort .title {
+.containerodd .title {
   width: 350px;
   background-color: #bb0404;
   display: -webkit-box;
@@ -349,7 +348,7 @@
       flex-wrap: wrap;
 }
 
-.containercomfort .title .number {
+.containerodd .title .number {
   width: 120px;
   height: 135px;
   -webkit-box-sizing: border-box;
@@ -363,11 +362,11 @@
   line-height: 0.71;
 }
 
-.containercomfort .title .item {
+.containerodd .title .item {
   color: #fff;
 }
 
-.containercomfort .title .titleh2 {
+.containerodd .title .titleh2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 200px;
@@ -378,24 +377,24 @@
   margin: 20px 0 0;
 }
 
-.containercomfort .title .txt {
+.containerodd .title .txt {
   background-color: #000;
   width: 450px;
   padding: 20px 20px 20px;
   line-height: 1.7;
 }
 
-.containercomfort .title .txt h3 {
+.containerodd .title .txt h3 {
   font-size: 25px;
 }
 
-.containercomfort .title .txt p {
+.containerodd .title .txt p {
   font-weight: lighter;
   font-size: 18px;
   letter-spacing: 2px;
 }
 
-.containercomfort .shadow {
+.containerodd .shadow {
   width: 450px;
   height: 300px;
   background-color: #eeeeee;
@@ -406,7 +405,7 @@
       align-self: flex-end;
 }
 
-.containercomfort .picture {
+.containerodd .picture {
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -421,15 +420,15 @@
   z-index: -1;
 }
 
-.containercomfort .picture a {
+.containerodd .picture a {
   text-decoration: none;
 }
 
-.containercomfort .picture .carpic {
+.containerodd .picture .carpic {
   width: 86%;
 }
 
-.containercomfort .narrate {
+.containerodd .narrate {
   width: 550px;
   padding: 10px 12px 20px;
   background-color: #eeeeee;
@@ -438,7 +437,7 @@
   left: 60px;
 }
 
-.containercomfort .narrate .because {
+.containerodd .narrate .because {
   line-height: 2;
   font-weight: bold;
   color: #bb0404;
@@ -451,17 +450,17 @@
           align-items: center;
 }
 
-.containercomfort .narrate .because::after {
+.containerodd .narrate .because::after {
   content: ' ';
   width: 380px;
   border-bottom: 1px solid #bb0404;
 }
 
-.containercomfort .narrate ul {
+.containerodd .narrate ul {
   line-height: 1.2;
 }
 
-.containercomfort .narrate ul p {
+.containerodd .narrate ul p {
   padding: 1px 3px;
   display: inline-block;
   color: #fff;
@@ -469,14 +468,14 @@
   border-radius: 5px;
 }
 
-.containercomfort .narrate ul li {
+.containerodd .narrate ul li {
   color: #333333;
   padding-left: 20px;
   text-indent: -20px;
   font-size: 14px;
 }
 
-.containercomfort .narrate ul li::before {
+.containerodd .narrate ul li::before {
   content: '．';
   color: #bb0404;
   font-size: 20px;
