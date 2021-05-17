@@ -54,9 +54,9 @@
     display: flex;
     flex-wrap: wrap;
 }
-.sevices{
-    width: 260px;
-    margin: 20px;
+.contents{
+    width: 28.888888%;
+    margin: 2.222222%;
     padding: 32px;
     box-sizing: border-box;
     display: flex;
@@ -67,22 +67,24 @@
     position: relative;
 }
 
-.sevices h3{
+.contents h3{
     margin: 20px 0;
     font-size: 22px;
     font-weight: bold; 
     line-height: 1.5; 
 }
 
-.sevices p::after{
-    display: block;
+.contents p::after{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     content: '···';
     font-size: 30px;
     color: #777777;
     opacity: .7;
 }
 
-.sevices img{
+.contents img{
     width: 60px;
     height: 60px;
     border-radius: 15px;
@@ -107,7 +109,7 @@
     width: 150px;
     margin: 5px;
     box-sizing: border-box;
-    padding:10px;
+    padding:10px 10px 10px 28px;
     color: #fff;
     border: 1px solid #777777;
     border-radius: 5px ;
@@ -116,12 +118,17 @@
 }
 
 
-.sevices:hover .serhover{
+.contents:hover .serhover{
     opacity: 1;
     background-color: #000000CC ;
     transition: 0.9s;
-
 }
 
+.serhover a:hover{
+    color:#fff;
+    background-color: #00aa22;
+}
 
+.serhover a .fa-apple{
+font-size: 26px;}
 
