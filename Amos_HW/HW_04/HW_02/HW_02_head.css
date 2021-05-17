@@ -1,0 +1,52 @@
+
+        .head {
+            width: 100%;
+            display: flex;
+            border-bottom: .5px solid rgb(224, 224, 224);
+            background-color: #ffffffE5;
+            position: fixed;
+            z-index: 1;
+
+        }
+        .logo{
+            align-self: center;
+            margin: 30px;
+        }
+        label {
+            align-self: center;
+        }
+
+        .navwrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navitem {
+            color: #1E1E1E;
+            margin: 20px 30px;
+            font-size: 12px;
+            font-style: bolder;
+            text-decoration: none;
+            border-bottom: 4px solid transparent;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+
+        a.navitem.active{
+            border-bottom: 4px solid #000;
+        }
+
+        .langcontainer {
+            margin: 20px;
+            display: flex;
+            font-size: 20px;
+        }
+
+        #langselection {
+            align-self: center;
+            text-decoration: none;
+        }
