@@ -1,38 +1,17 @@
-.lifeitem ul li a:hover{
-    background-color: #00aa22;
-    color: #fff;
+.introdcution {
+    text-align: center;
+    line-height: 2.5;
+}   
+
+.introdcution h2 {
+    font-weight: bolder;
+    font-size: 50px;
+    font-weight: bold;
 }
 
-.lifetxt {
-    padding: 0  60px 60px 70px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    line-height: 1.5;
+.lifecontent{
     position: relative;
 }
-
-
-.lifetxt h3 {
-    font-weight: bold;
-    font-size: 30px;
-    padding: 10px 0;
-}
-.lifetxt p {
-    font-size: 17px;
-    padding: 10px 0 60px;
-    color: #777777;
-}
-
-
-.lifetxt small {
-    display: block;
-    font-size: 16px;
-    color:#00aa22;
-}
-
 .lifecontent ul{
     display: flex;
     flex-wrap: wrap;
@@ -50,17 +29,54 @@
 }
 
 
+.lifetxt {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1.5;
+    position: relative;
+}
+
+
+
+.lifetxt h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.lifetxt p {
+    font-size: 17px;
+    padding: 10px 0 50px;
+    color: #777777;
+}
+
+.lifetxt small {
+    display: block;
+    font-size: 16px;
+    color:#00aa22;
+}
+
+.introdcution p{
+    color: #777777;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.lifepic{
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.lifepic img:nth-of-type(2){
+    display: none;
+}
+
 
 @media screen and (min-width: 879px){
-    .introdcution {
-        text-align: center;
-        line-height: 2.5;
-    }
-    
-    .introdcution h2 {
-        font-size: 50px;
-        font-weight: bold;
-    }
     
     .lifecontent {
         width: 1200px;
@@ -70,21 +86,11 @@
     .lifeitem{
         padding: 80px 0;
     }
-    
-    
-    .lifepic{
-        width: 50%;
-        box-sizing: border-box;
-        position: relative;
-    }
-    
-    .img{
-        width: 50%;
-        position: relative;
-        right: 450px;
-        z-index: -1;
-    }
-    
+
+    .lifeitem ul li a:hover{
+        background-color: #00aa22;
+        color: #fff;
+    }    
     
     .lifetxt {
         width: 50%;   
@@ -100,7 +106,7 @@
     .lifetxt img{
         width: 92px;
         height: 92px;
-        border: 1px solid rgb(224,224,224);
+        border: 1px solid #aaa;
         border-radius:15px;
     }
     
@@ -110,20 +116,23 @@
         flex-direction: row-reverse;
     }
     
-    
-    
-    
     .lifecontainer :nth-of-type(odd) .lifepic{
-        border-left:1px dashed #777777 ;
+        border-left:1px dashed #aaa ;
     }
     
     .lifecontainer :nth-of-type(even) .lifetxt{
-        border-left:1px dashed #777777 ;
+        border-left:1px dashed #aaa ;
     }
-    
-    .reverseimg{
+    .unreverseimg{
+        width: 90%;
         position: relative;
-        left: 150px;
+        right: 250px;
+        z-index: -1;
+    }
+    .reverseimg{
+        width: 90%;
+        position: relative;
+        right: 130px;
         z-index: -1;
     }
 
@@ -134,33 +143,80 @@
     .introdcution{
         display: flex;
         flex-direction: column;
+
     }
     .introdcution h2{
         opacity: 0;
     }
     .introdcution p{
-        font-size: 22px;
+        font-size: 14px;
         text-align: center;
-        line-height: 2;
+        line-height: 2.5;
     }
+
+
     .lifecontent{
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
         overflow: hidden;
     }
+
+    .lifecontent ul a{
+        font-size: 9px;
+        padding: 12px;
+    }
+    
+    .lifetxt {
+        margin:0 40px;
+        padding: 20px 40px 50px;
+        box-sizing: border-box;
+        border-left: 1px dashed #aaa;
+    }
+    .lifetxt img{
+        width: 40px;
+        height: 40px;        
+        border-radius:10px;
+        position: absolute;
+        top: 20px;
+        left: -20px;
+    }
+
+    .lifecontainer :last-child img:first-child{
+        border: 1px solid #ddd;
+    }
+
+
+    .lifetxt h3 {
+        font-size: 18px;
+    }
+    .lifetxt p {
+        font-size: 12px;
+    }
+    
+    
+    .lifetxt small {
+        font-size: 14px;
+    }
+
+
+    .lifepic{
+        width: 100%;
+    }
     .lifepic img{
         width: 100%;
     }
 
-    .lifetxt img{
-    width: 45px;
-    height: 45px;
-    border: 1px solid rgb(224,224,224);
-    border-radius:10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+    .lifepic img:nth-of-type(1){
+        display: none;
+    }
+
+    .lifepic img:nth-of-type(2){
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+    }
+
 
 }

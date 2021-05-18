@@ -5,8 +5,7 @@
             border-bottom: .5px solid rgb(224, 224, 224);
             background-color: #ffffffE5;
             position: fixed;
-            z-index: 1;
-
+            z-index: 4;
         }
         .logo{
             align-self: center;
@@ -49,4 +48,12 @@
         #langselection {
             align-self: center;
             text-decoration: none;
+        }
+
+        @media screen and (max-width:878px){
+
+            .head {
+                display: none;
+            }
+    
         }
