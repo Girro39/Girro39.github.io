@@ -15,7 +15,7 @@
 .footers{
     width: 1200px;
     margin: auto;
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
 }
 .foot{
     background-color: #fff;
