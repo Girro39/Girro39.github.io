@@ -1,24 +1,38 @@
-.bannertxt h2{
-    font-size: 120px;
-    font-weight: bold;
-}
-.bannertxt p{
-    font-size: 45px;
-}
-.bannercontainer{
-    position: relative;
-}
-.bannertxt{
-    position: absolute;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    bottom: 0;
-    z-index: 3;
-    padding-left: 100px;
-}
-.bannerpic img{
-    width: 100%;
+
+    .bannertxt h2{
+        font-size: 120px;
+        font-weight: bold;
+    }
+    .bannertxt p{
+        font-size: 45px;
+    }
+    .bannercontainer{
+        position: relative;
+    }
+    .bannertxt{
+        position: absolute;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+        padding-left: 100px;
+    }
+    .bannerpic img{
+        width: 100%;
+    }   
+@media screen and (max-width:878px){
+    .bannertxt a{
+        opacity: 0;
+    }
+    .bannertxt h2{
+        font-size: 80px;
+    }
+    .bannertxt{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
