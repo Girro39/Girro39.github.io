@@ -24,19 +24,19 @@
 
 
 .SOFT {
-  padding: 180px 0 180px;
+  padding: 90px 0;
   background-color: #f7f8f9;
 }
 
 .softintroduction {
   text-align: center;
   line-height: 1.5;
-  margin-bottom: 90px;
 }
 
 .softintroduction h2 {
   font-size: 60px;
   font-weight: bolder;
+  padding: 20px 0;
 }
 
 .softintroduction p {
@@ -83,6 +83,21 @@
 
 
 @media screen and (max-width:878px){
+  .softintroduction{
+      width: 100%;
+      margin: auto;
+  }
+
+  .softintroduction h2 {
+    font-size: 26px;
+  }
+  
+  .softintroduction p {
+    font-size: 14px;
+    padding: 0 20px 30px;  
+  }
+  
+
   .softcontainer{
     width: 100%;
     display: flex;
@@ -108,10 +123,14 @@
   }
   
   .softitem p {
-    padding: 0 50px;
+    padding: 0 22px;
     font-size: 14px;
     line-height:1.5;
     color: #616161;
   }
+
+  .comservicetxt h3 {
+    font-size: 24px;
+  }  
 
 }

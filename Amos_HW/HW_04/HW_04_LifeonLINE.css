@@ -75,6 +75,10 @@
     display: none;
 }
 
+.phonenav{
+    display: none;
+}
+
 
 @media screen and (min-width: 879px){
     
@@ -119,9 +123,16 @@
     .lifecontainer :nth-of-type(odd) .lifepic{
         border-left:1px dashed #aaa ;
     }
+    .lifecontainer :nth-of-type(odd) .lifetxt{
+        box-sizing: border-box;
+        padding-right: 70px;
+        padding-left: 80px;
+    }
     
     .lifecontainer :nth-of-type(even) .lifetxt{
         border-left:1px dashed #aaa ;
+        position: relative;
+        padding-left: 80px;
     }
     .unreverseimg{
         width: 90%;
@@ -217,6 +228,15 @@
         width: 100%;
         display: block;
     }
+
+    .phonenav{
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        background-color: #fff;
+    }
+    
 
 
 }

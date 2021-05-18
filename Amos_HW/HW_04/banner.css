@@ -1,38 +1,111 @@
 
     .bannertxt h2{
-        font-size: 120px;
+        font-size: 150px;
         font-weight: bold;
     }
     .bannertxt p{
-        font-size: 45px;
+        font-size: 30px;
+        line-height: 2;
     }
     .bannercontainer{
         position: relative;
+        outline: 1px solid blue;
     }
     .bannertxt{
-        position: absolute;
         color: #fff;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: absolute;
         top: 0;
         bottom: 0;
+        margin: auto;
+        left: 150px;
         z-index: 3;
-        padding-left: 100px;
+        outline: 1px solid blue;
+
     }
+    .download{
+        display: flex;
+        align-items: center;
+        padding: 20px 0 10px;
+    }
+
+    .download img{
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .download span{
+        font-weight: bolder;
+    }
+
+    .bannerlink{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .bannerlink a ~ a{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+        color: #fff;
+        border:1px solid #fff;
+        border-radius: 5px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    .bannerlink a ~ a:hover{
+        background-color: #00aa22;
+    }
+    .bannerlink a:first-child{
+        width: 120px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border:1px solid #fff;
+        display: none;
+        text-decoration: none;
+        color: #fff;
+    }
+
+
     .bannerpic img{
         width: 100%;
     }   
 @media screen and (max-width:878px){
-    .bannertxt a{
-        opacity: 0;
+    .download{
+        display: none;
     }
-    .bannertxt h2{
-        font-size: 80px;
-    }
-    .bannertxt{
+
+    .bannerlink a:first-child{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        
     }
+
+    .bannerlink a ~ a{ 
+        display: none;    
+    }
+
+    .bannertxt h2{
+        font-size: 50px;
+    }
+
+    .bannertxt p{
+        font-size: 14px;
+        font-weight: bolder;
+        line-height: 2;
+    }
+
+    .bannertxt{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        z-index: 3;
+    }
+    
 }

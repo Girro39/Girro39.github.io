@@ -40,15 +40,24 @@
         }
 
         .langcontainer {
-            margin: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 16px;
             display: flex;
-            font-size: 20px;
+            align-items: center;
         }
 
-        #langselection {
-            align-self: center;
+        .langcontainer a{
             text-decoration: none;
+            color: #000;
         }
+
+        .langcontainer img{
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
+
 
         @media screen and (max-width:878px){
 
