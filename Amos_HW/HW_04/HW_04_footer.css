@@ -1,62 +1,81 @@
 #line{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.finalfoot::after{
+.footers .foot:first-child:after{
     display: block;
-    width: 100%;
     content: '';
-    padding: 15px;
+    width: 1200px;
     border-bottom: 1px solid #777777;
+    margin-top: 30px;
 }
-
+.footers{
+    width: 1200px;
+    margin: auto;
+    outline: 1px solid yellow;
+}
 .foot{
-    width: 960px;
     background-color: #fff;
-    padding: 15px;
+    padding: 30px 0;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 
 .foot i{
     font-size: 8px;
 }
-
-.foot a{
+.footers a{
     color: #000;
-    font-size: 12px;
     text-decoration: none;
+}
+.footers :nth-child(1) a{
+    font-size: 14px;
     margin: 10px;
 }
-.link+.link::before{
+
+.footers :first-child a ~ a::before{
     content: '|  ';
 }
 
-.familysites{
+.footers :nth-child(2) a:nth-child(2) ~ a:not(.inner :last-child)::before{
+    content: '|  ';
+}
+
+.footers :nth-child(2) a{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.footers :last-child :first-child{
     font-size:14px;
 }
 
-.app{
-    width: 960px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
 
-.app i{
+.footers :last-child{
+    justify-content: space-between;
+}
+.footers :last-child i{
     font-size: 24px;
     color: #000;
 }
-.app a{
+.footers :last-child a{
     margin: 10px;
-    text-decoration: none;
+}
+
+
+@media screen and (max-width:878px){
+    .footers{
+        width: 100%; 
+    }
+
+    .footers .foot:first-child{
+        display: none;
+    }
 }

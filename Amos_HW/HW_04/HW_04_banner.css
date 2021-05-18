@@ -1,4 +1,4 @@
-
+    
     .bannertxt h2{
         font-size: 150px;
         font-weight: bold;
@@ -76,6 +76,8 @@
     .bannerpic img{
         width: 100%;
     }   
+
+
 @media screen and (max-width:878px){
     .download{
         display: none;
