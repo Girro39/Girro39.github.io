@@ -28,8 +28,9 @@
 }
 
 .foot i{
-    font-size: 8px;
+    font-size: 12px;
 }
+
 .footers a{
     color: #000;
     text-decoration: none;
@@ -43,19 +44,14 @@
     content: '|  ';
 }
 
-.footers :nth-child(2) a:nth-child(2) ~ a:not(.inner :last-child)::before{
+.footers :nth-child(2) a ~ a:not(.inner :last-child)::before{
     content: '|  ';
 }
 
-.footers :nth-child(2) a{
+.flink a{
     font-size: 12px;
     margin: 10px;
 }
-
-.footers :last-child :first-child{
-    font-size:14px;
-}
-
 
 .footers :last-child{
     justify-content: space-between;
@@ -67,6 +63,10 @@
 .footers :last-child a{
     margin: 10px;
 }
+.foot label{
+    font-size: 14px;
+}
+
 
 
 @media screen and (max-width:878px){
@@ -76,5 +76,21 @@
 
     .footers .foot:first-child{
         display: none;
+    }
+    .flink :first-child{
+        width: 100%;
+    }
+    .foot{
+        position: relative;
+    }
+    .foot label{
+        position: absolute;
+        top: 40px;
+        right: 50px;
+    }
+    .inner{
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px;
     }
 }

@@ -21,8 +21,6 @@
         margin: auto;
         left: 150px;
         z-index: 3;
-        outline: 1px solid blue;
-
     }
     .download{
         display: flex;
