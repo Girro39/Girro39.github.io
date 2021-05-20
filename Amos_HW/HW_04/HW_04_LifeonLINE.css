@@ -1,12 +1,19 @@
 .introdcution {
     text-align: center;
-    line-height: 2.5;
+    line-height: 1.5;
 }   
 
 .introdcution h2 {
+    padding-top: 50px;
     font-weight: bolder;
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 70px;    
+}
+
+.introdcution p{
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 240px;
 }
 
 .lifecontent{
@@ -171,11 +178,16 @@
         display: flex;
         flex-direction: column-reverse;
         overflow: hidden;
+        margin: 0px 0;
     }
 
     .lifecontent ul a{
         font-size: 9px;
-        padding: 12px;
+        font-weight: bolder;
+        padding: 14px;
+    }
+    .lifecontent ul a i{
+        font-size: 9px;
     }
     
     .lifetxt {
@@ -236,6 +248,18 @@
         z-index: 4;
         background-color: #fff;
     }
+
+    .navitem {
+        font-size: 15px;
+        color: #1E1E1E;
+        margin: 10px 10px 0;
+        padding: 10px 0 15px;
+    }
+
+    .navwrap a ~ a{
+        color: #777;
+    }
+
     
 
 
