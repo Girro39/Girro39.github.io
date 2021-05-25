@@ -88,6 +88,9 @@
 
 
 @media screen and (min-width: 879px){
+    .life_on_LINE{
+        width: 100%;
+    }
     
     .lifecontent {
         width: 1200px;
@@ -121,7 +124,9 @@
         border-radius:15px;
     }
     
-    
+    .lifecontainer{
+        width: 100%;
+    }
     .lifecontainer :nth-of-type(even){
         display: flex;
         flex-direction: row-reverse;

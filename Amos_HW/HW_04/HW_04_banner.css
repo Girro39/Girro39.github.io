@@ -9,13 +9,11 @@
         
     }
     .bannercontainer{
+        outline: 1px solid blue;
         position: relative;
     }
     .bannertxt{
         color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -107,5 +105,6 @@
         left: 20px;
         z-index: 3;
     }
+
     
 }
