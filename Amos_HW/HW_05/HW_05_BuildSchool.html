@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Reset -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper-bundle_min.css">
+    <link rel="stylesheet" href="HW_05_banner.css">
+
+    <title>Bulid School</title>
+    <style>
+        * {
+            outline: 1px solid #fa0;
+        }
+
+        .computer {
+            width: 70px;
+            height: 50px;
+        }
+
+        .computer>p {
+            color: red;
+            transform: rotate(138deg);
+            font-size: 56px;
+            font-weight: bolder;
+            margin-left: 5px;
+            line-height: 50px;
+        }
+
+        .angle {
+            width: 0;
+            border-top: 8px solid #000;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+        }
+
+        nav {
+            position: relative;
+            z-index: 2;
+        }
+
+        .swiper-container {
+            position: relative;
+            top: -150px;
+        }
+
+        .nav-link {
+            font-size: 12px;
+        }
+
+        .aaa {
+            outline: 2px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-md-auto aaa" href="#">
+                <img src="./HW_05_pic/asset 0.webp" alt="bulidschool" class="w-100">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand ms-auto fs-3 text-white text-center" href="#">
+                    Build School
+                    <p class="fs-6 text-center">developer career builder</p>
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white active" aria-current="page" href="#">
+                            台北班簡介
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">
+                            新竹班簡介
+
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">
+                            校友會-台灣青築未來協會 Build the Future
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">
+                            歷屆老師
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">
+                            問題洽詢
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- right offcanvas -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5> -->
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">台北班簡介</li>
+                        <li class="list-group-item">新竹班簡介</li>
+                        <li class="list-group-item">校友會-台灣青築未來協會 Build the Future</li>
+                        <li class="list-group-item">Blog</li>
+                        <li class="list-group-item">歷屆老師</li>
+                        <li class="list-group-item">關於</li>
+                        <li class="list-group-item">問題洽詢</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./HW_05_pic/banner01.png" alt="banner">
+                <div class="text position-absolute">
+                    <p>軟體工程師的路上有人帶</p>
+                    <span>START CODING AND GET COACHED FROM MENTORS</span>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="./HW_05_pic/asset 1.webp" alt="banner"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner1.webp" alt="banner"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner2.webp" alt="banner"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner3.webp" alt="banner"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner4.webp" alt="banner"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner5.webp" alt="banner"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner6.webp" alt="banner"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner7.webp" alt="banner"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="item item_title">
+                    <div class="computer border border-5 border-dark">
+                        <p class="text-center">–</p>
+                    </div>
+                    <div class="angle"></div>
+                    <h3>Build School</h3>
+                </div>
+                <div class="item">
+                    <h3>/*我們的理念*/</h3>
+                    <div class="mean">
+                        <p>Build = 將程式碼編譯及建置成可執行的軟體</p>
+                        <p>Build = 動手做</p>
+                        <p>Build = 軟體開發職涯的打造者</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item">
+                    <h3>實作及就業導向的軟體開發學校 </h3>
+                    <p>因應數位新時代的來臨，軟體、App、IoT
+                        、SaaS、雲端平台的應用需求大爆炸，軟體工程師的招募需求持續上升，以2016年5月求職平台的統計資料，從高科技、電商、金融、傳產、網路服務、軟體資訊、新創等各行業，台灣至少有 27,000
+                        位軟體開發工程師的職缺，甚至日本、新加坡等軟體及App 外商也來台灣求才。
+                    </p>
+                    <p>
+                        為了彌補企業求才所需技能及實務教學上的落差，我們希望能幫助想搭上軟體開發及數位經濟這艘火箭的學員們，打造更有競爭力的職涯!
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item item_pic">
+                    <img src="./HW_05_pic/asset 2.webp" alt="">
+                </div>
+                <div class="item item_title">
+                    <h3>動手實作才是真學習</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item">
+                    <h3>打造專案作品的學習方式</h3>
+                    <h3>(Project-based Learning)</h3>
+                    <p>透過身經百戰的實務講師、各大企業的資深軟體工程師或CTO，帶領學員實作一個真正能運作的產品開發，解決真實世界的問題，透過專題過程中的實作，培養解決問題的能力，這裏不只是程式教學或教育訓練，學的不只是技能，而是
+                        Learn how to learn，以因應變化多端的軟體開發技能，及自主尋找解答的能力。
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item item_pic">
+                    <img src="./HW_05_pic/asset 2.webp" alt="">
+                </div>
+                <div class="item item_title">
+                    <h3>動手實作才是真學習</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item">
+                    <h3>打造專案作品的學習方式</h3>
+                    <h3>(Project-based Learning)</h3>
+                    <p>透過身經百戰的實務講師、各大企業的資深軟體工程師或CTO，帶領學員實作一個真正能運作的產品開發，解決真實世界的問題，透過專題過程中的實作，培養解決問題的能力，這裏不只是程式教學或教育訓練，學的不只是技能，而是
+                        Learn how to learn，以因應變化多端的軟體開發技能，及自主尋找解答的能力。
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item item_pic">
+                    <img src="./HW_05_pic/asset 2.webp" alt="">
+                </div>
+                <div class="item item_title">
+                    <h3>動手實作才是真學習</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item">
+                    <h3>打造專案作品的學習方式</h3>
+                    <h3>(Project-based Learning)</h3>
+                    <p>透過身經百戰的實務講師、各大企業的資深軟體工程師或CTO，帶領學員實作一個真正能運作的產品開發，解決真實世界的問題，透過專題過程中的實作，培養解決問題的能力，這裏不只是程式教學或教育訓練，學的不只是技能，而是
+                        Learn how to learn，以因應變化多端的軟體開發技能，及自主尋找解答的能力。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+<body>
+    <!-- bootstrap5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
