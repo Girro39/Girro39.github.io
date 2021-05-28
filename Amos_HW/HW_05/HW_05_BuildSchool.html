@@ -40,10 +40,13 @@
             border-left: 10px solid transparent;
         }
 
-        nav {
-            position: relative;
+        .navbar {
+            position: absolute;
             top: 0;
-            z-index: 2;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
         }
 
         .swiper-container {
@@ -54,23 +57,54 @@
             font-size: 12px;
         }
 
-        .aaa {
-            outline: 2px solid #000;
+        .navbar-brand .txt span {
+            font-size: 12px;
+
         }
     </style>
 </head>
 
 <body>
+
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./HW_05_pic/banner1.webp" alt="banner" class="w-100">
+                <div class="text position-absolute">
+                    <p>軟體工程師的路上有人帶</p>
+                    <span>START CODING AND GET COACHED FROM MENTORS</span>
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="./HW_05_pic/asset 1.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner2.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner3.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner4.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner5.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner6.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner7.webp" alt="banner" class="w-100"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand ms-md-auto aaa" href="#">
-                <img src="./HW_05_pic/asset 0.webp" alt="bulidschool" class="w-100">
+            <a class="navbar-brand d-lg-none" href="#">
+                <img src="./HW_05_pic/asset 0.webp" alt="bulidschool">
             </a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a class="navbar-brand ms-auto fs-3 text-white text-center" href="#">
-                    Build School
-                    <p class="fs-6 text-center">developer career builder</p>
+                <a class="navbar-brand ms-auto fs-3 text-white text-center d-flex flex-md-row align-items-md-start"
+                    href="#">
+                    <div class="pic">
+                        <img src="./HW_05_pic/asset 0.webp" alt="bulidschool">
+                    </div>
+                    <div class="txt">
+                        <p class="fs-2 mt-2 ms-1">Build School</p>
+                        <span class="text-center">developer career builder</span>
+                    </div>
                 </a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ">
@@ -136,28 +170,6 @@
         </div>
 
     </nav>
-    <!-- Swiper -->
-    <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./HW_05_pic/banner1.webp" alt="banner" class="w-100">
-                <div class="text position-absolute">
-                    <p>軟體工程師的路上有人帶</p>
-                    <span>START CODING AND GET COACHED FROM MENTORS</span>
-                </div>
-            </div>
-            <div class="swiper-slide"><img src="./HW_05_pic/asset 1.webp" alt="banner" class="w-100"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner2.webp" alt="banner" class="w-100"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner3.webp" alt="banner" class="w-100"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner4.webp" alt="banner" class="w-100"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner5.webp" alt="banner" class="w-100"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner6.webp" alt="banner" class="w-100"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner7.webp" alt="banner" class="w-100"></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
 
 
 
