@@ -42,12 +42,12 @@
 
         nav {
             position: relative;
+            top: 0;
             z-index: 2;
         }
 
         .swiper-container {
-            position: relative;
-            top: -150px;
+            margin-bottom: 20px;
         }
 
         .nav-link {
@@ -61,7 +61,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
             <a class="navbar-brand ms-md-auto aaa" href="#">
@@ -141,20 +140,19 @@
     <div class="swiper-container mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="./HW_05_pic/banner01.png" alt="banner">
+                <img src="./HW_05_pic/banner1.webp" alt="banner" class="w-100">
                 <div class="text position-absolute">
                     <p>軟體工程師的路上有人帶</p>
                     <span>START CODING AND GET COACHED FROM MENTORS</span>
                 </div>
             </div>
-            <div class="swiper-slide"><img src="./HW_05_pic/asset 1.webp" alt="banner"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner1.webp" alt="banner"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner2.webp" alt="banner"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner3.webp" alt="banner"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner4.webp" alt="banner"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner5.webp" alt="banner"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner6.webp" alt="banner"></div>
-            <div class="swiper-slide"><img src="./HW_05_pic/banner7.webp" alt="banner"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/asset 1.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner2.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner3.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner4.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner5.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner6.webp" alt="banner" class="w-100"></div>
+            <div class="swiper-slide"><img src="./HW_05_pic/banner7.webp" alt="banner" class="w-100"></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -168,7 +166,7 @@
 
 
 
-    <!-- <div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="item item_title">
@@ -252,7 +250,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 </body>
 
@@ -261,15 +259,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
+
+            // 圖片間空白
+            // spaceBetween: 30,
             slidesPerView: 1,
-            spaceBetween: 30,
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
