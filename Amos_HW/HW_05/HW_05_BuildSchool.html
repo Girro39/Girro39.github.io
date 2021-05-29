@@ -16,7 +16,7 @@
     <title>Bulid School</title>
     <style>
         * {
-            outline: 1px solid #fa0;
+            /* outline: 1px solid #fa0; */
         }
 
         .computer {
@@ -35,18 +35,9 @@
 
         .angle {
             width: 0;
-            border-top: 8px solid #000;
-            border-right: 10px solid transparent;
-            border-left: 10px solid transparent;
-        }
-
-        .navbar {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            z-index: 1;
+            border-top: 12px solid #000;
+            border-right: 14px solid transparent;
+            border-left: 14px solid transparent;
         }
 
         .swiper-container {
@@ -60,6 +51,22 @@
         .navbar-brand .txt span {
             font-size: 12px;
 
+
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+        }
+
+        .row :last-child .item p {
+            box-sizing: border-box;
+            padding: 20px 30px 0px;
+            text-justify: auto;
         }
     </style>
 </head>
@@ -101,9 +108,9 @@
                     <div class="pic">
                         <img src="./HW_05_pic/asset 0.webp" alt="bulidschool">
                     </div>
-                    <div class="txt">
-                        <p class="fs-2 mt-2 ms-1">Build School</p>
-                        <span class="text-center">developer career builder</span>
+                    <div class="txt ms-2 me-2">
+                        <p class="fs-2 mt-2 ms-1">Build School<span class="text-center d-block mt-1">developer career
+                                builder</span></p>
                     </div>
                 </a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -179,17 +186,17 @@
 
 
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="item item_title">
-                    <div class="computer border border-5 border-dark">
+        <div class="row align-items-center mb-sm-5 p-3 p-md-5 m-md-5">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                <div class="item pic">
+                    <div class="computer border border-5 border-dark mx-auto mb-3 position-relative">
                         <p class="text-center">–</p>
+                        <div class="angle position-absolute top-100"></div>
                     </div>
-                    <div class="angle"></div>
-                    <h3>Build School</h3>
+                    <p class="text-center text-secondary fw-bolder fs-3">Build School</p>
                 </div>
                 <div class="item">
-                    <h3>/*我們的理念*/</h3>
+                    <h3 class="text-center fs-5 fw-bolder">/*我們的理念*/</h3>
                     <div class="mean">
                         <p>Build = 將程式碼編譯及建置成可執行的軟體</p>
                         <p>Build = 動手做</p>
@@ -199,7 +206,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="item">
-                    <h3>實作及就業導向的軟體開發學校 </h3>
+                    <h3 class="text-center fs-5 fw-bolder">實作及就業導向的軟體開發學校 </h3>
                     <p>因應數位新時代的來臨，軟體、App、IoT
                         、SaaS、雲端平台的應用需求大爆炸，軟體工程師的招募需求持續上升，以2016年5月求職平台的統計資料，從高科技、電商、金融、傳產、網路服務、軟體資訊、新創等各行業，台灣至少有 27,000
                         位軟體開發工程師的職缺，甚至日本、新加坡等軟體及App 外商也來台灣求才。
@@ -210,54 +217,59 @@
 
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+        </div>
+        <div class="row align-items-center mb-sm-5 p-3 p-md-5 m-md-5 flex-row-reverse">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
                 <div class="item item_pic">
                     <img src="./HW_05_pic/asset 2.webp" alt="">
                 </div>
                 <div class="item item_title">
-                    <h3>動手實作才是真學習</h3>
+                    <h3 class="text-center">動手實作才是真學習</h3>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="item">
-                    <h3>打造專案作品的學習方式</h3>
-                    <h3>(Project-based Learning)</h3>
+                    <h3 class="text-center fs-5 fw-bolder">打造專案作品的學習方式</h3>
+                    <h3 class="text-center fs-5 fw-bolder">(Project-based Learning)</h3>
                     <p>透過身經百戰的實務講師、各大企業的資深軟體工程師或CTO，帶領學員實作一個真正能運作的產品開發，解決真實世界的問題，透過專題過程中的實作，培養解決問題的能力，這裏不只是程式教學或教育訓練，學的不只是技能，而是
                         Learn how to learn，以因應變化多端的軟體開發技能，及自主尋找解答的能力。
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+        </div>
+        <div class="row align-items-center mb-sm-5 p-3 p-md-5 m-md-5">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
                 <div class="item item_pic">
-                    <img src="./HW_05_pic/asset 2.webp" alt="">
+                    <img src="./HW_05_pic/asset 3.webp" alt="">
                 </div>
                 <div class="item item_title">
-                    <h3>動手實作才是真學習</h3>
+                    <h3 class="text-center">就業銜接 </h3>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="item">
-                    <h3>打造專案作品的學習方式</h3>
-                    <h3>(Project-based Learning)</h3>
-                    <p>透過身經百戰的實務講師、各大企業的資深軟體工程師或CTO，帶領學員實作一個真正能運作的產品開發，解決真實世界的問題，透過專題過程中的實作，培養解決問題的能力，這裏不只是程式教學或教育訓練，學的不只是技能，而是
-                        Learn how to learn，以因應變化多端的軟體開發技能，及自主尋找解答的能力。
+                    <h3 class="text-center fs-5 fw-bolder">真正企業職場所需技能 </h3>
+                    <h3 class="text-center fs-5 fw-bolder">(Career Readiness) </h3>
+                    <p>除了透過打造專題作品過程，學到了技術及硬技能外，不同於一般的軟體培訓，我們更加入了簡報技巧、履歷及面試準備、以及真正軟體開發的團隊溝通及運作，這些軟實力 (Soft-Skill)
+                        的培養，讓學員能提早做好準備，在職場上成為一位專業的軟體工程師!
                     </p>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
-                <div class="item item_pic">
-                    <img src="./HW_05_pic/asset 2.webp" alt="">
+        </div>
+        <div class="row align-items-center mb-sm-5 p-3 p-md-5 m-md-5 flex-row-reverse">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
+                <div class="item item_pic ">
+                    <img src="./HW_05_pic/asset 4.webp" alt="">
                 </div>
                 <div class="item item_title">
-                    <h3>動手實作才是真學習</h3>
+                    <h3 class="text-center">連結及影響力 </h3>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="item">
-                    <h3>打造專案作品的學習方式</h3>
-                    <h3>(Project-based Learning)</h3>
-                    <p>透過身經百戰的實務講師、各大企業的資深軟體工程師或CTO，帶領學員實作一個真正能運作的產品開發，解決真實世界的問題，透過專題過程中的實作，培養解決問題的能力，這裏不只是程式教學或教育訓練，學的不只是技能，而是
-                        Learn how to learn，以因應變化多端的軟體開發技能，及自主尋找解答的能力。
+                    <h3 class="text-center fs-5 fw-bolder">企業導師的連結 </h3>
+                    <h3 class="text-center fs-5 fw-bolder">(Mentor Network)</h3>
+                    <p>每一位在軟體開發上有實務經驗的企業導師，他們是各大企業的主管、資深軟體工程師或 CTO，其人際連結及資源將帶給同學更多更好的就業機會，你將比別人站得更高，看得更遠!
                     </p>
                 </div>
             </div>
