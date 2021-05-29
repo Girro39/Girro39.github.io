@@ -1,0 +1,16 @@
+.bannerbuliding {
+    width: 100%;
+    background-image: url("./HW_05_pic/asset\ 5.webp");
+}
+
+.bannerbuliding p {
+    background-color: #34a2a8ee;
+    padding: 50px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.excol_list ul li {
+    list-style: outside;
+}

@@ -199,8 +199,32 @@
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
     left: 20px;
-    right: auto
+    right: auto;
 }
+
+@media screen and (max-width:575px) {
+
+    :root {
+        --swiper-navigation-size: 10px
+    }
+}
+
+
+@media screen and (min-width:768px) {
+
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next {
+        left: 100px;
+        right: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev {
+        right: 100px;
+        left: auto
+    }
+}
+
 
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
@@ -247,7 +271,7 @@
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    bottom: 10px;
+    bottom: 45px;
     left: 0;
     width: 100%
 }

@@ -13,60 +13,17 @@
     <link rel="stylesheet" href="swiper-bundle_min.css">
     <link rel="stylesheet" href="HW_05_banner.css">
 
-    <title>Bulid School</title>
+    <link rel="stylesheet" href="swiper-container.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="bannerbuilding.css">
+    <link rel="icon" href="./HW_05_pic/asset 0.webp">
+
+
+    <title>Bulid School_HW05</title>
     <style>
         * {
-            /* outline: 1px solid #fa0; */
-        }
-
-        .computer {
-            width: 70px;
-            height: 50px;
-        }
-
-        .computer>p {
-            color: red;
-            transform: rotate(138deg);
-            font-size: 56px;
-            font-weight: bolder;
-            margin-left: 5px;
-            line-height: 50px;
-        }
-
-        .angle {
-            width: 0;
-            border-top: 12px solid #000;
-            border-right: 14px solid transparent;
-            border-left: 14px solid transparent;
-        }
-
-        .swiper-container {
-            margin-bottom: 20px;
-        }
-
-        .nav-link {
-            font-size: 12px;
-        }
-
-        .navbar-brand .txt span {
-            font-size: 12px;
-
-
-        }
-
-        .navbar {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            z-index: 1;
-        }
-
-        .row :last-child .item p {
-            box-sizing: border-box;
-            padding: 20px 30px 0px;
-            text-justify: auto;
+            outline: 1px solid #a6d;
         }
     </style>
 </head>
@@ -78,9 +35,21 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="./HW_05_pic/banner1.webp" alt="banner" class="w-100">
-                <div class="text position-absolute">
-                    <p>軟體工程師的路上有人帶</p>
-                    <span>START CODING AND GET COACHED FROM MENTORS</span>
+                <div class="text position-absolute fw-bolder">
+                    <p class="text-white">軟體工程師的路上有人帶</p>
+                    <p class="text-white"></p>
+                    <span class="text-white">START CODING AND GET COACHED FROM MENTORS</span>
+                    <div class="container buttons ">
+                        <button type="button" class="btn text-white">
+                            台北班簡介及報名(2021/5/3開課)
+                        </button>
+                        <button type="button" class="btn text-white">
+                            新竹班簡介(2021/11月後)
+                        </button>
+                        <button type="button" class="btn text-white">
+                            招生說明會報名
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide"><img src="./HW_05_pic/asset 1.webp" alt="banner" class="w-100"></div>
@@ -154,7 +123,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- right offcanvas -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+            <div class="offcanvas offcanvas-end w-sm-50" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                     <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5> -->
@@ -178,14 +147,7 @@
 
     </nav>
 
-
-
-
-
-
-
-
-    <div class="container">
+    <div class="container maincontainer">
         <div class="row align-items-center mb-sm-5 p-3 p-md-5 m-md-5">
             <div class="col-12 col-md-6 d-flex flex-column align-items-center ">
                 <div class="item pic">
@@ -276,6 +238,180 @@
         </div>
     </div>
 
+    <div class="bannerbuliding bannerbuliding_weeks">
+        <p class="text-center">18 - 24週的實作及作品開發 - 從訓練、就業、到企業連結</p>
+    </div>
+
+    <div class="container exercisecontainer mt-md-5 mb-md-5">
+        <div class="row">
+            <div class="exercisecol col-12 col-md-3">
+                <p class="text-center p-2 m-5 fs-4 fw-bold">第 1 - 4 個月</p>
+                <div class="excol_pic w-50 mx-auto mb-4">
+                    <img src="./HW_05_pic/asset 29.svg" alt="pic">
+                </div>
+                <h3 class="text-center p-3 text-danger fw-bold fs-5">程式基礎設計</h3>
+                <div class="excol_list mx-auto w-75">
+                    <ul>
+                        <li>業界講師實戰</li>
+                        <li>企業主管/創業家/CTO 演講</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exercisecol col-12 col-md-3">
+                <p class="text-center p-2 m-5 fs-4 fw-bold">第 5 - 6 個月 </p>
+                <div class="excol_pic w-50 mx-auto mb-4">
+                    <img src="./HW_05_pic/asset 31.svg" alt="pic">
+                </div>
+                <h3 class="text-center p-3 text-danger fw-bold fs-5">專案及作品導向實作
+                </h3>
+                <div class="excol_list mx-auto w-75">
+                    <ul>
+                        <li>Web / App 作品開發 - 企業導師指導 </li>
+                        <li>不只是 Demo - 真實可運作成果 </li>
+                        <li>團隊開發 - 真實軟體開發團隊的運作及分工 (Agile敏捷, kanban 看板, CI 自動化建置) </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exercisecol col-12 col-md-3">
+                <p class="text-center p-2 m-5 fs-4 fw-bold">第 6 - 7 個月
+                </p>
+                <div class="excol_pic w-50 mx-auto mb-4">
+                    <img src="./HW_05_pic/asset 32.svg" alt="pic">
+                </div>
+                <h3 class="text-center p-3 text-danger fw-bold fs-5">作品發表 </h3>
+                <div class="excol_list mx-auto w-75">
+                    <ul>
+                        <li>簡報 Demo 及溝通技巧 </li>
+                        <li>作品及程式碼講解 </li>
+                        <li>個人履歷準備 – GitHub, CodePen … </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exercisecol col-12 col-md-3">
+                <p class="text-center p-2 m-5 fs-4 fw-bold">未來及展望 </p>
+                <div class="excol_pic w-50 mx-auto mb-4">
+                    <img src="./HW_05_pic/asset 6.webp" alt="pic">
+                </div>
+                <h3 class="text-center p-3 text-danger fw-bold fs-5">就業及企業導師諮詢
+                </h3>
+                <div class="excol_list mx-auto w-75">
+                    <ul>
+                        <li>就業媒合或未來職涯諮詢</li>
+                        <li>企業導師 -人際連結及資源 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bannerbuliding bannerbuliding_tools">
+        <p class="text-center">在課程及作品實作中，將採用這些工具 - 熟悉實務上軟體開發團隊的運作、分工及真實專案的流程
+        </p>
+    </div>
+
+    <div class="container toolscontainer mt-md-5 mb-md-5">
+        <div class="row">
+            <div class="toolscol col-12 col-md-3">
+                <img src="./HW_05_pic/asset 8.webp" alt="pic">
+                <img src="./HW_05_pic/asset 9.webp" alt="pic">
+            </div>
+            <div class="toolscol col-12 col-md-3">
+                <div class="tools_pic">
+                    <img src="./HW_05_pic/asset 10.webp" alt="pic">
+                    <img src="./HW_05_pic/asset 11.webp" alt="pic">
+                </div>
+
+            </div>
+            <div class="toolscol col-12 col-md-3">
+                <div class="tools_pic">
+                    <img src="./HW_05_pic/asset 12.webp" alt="pic">
+                    <img src="./HW_05_pic/asset 13.webp" alt="pic">
+                </div>
+            </div>
+            <div class="toolscol col-12 col-md-3">
+                <div class="tools_pic">
+                    <img src="./HW_05_pic/asset 14.webp" alt="pic">
+                    <img src="./HW_05_pic/asset 15.webp" alt="pic">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <h3 class="text-center p-3 text-danger fw-bold fs-5">程式基礎設計</h3>
+                <div class="excol_list mx-auto w-75">
+                    <ul>
+                        <li>業界講師實戰</li>
+                        <li>業界講師實戰</li>
+                        <li>業界講師實戰</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3 class="text-center p-3 text-danger fw-bold fs-5">程式基礎設計</h3>
+                <div class="excol_list mx-auto w-75">
+                    <ul>
+                        <li>業界講師實戰</li>
+                        <li>業界講師實戰</li>
+                        <li>業界講師實戰</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3 class="text-center p-3 text-danger fw-bold fs-5">程式基礎設計</h3>
+                <div class="excol_list mx-auto w-75">
+                    <ul>
+                        <li>業界講師實戰</li>
+                        <li>業界講師實戰</li>
+                        <li>業界講師實戰</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3 class="text-center p-3 text-danger fw-bold fs-5">程式基礎設計</h3>
+                <div class="excol_list mx-auto w-75">
+                    <ul>
+                        <li>業界講師實戰</li>
+                        <li>業界講師實戰</li>
+                        <li>業界講師實戰</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="bannerbuliding bannerbuliding_teachers">
+        <p class="text-center">我們的講師及企業導師擁有在這些公司的工作經歷、擔任主管或資深工程師
+        </p>
+    </div>
+
+    <div class="container jobcontainer mt-md-5 mb-md-5">
+        <div class="row">
+            <div class="jobcol col-12 col-md-3 d-md-flex flex-md-column align-items-center justify-content-center">
+                <img src="./HW_05_pic/asset 17.webp" alt="pic" class="w-75 m-2">
+                <img src="./HW_05_pic/asset 18.webp" alt="pic" class="w-75 m-2">
+            </div>
+            <div class="jobcol col-12 col-md-3 d-md-flex flex-md-column align-items-center justify-content-center">
+                <img src="./HW_05_pic/asset 19.webp" alt="pic" class="w-75 m-2">
+                <img src="./HW_05_pic/asset 20.webp" alt="pic" class="w-75 m-2">
+            </div>
+            <div class="jobcol col-12 col-md-3 d-md-flex flex-md-column align-items-center justify-content-center">
+                <img src="./HW_05_pic/asset 21.webp" alt="pic" class="w-75 m-2">
+                <img src="./HW_05_pic/asset 22.webp" alt="pic" class="w-50 m-2">
+            </div>
+            <div class="jobcol col-12 col-md-3 d-md-flex flex-md-column align-items-center justify-content-center">
+                <img src="./HW_05_pic/asset 24.webp" alt="pic" class="w-75 m-2">
+                <img src="./HW_05_pic/asset 23.webp" alt="pic" class="w-50 m-2">
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 <body>
@@ -299,7 +435,7 @@
                 clickable: true,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
+                nextEl: ".s fs-5 fw-bolder text-center m-3 p-2wiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
         });

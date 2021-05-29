@@ -1,0 +1,17 @@
+.swiper-container {
+    margin-bottom: 20px;
+}
+
+.swiper-slide .text p {
+    font-size: 40px;
+}
+
+.buttons>button {
+    border: none;
+    background-color: #3d9be9;
+
+}
+
+.buttons>button:hover {
+    background-color: #045184;
+}
