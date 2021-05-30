@@ -1,0 +1,28 @@
+.expic img {
+    width: 100px;
+    height: 100px;
+}
+
+.excol>p,
+.excol>.expic,
+.excol>h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.excol p {
+    font-size: 24px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.excol h3 {
+    color: red;
+    font-size: 20px;
+    padding: 20px 0;
+
+}
+
+.exlist {
+    padding: 20px 20px;
+}
