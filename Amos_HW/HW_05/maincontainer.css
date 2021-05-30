@@ -19,8 +19,14 @@
     border-left: 14px solid transparent;
 }
 
-.row :last-child .item p {
+.mainrow :last-child .item p {
     box-sizing: border-box;
     padding: 20px 30px 0px;
     text-justify: auto;
+}
+
+@media screen and (max-width:575px) {
+    .mainrow div:first-child {
+        margin-bottom: 40px;
+    }
 }

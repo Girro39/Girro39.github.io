@@ -202,28 +202,6 @@
     right: auto;
 }
 
-@media screen and (max-width:575px) {
-
-    :root {
-        --swiper-navigation-size: 10px
-    }
-}
-
-
-@media screen and (min-width:768px) {
-
-    .swiper-button-prev,
-    .swiper-container-rtl .swiper-button-next {
-        left: 100px;
-        right: auto;
-    }
-
-    .swiper-button-next,
-    .swiper-container-rtl .swiper-button-prev {
-        right: 100px;
-        left: auto
-    }
-}
 
 
 .swiper-button-prev:after,
@@ -640,4 +618,27 @@ button.swiper-pagination-bullet {
     z-index: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
+}
+
+@media screen and (max-width:575px) {
+
+    :root {
+        --swiper-navigation-size: 30px
+    }
+}
+
+
+@media screen and (min-width:768px) {
+
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next {
+        left: 100px;
+        right: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev {
+        right: 100px;
+        left: auto
+    }
 }
