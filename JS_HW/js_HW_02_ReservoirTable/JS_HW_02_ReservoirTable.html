@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReservoirTable</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>
+            台灣水庫即時水情
+        </h1>
+    </div>
+
+    <div id="container"></div>
+
+
+    <script>
+        let Titles = ['Item', 'Name', 'Capacity', 'Percent'];
+
+        let reservoirData = [{
+                name: '新山水庫(基隆)',
+                capacity: '905.89',
+                percent: '90.4%'
+            },
+            {
+                name: '翡翠水庫(台北、新北)',
+                capacity: '28426.64',
+                percent: '84.7%'
+            },
+            {
+                name: '石門水庫(新北、桃園、新竹)',
+                capacity: '6306.78',
+                percent: '31.1%'
+            },
+            {
+                name: '永和山水庫(新竹、苗栗)',
+                capacity: '496.75',
+                percent: '16.5%'
+            },
+            {
+                name: '寶山水庫(新竹)',
+                capacity: '142.39',
+                percent: '28.2%'
+            }
+
+
+
+        ]
+
+
+        let container = document.getElementById("container");
+        let table = document.createElement("table");
+        let thead = document.createElement("thead");
+        let tbody = document.createElement("tbody");
+
+        window.onload = function () {
+            createTable(reservoirData, Titles);
+
+            container.appendChild(table);
+        }
+
+        function createTable(rowData, titles) {
+            AddThead(thead, Titles);
+            AddTbody(tbody, reservoirData);
+            // let keys = Object.values(reservoirData);
+            // // console.log(names);
+            // keys.forEach(function (item) {
+            //     console.log(item.name);
+            // })
+        }
+
+        function AddThead(thead, titleData) {
+            let theadrow = document.createElement("tr");
+
+            titleData.forEach(function (col) {
+                let td = document.createElement("td");
+                td.innerText = col;
+                theadrow.appendChild(td);
+            })
+            thead.appendChild(theadrow);
+            table.appendChild(thead);
+        }
+
+        function AddTbody(tbody, bodyData) {
+            let bodyrow = document.createElement("tr");
+
+            bodyData
+
+        }
+    </script>
+</body>
+
+</html>
