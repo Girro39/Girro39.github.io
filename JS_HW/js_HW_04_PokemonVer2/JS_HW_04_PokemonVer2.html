@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        .jumbotron>h1 {
+            color: #fff;
+        }
+    </style>
 
 </head>
 
 <body>
 
-    <div class="jumbotron text-center">
+    <div class="container jumbotron bg-danger text-center">
         <h1>寶可夢圖鑑列表</h1>
     </div>
 
@@ -22,11 +29,6 @@
             <div class="m-2 btn_col">
                 <button class="btn btn-warning">
                     AddAllPokemon
-                </button>
-            </div>
-            <div class="m-2 btn_col">
-                <button class="btn btn-warning">
-                    RemoveAll
                 </button>
             </div>
             <div class="m-2 btn_col">
@@ -41,96 +43,28 @@
             </div>
             <div class="m-2 btn_col">
                 <button class="btn btn-warning">
-                    SetTimeout
+                    SetInterval
                 </button>
             </div>
             <div class="m-2 btn_col">
                 <button class="btn btn-warning">
-                    Stop
+                    Stop_SetInterval
+                </button>
+            </div>
+            <div class="m-2 btn_col">
+                <button class="btn btn-warning">
+                    RemoveAll
                 </button>
             </div>
         </div>
     </div>
 
-    <div id='container'></div>
+    <div class="container" id='container'></div>
 
-    <script>
-        let container = document.getElementById("container");
-        let i = container.childNodes.length;
-        console.log(i);
-        let timeoutId;
-
-        //新增全部 function
-        function plusAll() {
-            for (let i = 1; i < 899; i++) {
-                let fileName = i.toString().padStart(3, '0');
-                let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
-
-
-                let img = document.createElement('img');
-                img.setAttribute("src", pathFile);
-                container.appendChild(img);
-            }
-        }
-
-        //+1 function
-        function plusOne() {
-            i++;
-            console.log(i);
-            let fileName = i.toString().padStart(3, '0'); //00i
-            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
-            let img = document.createElement('img');
-            img.setAttribute("src", pathFile);
-            container.appendChild(img);
-        }
-
-        //新增全部 button
-        const btn_AddAll = document.querySelector(".row .btn_col:nth-of-type(1) button");
-        btn_AddAll.addEventListener("click", function (event) {
-            plusAll();
-            document.querySelector(".row .btn_col:nth-of-type(3) button").disabled = true;
-            document.querySelector(".row .btn_col:nth-of-type(4) button").disabled = false;
-
-        })
-
-
-        //移除全部 button
-        const btn_Remove = document.querySelector(".row .btn_col:nth-of-type(2) button");
-        btn_Remove.addEventListener('click', function (event) {
-            container.innerHTML = "";
-            document.querySelector(".row .btn_col:nth-of-type(3) button").disabled = false;
-            document.querySelector(".row .btn_col:nth-of-type(4) button").disabled = true;
-
-        })
+    <script src="HW_04_Pokemon.js"></script>
 
 
 
-        //+1 button
-        const btn_AddOne = document.querySelector(".row .btn_col:nth-of-type(3) button");
-        btn_AddOne.addEventListener('click', function (event) {
-            let i = container.childNodes.length;
-            let j = container.childNodes.values;
-            console.log(`我是j ${j}`);
-            if (i < 899) {
-                i++;
-                plusOne();
-            }
-            document.querySelector(".row .btn_col:nth-of-type(4) button").disabled = false;
-        });
-
-        //-1 button
-        const btn_LessOne = document.querySelector(".row .btn_col:nth-of-type(4) button");
-        btn_LessOne.addEventListener('click', function (event) {});
-
-        //settimeout button
-        const btn_Timeout = document.querySelector(".row .btn_col:nth-of-type(5) button");
-        btn_Timeout.addEventListener('click', function (event) {})
-
-
-        //點圖片消失 button
-        // const img_clear = document.getElementById('remove');
-        // img_clear.addEventListener('click', function (event) {
-        // })
     </script>
 
     <!-- BootStrap 4.6.0 -->
