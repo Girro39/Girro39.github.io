@@ -41,12 +41,12 @@
             </div>
             <div class="m-2 btn_col">
                 <button class="btn btn-warning">
-                    Timeout
+                    SetTimeout
                 </button>
             </div>
             <div class="m-2 btn_col">
                 <button class="btn btn-warning">
-                    Time
+                    Stop
                 </button>
             </div>
         </div>
@@ -56,7 +56,8 @@
 
     <script>
         let container = document.getElementById("container");
-        let i = 0;
+        let i = container.childNodes.length;
+        console.log(i);
         let timeoutId;
 
         //新增全部 function
@@ -75,6 +76,7 @@
         //+1 function
         function plusOne() {
             i++;
+            console.log(i);
             let fileName = i.toString().padStart(3, '0'); //00i
             let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
             let img = document.createElement('img');
@@ -86,6 +88,9 @@
         const btn_AddAll = document.querySelector(".row .btn_col:nth-of-type(1) button");
         btn_AddAll.addEventListener("click", function (event) {
             plusAll();
+            document.querySelector(".row .btn_col:nth-of-type(3) button").disabled = true;
+            document.querySelector(".row .btn_col:nth-of-type(4) button").disabled = false;
+
         })
 
 
@@ -93,6 +98,9 @@
         const btn_Remove = document.querySelector(".row .btn_col:nth-of-type(2) button");
         btn_Remove.addEventListener('click', function (event) {
             container.innerHTML = "";
+            document.querySelector(".row .btn_col:nth-of-type(3) button").disabled = false;
+            document.querySelector(".row .btn_col:nth-of-type(4) button").disabled = true;
+
         })
 
 
@@ -100,7 +108,14 @@
         //+1 button
         const btn_AddOne = document.querySelector(".row .btn_col:nth-of-type(3) button");
         btn_AddOne.addEventListener('click', function (event) {
-            plusOne();
+            let i = container.childNodes.length;
+            let j = container.childNodes.values;
+            console.log(`我是j ${j}`);
+            if (i < 899) {
+                i++;
+                plusOne();
+            }
+            document.querySelector(".row .btn_col:nth-of-type(4) button").disabled = false;
         });
 
         //-1 button
