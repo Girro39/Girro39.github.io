@@ -95,6 +95,7 @@
 
         //setInterval button
         btn_SetInerval.addEventListener('click', function (event) {
+            btn_Remove.disabled = false;
             setintervalId = setInterval(plusOne,500);
         })
 
@@ -107,8 +108,3 @@
 
         //#endregion
 
-
-        // click_Img.addEventListener('click',function(event){
-        //     alert('hhh');
-        //     // click_Img.remove();
-        // })
