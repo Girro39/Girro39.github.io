@@ -56,11 +56,11 @@
 
     <script>
         let container = document.getElementById("container");
+        let i = 0;
+        let timeoutId;
 
-
-        //新增全部
-        const btn_AddAll = document.querySelector(".row .btn_col:nth-of-type(1) button");
-        btn_AddAll.addEventListener("click", function (event) {
+        //新增全部 function
+        function plusAll() {
             for (let i = 1; i < 899; i++) {
                 let fileName = i.toString().padStart(3, '0');
                 let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
@@ -68,43 +68,54 @@
 
                 let img = document.createElement('img');
                 img.setAttribute("src", pathFile);
-                img.setAttribute('id', 'remove')
                 container.appendChild(img);
             }
+        }
+
+        //+1 function
+        function plusOne() {
+            i++;
+            let fileName = i.toString().padStart(3, '0'); //00i
+            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
+            let img = document.createElement('img');
+            img.setAttribute("src", pathFile);
+            container.appendChild(img);
+        }
+
+        //新增全部 button
+        const btn_AddAll = document.querySelector(".row .btn_col:nth-of-type(1) button");
+        btn_AddAll.addEventListener("click", function (event) {
+            plusAll();
         })
 
 
-        //移除全部
+        //移除全部 button
         const btn_Remove = document.querySelector(".row .btn_col:nth-of-type(2) button");
         btn_Remove.addEventListener('click', function (event) {
             container.innerHTML = "";
         })
 
 
-        //+1
+
+        //+1 button
         const btn_AddOne = document.querySelector(".row .btn_col:nth-of-type(3) button");
         btn_AddOne.addEventListener('click', function (event) {
-            let i = 1;
-            let fileName = i.toString().padStart(3, '0');
-            let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
-
-            let img = document.createElement('img');
-            img.setAttribute("src", pathFile);
-            container.appendChild(img);
+            plusOne();
         });
 
-        //-1
+        //-1 button
         const btn_LessOne = document.querySelector(".row .btn_col:nth-of-type(4) button");
+        btn_LessOne.addEventListener('click', function (event) {});
 
-        //timeout
+        //settimeout button
         const btn_Timeout = document.querySelector(".row .btn_col:nth-of-type(5) button");
+        btn_Timeout.addEventListener('click', function (event) {})
 
 
-        //點圖片消失
-        const img_clear = document.getElementById('remove');
-        img_clear.addEventListener('click', function (event) {
-            container.removeChild(this);
-        })
+        //點圖片消失 button
+        // const img_clear = document.getElementById('remove');
+        // img_clear.addEventListener('click', function (event) {
+        // })
     </script>
 
     <!-- BootStrap 4.6.0 -->
