@@ -9,7 +9,7 @@
         const btn_Stop_SetInterval = document.querySelector(".row .btn_col:nth-of-type(5) button")
         const btn_Remove = document.querySelector(".row .btn_col:nth-of-type(6) button");
         const click_Img = document.getElementsByTagName('img');
-        btn_Remove.disabled = true;
+        // btn_Remove.disabled = true;
         btn_LessOne.disabled = true;
 
 
@@ -74,7 +74,6 @@
             container.innerHTML = "";
             btn_AddOne.disabled = false;
             btn_LessOne.disabled = true;
-            btn_Remove.disabled = true;
         })
 
 
