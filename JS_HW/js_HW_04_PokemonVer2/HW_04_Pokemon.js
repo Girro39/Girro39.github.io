@@ -97,6 +97,7 @@
         btn_SetInerval.addEventListener('click', function (event) {
             btn_Remove.disabled = false;
             setintervalId = setInterval(plusOne,500);
+            btn_SetInerval.disabled = true;
         })
 
 
@@ -104,6 +105,7 @@
 
         btn_Stop_SetInterval.addEventListener('click',function(event){
             clearInterval(setintervalId);
+            btn_SetInerval.disabled = false;
         })
 
         //#endregion
