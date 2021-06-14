@@ -8,8 +8,6 @@
         const btn_SetInerval = document.querySelector(".row .btn_col:nth-of-type(4) button");
         const btn_Stop_SetInterval = document.querySelector(".row .btn_col:nth-of-type(5) button")
         const btn_Remove = document.querySelector(".row .btn_col:nth-of-type(6) button");
-        const click_Img = document.getElementsByTagName('img');
-        // btn_Remove.disabled = true;
         btn_LessOne.disabled = true;
 
 
@@ -26,6 +24,11 @@
                 let img = document.createElement('img');
                 img.setAttribute("src", pathFile);
                 container.appendChild(img);
+
+                //img上註冊click事件 點到就移除
+                img.addEventListener('click',function(){
+                    container.removeChild(img);
+                });
             }
         }
         
@@ -40,7 +43,11 @@
                 let pathFile = `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`;
                 let img = document.createElement('img');
                 img.setAttribute("src", pathFile);
-                container.appendChild(img);    
+                container.appendChild(img);
+                //img上註冊click事件 點到就移除
+                img.addEventListener('click',function(){
+                    container.removeChild(img);
+                });
             }
         }
 
@@ -108,4 +115,5 @@
         })
 
         //#endregion
+
 
