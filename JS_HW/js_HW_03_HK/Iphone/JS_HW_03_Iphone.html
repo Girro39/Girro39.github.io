@@ -10,34 +10,111 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>Apple</title>
+
+    <style>
+        .choose_type {
+            margin: 50px 0 12px;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .which_link {
+            margin: 12px 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .btn {
+            border: 2px solid #eee;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .button_inner_row span,
+        .button_inner_row h4 {
+            text-align: left;
+        }
+
+        /* * {
+            outline: 1px solid #aaa;
+        } */
+    </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-white"></span>
-            </button>
-            <a class="navbar-brand text-white" href="#">Apple</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item p-2 fs-5">
-                        <a class="nav-link text-light active" aria-current="page" href="#">iPad Pro</a>
-                    </li>
-                    <li class="nav-item p-2 fs-5">
-                        <a class="nav-link text-light" href="#">iPhone12</a>
-                    </li>
-                    <li class="nav-item p-2 fs-5">
-                        <a class="nav-link text-light" href="#">Mac</a>
-                    </li>
-                </ul>
+    <div class="container bg-dark nav_container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon bg-white"></span>
+                        </button>
+                        <!-- <a class="navbar-brand text-white" href="#">Apple</a> -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item p-2 fs-5">
+                                    <a class="nav-link text-light active" aria-current="page" href="#">iPad Pro</a>
+                                </li>
+                                <li class="nav-item p-2 fs-5">
+                                    <a class="nav-link text-light" href="#">iPhone12 Pro</a>
+                                </li>
+                                <li class="nav-item p-2 fs-5">
+                                    <a class="nav-link text-light" href="#">Mac</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
 
+    <div class="container" id="iPhone12Pro">
+        <div class="row">
+            <div class="col-12 col-md-6">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row button_row">
+                    <span class="text-danger mt-5 mb-2">全新</span>
+                    <h2 class="fw-bolder fs-1">購買 iPhone 12 Pro</h2>
+                    <h2 class="choose_type">選擇機型。</h2>
+                    <a href="#" class="text-decoration-none which_link"> 哪一款機型最適合你？</a>
+                </div>
+                <div class="row button_row">
+                    <button class="btn my-4">
+                        <div class="row button_inner_row">
+                            <div class="col-6">
+                                <h4 class="fw-bolder">iPhone 12 Pro</h4>
+                                <span>6.1吋顯示器</span>
+                            </div>
+                            <div class="col-6 my-auto">
+                                <label for="" class="fs-4">NT$33,900起</label>
+                            </div>
+                        </div>
+                    </button>
+
+                </div>
+                <div class="row button_row border-bottom ">
+                    <button class="btn my-4">
+                        <div class="row button_inner_row">
+                            <div class="col-6">
+                                <h4 class="fw-bolder">iPhone 12 Pro Max</h4>
+                                <span>6.7吋顯示器</span>
+                            </div>
+                            <div class="col-6 my-auto">
+                                <label for="" class="fs-4">NT$33,900起</label>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./iphone12pro.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
