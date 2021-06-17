@@ -1,0 +1,66 @@
+{
+    "iPadPro": {
+        "太空灰色": [{
+                "id": "iPadPro001",
+                "picture": "",
+                "color": "太空灰色",
+                "storage": "64GB",
+                "network": "Wi-Fi",
+                "price": "13900",
+                "discription": "10.2吋 iPad Wifi"
+            },
+            {
+                "id": "A001",
+                "picture": "",
+                "color": "太空灰色",
+                "storage": "64GB",
+                "network": "Wi-Fi",
+                "price": "13900",
+                "discription": "10.2吋 iPad Wifi"
+            },
+            {
+                "id": "A001",
+                "picture": "",
+                "color": "太空灰色",
+                "storage": "64GB",
+                "network": "Wi-Fi",
+                "price": "13900",
+                "discription": "10.2吋 iPad Wifi"
+            }
+        ],
+        "銀色": [{
+                "id": "A001",
+                "picture": "",
+                "color": "太空灰色",
+                "storage": "64GB",
+                "network": "Wi-Fi",
+                "price": "13900",
+                "discription": "10.2吋 iPad Wifi"
+            },
+            {
+                "id": "A001",
+                "picture": "",
+                "color": "太空灰色",
+                "storage": "64GB",
+                "network": "Wi-Fi",
+                "price": "13900",
+                "discription": "10.2吋 iPad Wifi"
+            },
+            {
+                "id": "A001",
+                "picture": "",
+                "color": "太空灰色",
+                "storage": "64GB",
+                "network": "Wi-Fi",
+                "price": "13900",
+                "discription": "10.2吋 iPad Wifi"
+            }
+        ],
+
+
+
+    },
+    "iPhone12Pro": {
+
+    }
+}

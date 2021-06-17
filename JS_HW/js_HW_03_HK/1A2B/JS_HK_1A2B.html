@@ -90,7 +90,7 @@
                 //輸入的值 還有幾A幾B 放上去
                 let guessArray = inputGuess.value.split('').map(x => Number(x));
                 let unRepeatNumLenth = Array.from(new Set(guessArray)).length;
-                if (isNaN(inputGuess.value)) {
+                if (isNaN(inputGuess.value) || inputGuess.value.includes('+')) {
                     alert('要輸入數字');
                 } else if (inputGuess.value.split('').length !== 4) {
                     alert('數字數不足4個')
