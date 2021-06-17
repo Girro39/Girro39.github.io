@@ -65,6 +65,13 @@
             btn_answer.disabled = true;
             btn_guess.disabled = true;
             inputGuess.disabled = true;
+            const enterKeyCode = 13;
+
+            document.addEventListener('keydown', () => {
+                if (event.keyCode == enterKeyCode) {
+                    finalJudge();
+                }
+            })
 
             btn_start.addEventListener('click', function (event) {
                 btn_giveup.disabled = false;
@@ -83,25 +90,31 @@
                 showAns();
             })
 
-
-            btn_guess.addEventListener('click', function (event) {
-                // 判斷是不是數字 有沒有4個數字
-                // 判斷答案幾a幾b
-                //輸入的值 還有幾A幾B 放上去
+            function finalJudge() {
                 let guessArray = inputGuess.value.split('').map(x => Number(x));
                 let unRepeatNumLenth = Array.from(new Set(guessArray)).length;
                 if (isNaN(inputGuess.value) || inputGuess.value.includes('+') || inputGuess.value.includes(
                         '-')) {
                     alert('要輸入數字');
+                    inputGuess.value = ''
                 } else if (inputGuess.value.split('').length !== 4) {
-                    alert('數字數不足4個')
+                    alert('數字數不足4個');
+                    inputGuess.value = ''
+
                 } else if (unRepeatNumLenth !== 4) {
                     alert('不要輸入重複數字');
+                    inputGuess.value = ''
+
                 } else {
                     judge_ab();
-                    showguess()
+                    showguess();
+                    inputGuess.value = ''
                 }
-            })
+            }
+            btn_guess.addEventListener('click', finalJudge);
+            // 判斷是不是數字 有沒有4個數字
+            // 判斷答案幾a幾b
+            //輸入的值 還有幾A幾B 放上去
 
 
 
