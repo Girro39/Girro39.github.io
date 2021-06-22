@@ -1,185 +1,188 @@
-[
+{
+    "colors": ["太空灰色", "銀色", "玫瑰金色", "綠色", "天藍色"],
+    "storages": ["64GB", "256GB"],
+    "networks": ["WiFi", "WiFi+行動網路"],
+    "products": [{
+            "id": "T001",
+            "type": "ipadair",
+            "color": "太空灰色",
+            "storage": "64GB",
+            "network": "WiFi",
+            "price": "18900",
+            "pictureid": "-wifi-spacegray-"
+        },
+        {
+            "id": "T002",
+            "type": "ipadair",
+            "color": "銀色",
+            "storage": "64GB",
+            "network": "WiFi",
+            "price": "18900",
+            "pictureid": "-wifi-silver-"
+        },
+        {
+            "id": "T003",
+            "type": "ipadair",
+            "color": "玫瑰金色",
+            "storage": "64GB",
+            "network": "WiFi",
+            "price": "18900",
+            "pictureid": "-wifi-gold-"
+        },
+        {
+            "id": "T004",
+            "type": "ipadair",
+            "color": "綠色",
+            "storage": "64GB",
+            "network": "WiFi",
+            "price": "18900",
+            "pictureid": "-wifi-green-"
+        },
+        {
+            "id": "T005",
+            "type": "ipadair",
+            "color": "天藍色",
+            "storage": "64GB",
+            "network": "WiFi",
+            "price": "18900",
+            "pictureid": "-wifi-blue-"
+        },
 
-    {
-        "id": "T001",
-        "type": "ipadair",
-        "color": "太空灰色",
-        "storage": "64GB",
-        "network": "WiFi",
-        "price": "18900",
-        "pictureid": "-wifi-spacegray-"
-    },
-    {
-        "id": "T002",
-        "type": "ipadair",
-        "color": "銀色",
-        "storage": "64GB",
-        "network": "WiFi",
-        "price": "18900",
-        "pictureid": "-wifi-silver-"
-    },
-    {
-        "id": "T003",
-        "type": "ipadair",
-        "color": "玫瑰金色",
-        "storage": "64GB",
-        "network": "WiFi",
-        "price": "18900",
-        "pictureid": "-wifi-gold-"
-    },
-    {
-        "id": "T004",
-        "type": "ipadair",
-        "color": "綠色",
-        "storage": "64GB",
-        "network": "WiFi",
-        "price": "18900",
-        "pictureid": "-wifi-green-"
-    },
-    {
-        "id": "T005",
-        "type": "ipadair",
-        "color": "天藍色",
-        "storage": "64GB",
-        "network": "WiFi",
-        "price": "18900",
-        "pictureid": "-wifi-blue-"
-    },
+        {
+            "id": "T006",
+            "type": "ipadair",
+            "color": "太空灰色",
+            "storage": "256GB",
+            "network": "WiFi",
+            "price": "23900",
+            "pictureid": "-wifi-spacegray-"
+        },
+        {
+            "id": "T007",
+            "type": "ipadair",
+            "color": "銀色",
+            "storage": "256GB",
+            "network": "WiFi",
+            "price": "23900",
+            "pictureid": "-wifi-silver-"
+        },
+        {
+            "id": "T008",
+            "type": "ipadair",
+            "color": "玫瑰金色",
+            "storage": "256GB",
+            "network": "WiFi",
+            "price": "23900",
+            "pictureid": "-wifi-gold-"
+        },
+        {
+            "id": "T009",
+            "type": "ipadair",
+            "color": "綠色",
+            "storage": "256GB",
+            "network": "WiFi",
+            "price": "23900",
+            "pictureid": "-wifi-green-"
+        },
+        {
+            "id": "T010",
+            "type": "ipadair",
+            "color": "天藍色",
+            "storage": "256GB",
+            "network": "WiFi",
+            "price": "23900",
+            "pictureid": "-wifi-blue-"
+        }, {
+            "id": "U001",
+            "type": "ipadair",
+            "color": "太空灰色",
+            "storage": "64GB",
+            "network": "WiFi+行動網路",
+            "price": "23200",
+            "pictureid": "-wifi-spacegray-"
+        },
+        {
+            "id": "U002",
+            "type": "ipadair",
+            "color": "銀色",
+            "storage": "64GB",
+            "network": "WiFi+行動網路",
+            "price": "23200",
+            "pictureid": "-wifi-silver-"
+        },
+        {
+            "id": "U003",
+            "type": "ipadair",
+            "color": "玫瑰金色",
+            "storage": "64GB",
+            "network": "WiFi+行動網路",
+            "price": "23200",
+            "pictureid": "-wifi-gold-"
+        },
+        {
+            "id": "U004",
+            "type": "ipadair",
+            "color": "綠色",
+            "storage": "64GB",
+            "network": "WiFi+行動網路",
+            "price": "23200",
+            "pictureid": "-wifi-green-"
+        },
+        {
+            "id": "U005",
+            "type": "ipadair",
+            "color": "天藍色",
+            "storage": "64GB",
+            "network": "WiFi+行動網路",
+            "price": "23200",
+            "pictureid": "-wifi-blue-"
+        },
 
-    {
-        "id": "T006",
-        "type": "ipadair",
-        "color": "太空灰色",
-        "storage": "256GB",
-        "network": "WiFi",
-        "price": "23900",
-        "pictureid": "-wifi-spacegray-"
-    },
-    {
-        "id": "T007",
-        "type": "ipadair",
-        "color": "銀色",
-        "storage": "256GB",
-        "network": "WiFi",
-        "price": "23900",
-        "pictureid": "-wifi-silver-"
-    },
-    {
-        "id": "T008",
-        "type": "ipadair",
-        "color": "玫瑰金色",
-        "storage": "256GB",
-        "network": "WiFi",
-        "price": "23900",
-        "pictureid": "-wifi-gold-"
-    },
-    {
-        "id": "T009",
-        "type": "ipadair",
-        "color": "綠色",
-        "storage": "256GB",
-        "network": "WiFi",
-        "price": "23900",
-        "pictureid": "-wifi-green-"
-    },
-    {
-        "id": "T010",
-        "type": "ipadair",
-        "color": "天藍色",
-        "storage": "256GB",
-        "network": "WiFi",
-        "price": "23900",
-        "pictureid": "-wifi-blue-"
-    }, {
-        "id": "U001",
-        "type": "ipadair",
-        "color": "太空灰色",
-        "storage": "64GB",
-        "network": "WiFi+行動網路",
-        "price": "23200",
-        "pictureid": "-wifi-spacegray-"
-    },
-    {
-        "id": "U002",
-        "type": "ipadair",
-        "color": "銀色",
-        "storage": "64GB",
-        "network": "WiFi+行動網路",
-        "price": "23200",
-        "pictureid": "-wifi-silver-"
-    },
-    {
-        "id": "U003",
-        "type": "ipadair",
-        "color": "玫瑰金色",
-        "storage": "64GB",
-        "network": "WiFi+行動網路",
-        "price": "23200",
-        "pictureid": "-wifi-gold-"
-    },
-    {
-        "id": "U004",
-        "type": "ipadair",
-        "color": "綠色",
-        "storage": "64GB",
-        "network": "WiFi+行動網路",
-        "price": "23200",
-        "pictureid": "-wifi-green-"
-    },
-    {
-        "id": "U005",
-        "type": "ipadair",
-        "color": "天藍色",
-        "storage": "64GB",
-        "network": "WiFi+行動網路",
-        "price": "23200",
-        "pictureid": "-wifi-blue-"
-    },
+        {
+            "id": "U006",
+            "type": "ipadair",
+            "color": "太空灰色",
+            "storage": "256GB",
+            "network": "WiFi+行動網路",
+            "price": "28200",
+            "pictureid": "-wifi-spacegray-"
+        },
+        {
+            "id": "U007",
+            "type": "ipadair",
+            "color": "銀色",
+            "storage": "256GB",
+            "network": "WiFi+行動網路",
+            "price": "28200",
+            "pictureid": "-wifi-silver-"
+        },
+        {
+            "id": "U008",
+            "type": "ipadair",
+            "color": "玫瑰金色",
+            "storage": "256GB",
+            "network": "WiFi+行動網路",
+            "price": "28200",
+            "pictureid": "-wifi-gold-"
+        },
+        {
+            "id": "U009",
+            "type": "ipadair",
+            "color": "綠色",
+            "storage": "256GB",
+            "network": "WiFi+行動網路",
+            "price": "28200",
+            "pictureid": "-wifi-green-"
+        },
+        {
+            "id": "U010",
+            "type": "ipadair",
+            "color": "天藍色",
+            "storage": "256GB",
+            "network": "WiFi+行動網路",
+            "price": "28200",
+            "pictureid": "-wifi-blue-"
+        }
 
-    {
-        "id": "U006",
-        "type": "ipadair",
-        "color": "太空灰色",
-        "storage": "256GB",
-        "network": "WiFi+行動網路",
-        "price": "28200",
-        "pictureid": "-wifi-spacegray-"
-    },
-    {
-        "id": "U007",
-        "type": "ipadair",
-        "color": "銀色",
-        "storage": "256GB",
-        "network": "WiFi+行動網路",
-        "price": "28200",
-        "pictureid": "-wifi-silver-"
-    },
-    {
-        "id": "U008",
-        "type": "ipadair",
-        "color": "玫瑰金色",
-        "storage": "256GB",
-        "network": "WiFi+行動網路",
-        "price": "28200",
-        "pictureid": "-wifi-gold-"
-    },
-    {
-        "id": "U009",
-        "type": "ipadair",
-        "color": "綠色",
-        "storage": "256GB",
-        "network": "WiFi+行動網路",
-        "price": "28200",
-        "pictureid": "-wifi-green-"
-    },
-    {
-        "id": "U010",
-        "type": "ipadair",
-        "color": "天藍色",
-        "storage": "256GB",
-        "network": "WiFi+行動網路",
-        "price": "28200",
-        "pictureid": "-wifi-blue-"
-    }
-
-]
+    ]
+}

@@ -20,38 +20,83 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="container">
-                    <div class="row" id="colorsArea"></div>
-                    <div class="row" id="storageArea"></div>
-                    <div class="row" id="networkArea"></div>
-                    <div class="row" id="priceArea"></div>
+                    <div class="row" id="colorsRow"></div>
+                    <div class="row" id="storageRow"></div>
+                    <div class="row" id="networkRow"></div>
+                    <div class="row" id="priceRow"></div>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <template id="colorCollapseTem">
-        <p>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#colorcollapse" role="button"
-                aria-expanded="false" aria-controls="colorcollapse">
-                Link with href
-            </a>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#colorcollapse"
-                aria-expanded="false" aria-controls="colorcollapse">
-                Button with data-bs-target
-            </button>
-        </p>
-        <div class="collapse" id="colorcollapse">
-            <div class="card card-body">
-                Some placeholder content for the collapse component. This panel is hidden by default but revealed when
-                the
-                user activates the relevant trigger.
-            </div>
+    <!-- <template id="colorCollapseTem"> -->
+    <!-- <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+            aria-expanded="false" aria-controls="collapse">
+            Button with data-bs-target
+        </button>
+    </p>
+    <div class="collapse show" id="collapse">
+        <h2 id="collapseHead"></h2>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
+            aria-controls="collapse">
+            Link with href
+        </a>
+        <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when
+            the
+            user activates the relevant trigger.
         </div>
-    </template>
+    </div> -->
+    <!-- </template> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <script type="module">
+        import {$g,$c} from './myhelpers.js';
+
+        const iPadAirUrl =
+            "https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_05_iPad/iPadAir202009.json";
+
+        // const iPadAirAllPic =
+        //     "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-202009"
+
+        let iPadAirXHR = new XMLHttpRequest();
+        let iPadAirArray;
+        let colorsRow = $g('.colorsRow');
+        let storageRow = $g('.storageRow');
+        let networkRow = $g('.networkRow');
+        let priceRow = $g('.priceRow');
+
+        window.onload = function () {
+            requestiPadAirJson();
+        }
+
+        function requestiPadAirJson() {
+            iPadAirXHR.onload = function () {
+                iPadAirArray = JSON.parse(this.responseText);
+                // console.log(iPadAirArray);
+
+                iPadAirArray.forEach((collocation, index) => {
+                    // console.log(collocation);
+                    //建右側button
+                    createColors(collocation);
+                })
+            }
+            iPadAirXHR.open('GET', iPadAirUrl);
+            iPadAirXHR.send();
+        }
+
+        function createColors(collocation) {
+            
+            let btn = $c('button');
+            btn.innerText = collocation.color;
+            console.log(collocation);
+                        Object.keys(collocation)
+        }
     </script>
 
 </body>
