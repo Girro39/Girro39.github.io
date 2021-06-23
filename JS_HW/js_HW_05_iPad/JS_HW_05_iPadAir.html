@@ -112,7 +112,7 @@
 
         let iPadAirXHR = new XMLHttpRequest();
         let iPadAirObject;
-        let colorArray;
+        let colorArray = [];
         let btnShowiPadAir = $g('#showipadair');
         let chooseRow = $g('#chooseRow');
         
@@ -120,24 +120,42 @@
             requestiPadAirJson();
         }
         
+        // function createElment(tagname,classname,idname){
+        //     let element = document.createElement(`${tagname}`);
+        //     element.setAttribute('class',`${classname}`);
+        //     element.setAttribute('id',`${idname}`);
+        //     return element;
+        // }
+
         function requestiPadAirJson() {
             iPadAirXHR.onload = function () {
                 iPadAirObject = JSON.parse(this.responseText);
-                
-                btnShowiPadAir.addEventListener('click',showiPadAir);
-                
             }
             iPadAirXHR.open('GET', iPadAirUrl);
             iPadAirXHR.send();
         }
 
+        btnShowiPadAir.addEventListener('click',showiPadAir);
+
         function showiPadAir(){
             // alert('show')
             //創顏色
+            createColors();
             //創圖片
             //創容量
             //創網路
             //創價格        
+        }
+
+        function createColors(){
+            let colorRow = $c('div');
+            colorRow.setAttribute('id','colorRow');
+
+                console.log(iPadAirObject.colors[0].zh-tw);
+                console.log(typeof item);
+            let colorBtn = $c('button');
+            colorBtn.setAttribute('id','')
+            
         }
 
     </script>

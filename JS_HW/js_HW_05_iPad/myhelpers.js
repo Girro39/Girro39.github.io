@@ -6,8 +6,10 @@ function $g(selector){
 }
 
 //c象徵create
-function $c(element){
-    return document.createElement(element);
+function $c(element,attribute){
+    let ele = document.createElement(element);
+    // element.setAttribute('class')
+    return ele;
 }
 
 
