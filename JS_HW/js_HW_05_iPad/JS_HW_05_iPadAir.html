@@ -148,11 +148,17 @@
         }
 
         function createColors(){
+
+            iPadAirObject.colors.forEach((item)=>{
+                
+                console.log(item.zhtw);
+            })
             let colorRow = $c('div','colorRow','row');
                 // console.log(iPadAirObject.colors[0].enus);
                 // console.log(typeof item);
+            let grayimg = $c('img','grayimg','w-25')
             let graybtn = $c('div','graybtn','col-6 btn btn-secdonary');
-            graybtn.innerHTML = `<img src="${iPadAirObject.colors[1].colorimgurl}">`;
+            graybtn.innerHTML = `<img src="${iPadAirObject.colors[1].colorimgurl}"><p>${iPadAirObject.colors[1].zhtw}</p>`;
             colorRow.appendChild(graybtn);
             chooseRow.appendChild(colorRow);
 
