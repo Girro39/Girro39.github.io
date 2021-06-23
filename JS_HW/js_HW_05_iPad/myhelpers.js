@@ -6,9 +6,10 @@ function $g(selector){
 }
 
 //c象徵create
-function $c(element,attribute){
+function $c(element,idattribute,classattribute){
     let ele = document.createElement(element);
-    // element.setAttribute('class')
+    ele.setAttribute('id',`${idattribute}`);
+    ele.setAttribute('class',`${classattribute}`);
     return ele;
 }
 

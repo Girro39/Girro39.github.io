@@ -148,13 +148,15 @@
         }
 
         function createColors(){
-            let colorRow = $c('div');
-            colorRow.setAttribute('id','colorRow');
+            let colorRow = $c('div','colorRow','row');
+                // console.log(iPadAirObject.colors[0].enus);
+                // console.log(typeof item);
+            let graybtn = $c('div','graybtn','col-6 btn btn-secdonary');
+            graybtn.innerHTML = `<img src="${iPadAirObject.colors[1].colorimgurl}">`;
+            colorRow.appendChild(graybtn);
+            chooseRow.appendChild(colorRow);
 
-                console.log(iPadAirObject.colors[0].zh-tw);
-                console.log(typeof item);
-            let colorBtn = $c('button');
-            colorBtn.setAttribute('id','')
+        
             
         }
 
