@@ -30,7 +30,19 @@
             "colorimgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-blue-202009"
         }
     ],
-    "storages": ["64GB", "256GB"],
+    "storages": [{
+            "capacity": "64GB",
+            "startprice": "NT$18,900起",
+            "wifip": "18,900",
+            "cellp": "23,200"
+        },
+        {
+            "capacity": "256GB",
+            "startprice": "NT$23,900起",
+            "wifip": "23,900",
+            "cellp": "28,200"
+        }
+    ],
     "networks": ["WiFi", "WiFi+行動網路"],
     "products": [{
             "id": "T001",

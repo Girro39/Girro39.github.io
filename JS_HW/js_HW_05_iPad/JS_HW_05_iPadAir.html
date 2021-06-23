@@ -15,7 +15,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 text-center" id="imgCol">
+            <div class="col-12" id="finalpriceCol"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center" id="imgCol">
                 <!-- 圖片 -->
                 <!-- 下方說明 -->
             </div>
@@ -45,7 +48,6 @@
 
         let iPadAirXHR = new XMLHttpRequest();
         let iPadAirObject;
-        let colorArray = [];
         let btnShowiPadAir = $g('#showipadair');
         let chooseCol = $g('#chooseCol');
         let imgCol = $g('#imgCol');
@@ -75,11 +77,12 @@
             ipadimg.setAttribute('src','https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-202009');
             imgCol.appendChild(ipadimg);
             //創容量
+            createStorages();
             //創網路
-            //創價格        
+            //創價格            
         }
 
-        function createColors(){
+        function createColors(){ 
             let colorimg;
             let colorp;
             let colorbtn;
@@ -88,11 +91,11 @@
                 colorimg = $c('img',`${item.enus}img`,'w-25 mx-auto');
                 colorimg.setAttribute('src',`${item.colorimgurl}`);
 
-                colorp = $c('p',`${item.enus}text`,'d-block');
+                colorp = $c('p',`${item.enus}text`);
                 colorp.innerHTML =`${item.zhtw}`;
 
                 colorbtn = $c('div',`${item.enus}btn`,'col-4 btn btn-outline-secondary m-2');
-                colorbtn.setAttribute('style','border-radius:30px;')
+                colorbtn.setAttribute('style','border-radius:30px;');
 
 
                 colorbtn.appendChild(colorimg);
@@ -101,20 +104,20 @@
 
 
                 colorbtn.addEventListener('click',function(){
-                    let changeimg = $c('img',`${item.enus}ipadimg`,'w-25 mx-auto');
-                    changeimg.setAttribute('src',`${item.ipadimgurlWiFi}`);
+                    let changeipadimg = $c('img',`${item.enus}ipadimg`,'w-50 mx-auto');
+                    changeipadimg.setAttribute('src',`${item.ipadimgurlWiFi}`);
                     imgCol.innerHTML = '';
-                    imgCol.appendChild(changeimg);
-                })
+                    imgCol.appendChild(changeipadimg);
+                });
                 
-            })
+            });
             chooseCol.appendChild(colorRow);
-            
-            
         }
 
-        function addEvent_colorbtn(){
-            
+        function createStorages(){
+            iPadAirObject.storages.forEach((item)=>{
+                // console.log(item);
+            });
         }
 
     </script>
