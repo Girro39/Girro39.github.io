@@ -15,45 +15,67 @@
 
     <div class="container">
         <div class="row">
+            <button class="btn btn-outline-secondary" id="showipadair">iPadAir</button>
+        </div>
+        <div class="row">
+
+            <div class="col-12 col-md-6">
+                <!-- 圖片 -->
+                <!-- 下方說明 -->
+            </div>
+            <div class="col-12 col-md-6" id="chooseRow">
+                <!-- 大標購買ipad air -->
+                <!-- 外觀 顏色 -->
+                <!-- 儲存裝置 容量 -->
+                <!-- 連線能力 網路 -->
+                <!-- 價格 -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="container">
+        <div class="row">
             <div class="col-12 col-md-6">
                 <img src="" alt="">
             </div>
             <div class="col-12 col-md-6">
                 <div class="container">
-                    <div class="row">
-                        <div class="container">
-                            <div class="row" id="colorsRow">
-                                <!-- <div class="col-6 btn border border-secdonary">
-                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
-                                        class="w-25 d-block mx-auto" alt="">
-                                    太空灰色</div>
-                                <div class="col-6 btn border border-secdonary">
-                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
-                                        class="w-25 d-block mx-auto" alt="">
-                                    銀色</div>
-                                <div class="col-6 btn border border-secdonary">
-                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
-                                        class="w-25 d-block mx-auto" alt="">
-                                    玫瑰金色</div>
-                                <div class="col-6 btn border border-secdonary">
-                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
-                                        class="w-25 d-block mx-auto" alt="">
-                                    綠色</div>
-                                <div class="col-6 btn border border-secdonary">
-                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
-                                        class="w-25 d-block mx-auto" alt="">
-                                    天藍色</div> -->
-                            </div>
-                        </div>
+                    <div class="row" id="colorsRow">
+                        <h2>外觀</h2>
+                        <div class="col-5 m-1 mx-auto btn border border-secdonary">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
+                                class="w-25 d-block mx-auto" alt="">
+                            太空灰色</div>
+                        <div class="col-5 m-1 mx-auto btn border border-secdonary">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201903"
+                                class="w-25 d-block mx-auto" alt="">
+                            銀色</div>
+                        <div class="col-5 m-1 mx-auto btn border border-secdonary">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-gold-201903"
+                                class="w-25 d-block mx-auto" alt="">
+                            玫瑰金色</div>
+                        <div class="col-5 m-1 mx-auto btn border border-secdonary">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-green-202009"
+                                class="w-25 d-block mx-auto" alt="">
+                            綠色</div>
+                        <div class="col-5 m-1 ms- btn border border-secdonary">
+                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-blue-202009"
+                                class="w-25 d-block mx-auto" alt="">
+                            天藍色</div>
                     </div>
-                    <div class="row" id="storageRow"></div>
+                    <div class="row" id="storageRow">
+                        <h2>儲存裝置</h2>
+                        <div class="col-5 m-1 btn border border-secdonary mx-auto">64GB</div>
+                        <div class="col-5 m-1 btn border border-secdonary mx-auto">256GB</div>
+                    </div>
                     <div class="row" id="networkRow"></div>
                     <div class="row" id="priceRow"></div>
                 </div>
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <!-- <template id="colorCollapseTem"> -->
     <!-- <p>
@@ -83,19 +105,16 @@
     <script type="module">
         import {$g,$c} from './myhelpers.js';
 
+
+        //iPadAirJSON網址
         const iPadAirUrl =
             "https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_05_iPad/iPadAir202009.json";
-
-        // const iPadAirAllPic =
-        //     "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-202009"
 
         let iPadAirXHR = new XMLHttpRequest();
         let iPadAirObject;
         let colorArray;
-        let colorsRow = $g('#colorsRow');
-        let storageRow = $g('#storageRow');
-        let networkRow = $g('#networkRow');
-        let priceRow = $g('#priceRow');
+        let btnShowiPadAir = $g('#showipadair');
+        let chooseRow = $g('#chooseRow');
         
         window.onload = function () {
             requestiPadAirJson();
@@ -104,23 +123,23 @@
         function requestiPadAirJson() {
             iPadAirXHR.onload = function () {
                 iPadAirObject = JSON.parse(this.responseText);
-                colorArray = iPadAirObject.colors;
-                createColors();
+                
+                btnShowiPadAir.addEventListener('click',showiPadAir);
+                
             }
             iPadAirXHR.open('GET', iPadAirUrl);
             iPadAirXHR.send();
         }
 
-        function createColors() {
-            colorArray.forEach((color)=>{
-                const colorUrl =`https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish${}-spacegray-201903`
-                let div = $c('div');
-                div.innerHTML =color;
-                colorsRow.append(div);
-                console.log(colorsRow);
-                // console.log(btn);
-            });
+        function showiPadAir(){
+            // alert('show')
+            //創顏色
+            //創圖片
+            //創容量
+            //創網路
+            //創價格        
         }
+
     </script>
 
 </body>

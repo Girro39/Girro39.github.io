@@ -1,6 +1,35 @@
 {
-    "colors": ["太空灰色", "銀色", "玫瑰金色", "綠色", "天藍色"],
-    "colorsid": ["-spacegray-", "-silver-", "-gold-", "-green-", "-blue-"],
+    "colors": [{
+            "zh-tw": "全款",
+            "en-us": "all",
+            "colorimgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-202009"
+        },
+        {
+            "zh-tw": "太空灰色",
+            "en-us": "spacegray",
+            "colorimgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202009"
+        },
+        {
+            "zh-tw": "銀色",
+            "en-us": "silver",
+            "colorimgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-silver-202009"
+        },
+        {
+            "zh-tw": "玫瑰金色",
+            "en-us": "gold",
+            "colorimgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-gold-202009"
+        },
+        {
+            "zh-tw": "綠色",
+            "en-us": "green",
+            "colorimgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-green-202009"
+        },
+        {
+            "zh-tw": "天藍色",
+            "en-us": "blue",
+            "colorimgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-blue-202009"
+        }
+    ],
     "storages": ["64GB", "256GB"],
     "networks": ["WiFi", "WiFi+行動網路"],
     "products": [{
