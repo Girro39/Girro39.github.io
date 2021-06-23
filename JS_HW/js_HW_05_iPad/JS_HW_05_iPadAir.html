@@ -120,8 +120,16 @@
 
         function createSN(){
             let storageRow = $c('div','storageRow','row');
+            let networkRow = $c('div','networkRow','row');
             let storageCPC,storageSP,storagebtn;
+            let networkAB,networkSP,networkbtn;
+            let storageh2 = $c('h2');
+            let networkh2 = $c('h2');
+            storageh2.innerHTML = `儲存裝置`;
+            storageRow.appendChild(storageh2);
+            networkh2.innerHTML = `連線能力`
 
+            networkRow.appendChild(networkh2);
             iPadAirObject.storages.forEach((item)=>{
                 storageCPC = $c('p',`${item.capacity}text`);
                 storageCPC.innerHTML = `${item.capacity}`;
@@ -139,6 +147,23 @@
                 // console.log(item.startprice);
             });
 
+            iPadAirObject.networks.forEach((item)=>{
+                networkAB = $c('p',`networkability`);
+                networkAB.innerHTML = `${item.ability}`;
+console.log(item.ability)
+                networkSP = $c('p',`networktext`);
+                storageSP.innerHTML =`${item.startprice}`;
+
+                networkbtn = $c('div','','col-4 btn btn-outline-secondary m-2');
+                networkbtn.setAttribute('style','border-radius:30px;');
+
+                networkbtn.appendChild(networkAB);
+                networkbtn.appendChild(networkSP);
+                storageRow.appendChild(networkbtn);
+                
+                // console.log(item);
+            });
+            
             chooseCol.appendChild(storageRow);
 
         }

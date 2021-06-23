@@ -33,17 +33,27 @@
     "storages": [{
             "capacity": "64GB",
             "startprice": "NT$18,900起",
-            "wifip": "18,900",
-            "cellp": "23,200"
+            "wifip": "NT$18,900",
+            "cellp": "NT$23,200"
         },
         {
             "capacity": "256GB",
             "startprice": "NT$23,900起",
-            "wifip": "23,900",
-            "cellp": "28,200"
+            "wifip": "NT$23,900",
+            "cellp": "NT$28,200"
         }
     ],
-    "networks": ["WiFi", "WiFi+行動網路"],
+    "networks": [{
+            "ability": "WiFi",
+            "startprice": "NT$18,900起",
+            "secondprice": "NT$23,900起"
+        },
+        {
+            "ability": "WiFi+行動網路",
+            "startprice": "NT$23,200起",
+            "secondprice": "NT$28,200起"
+        }
+    ],
     "products": [{
             "id": "T001",
             "type": "ipadair",
