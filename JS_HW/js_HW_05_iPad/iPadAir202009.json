@@ -1,5 +1,6 @@
 {
     "colors": ["太空灰色", "銀色", "玫瑰金色", "綠色", "天藍色"],
+    "colorsid": ["-spacegray-", "-silver-", "-gold-", "-green-", "-blue-"],
     "storages": ["64GB", "256GB"],
     "networks": ["WiFi", "WiFi+行動網路"],
     "products": [{

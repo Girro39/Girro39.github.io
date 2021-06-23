@@ -20,7 +20,32 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="container">
-                    <div class="row" id="colorsRow"></div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="row" id="colorsRow">
+                                <!-- <div class="col-6 btn border border-secdonary">
+                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
+                                        class="w-25 d-block mx-auto" alt="">
+                                    太空灰色</div>
+                                <div class="col-6 btn border border-secdonary">
+                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
+                                        class="w-25 d-block mx-auto" alt="">
+                                    銀色</div>
+                                <div class="col-6 btn border border-secdonary">
+                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
+                                        class="w-25 d-block mx-auto" alt="">
+                                    玫瑰金色</div>
+                                <div class="col-6 btn border border-secdonary">
+                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
+                                        class="w-25 d-block mx-auto" alt="">
+                                    綠色</div>
+                                <div class="col-6 btn border border-secdonary">
+                                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
+                                        class="w-25 d-block mx-auto" alt="">
+                                    天藍色</div> -->
+                            </div>
+                        </div>
+                    </div>
                     <div class="row" id="storageRow"></div>
                     <div class="row" id="networkRow"></div>
                     <div class="row" id="priceRow"></div>
@@ -65,37 +90,36 @@
         //     "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-202009"
 
         let iPadAirXHR = new XMLHttpRequest();
-        let iPadAirArray;
-        let colorsRow = $g('.colorsRow');
-        let storageRow = $g('.storageRow');
-        let networkRow = $g('.networkRow');
-        let priceRow = $g('.priceRow');
-
+        let iPadAirObject;
+        let colorArray;
+        let colorsRow = $g('#colorsRow');
+        let storageRow = $g('#storageRow');
+        let networkRow = $g('#networkRow');
+        let priceRow = $g('#priceRow');
+        
         window.onload = function () {
             requestiPadAirJson();
         }
-
+        
         function requestiPadAirJson() {
             iPadAirXHR.onload = function () {
-                iPadAirArray = JSON.parse(this.responseText);
-                // console.log(iPadAirArray);
-
-                iPadAirArray.forEach((collocation, index) => {
-                    // console.log(collocation);
-                    //建右側button
-                    createColors(collocation);
-                })
+                iPadAirObject = JSON.parse(this.responseText);
+                colorArray = iPadAirObject.colors;
+                createColors();
             }
             iPadAirXHR.open('GET', iPadAirUrl);
             iPadAirXHR.send();
         }
 
-        function createColors(collocation) {
-            
-            let btn = $c('button');
-            btn.innerText = collocation.color;
-            console.log(collocation);
-                        Object.keys(collocation)
+        function createColors() {
+            colorArray.forEach((color)=>{
+                const colorUrl =`https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish${}-spacegray-201903`
+                let div = $c('div');
+                div.innerHTML =color;
+                colorsRow.append(div);
+                console.log(colorsRow);
+                // console.log(btn);
+            });
         }
     </script>
 
