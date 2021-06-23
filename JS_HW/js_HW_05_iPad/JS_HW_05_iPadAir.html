@@ -15,15 +15,12 @@
 
     <div class="container">
         <div class="row">
-            <button class="btn btn-outline-secondary" id="showipadair">iPadAir</button>
-        </div>
-        <div class="row">
-
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 text-center" id="imgCol">
                 <!-- 圖片 -->
                 <!-- 下方說明 -->
             </div>
-            <div class="col-12 col-md-6" id="chooseRow">
+
+            <div class="col-12 col-md-6" id="chooseCol">
                 <!-- 大標購買ipad air -->
                 <!-- 外觀 顏色 -->
                 <!-- 儲存裝置 容量 -->
@@ -33,70 +30,6 @@
         </div>
     </div>
 
-
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <img src="" alt="">
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="container">
-                    <div class="row" id="colorsRow">
-                        <h2>外觀</h2>
-                        <div class="col-5 m-1 mx-auto btn border border-secdonary">
-                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-spacegray-201903"
-                                class="w-25 d-block mx-auto" alt="">
-                            太空灰色</div>
-                        <div class="col-5 m-1 mx-auto btn border border-secdonary">
-                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201903"
-                                class="w-25 d-block mx-auto" alt="">
-                            銀色</div>
-                        <div class="col-5 m-1 mx-auto btn border border-secdonary">
-                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-gold-201903"
-                                class="w-25 d-block mx-auto" alt="">
-                            玫瑰金色</div>
-                        <div class="col-5 m-1 mx-auto btn border border-secdonary">
-                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-green-202009"
-                                class="w-25 d-block mx-auto" alt="">
-                            綠色</div>
-                        <div class="col-5 m-1 ms- btn border border-secdonary">
-                            <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-blue-202009"
-                                class="w-25 d-block mx-auto" alt="">
-                            天藍色</div>
-                    </div>
-                    <div class="row" id="storageRow">
-                        <h2>儲存裝置</h2>
-                        <div class="col-5 m-1 btn border border-secdonary mx-auto">64GB</div>
-                        <div class="col-5 m-1 btn border border-secdonary mx-auto">256GB</div>
-                    </div>
-                    <div class="row" id="networkRow"></div>
-                    <div class="row" id="priceRow"></div>
-                </div>
-            </div>
-
-        </div>
-    </div> -->
-
-    <!-- <template id="colorCollapseTem"> -->
-    <!-- <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
-            aria-expanded="false" aria-controls="collapse">
-            Button with data-bs-target
-        </button>
-    </p>
-    <div class="collapse show" id="collapse">
-        <h2 id="collapseHead"></h2>
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
-            aria-controls="collapse">
-            Link with href
-        </a>
-        <div class="card card-body">
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when
-            the
-            user activates the relevant trigger.
-        </div>
-    </div> -->
-    <!-- </template> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
@@ -114,55 +47,73 @@
         let iPadAirObject;
         let colorArray = [];
         let btnShowiPadAir = $g('#showipadair');
-        let chooseRow = $g('#chooseRow');
+        let chooseCol = $g('#chooseCol');
+        let imgCol = $g('#imgCol');
+        let ipadimg = $c('img','ipadimg');
         
         window.onload = function () {
             requestiPadAirJson();
         }
         
-        // function createElment(tagname,classname,idname){
-        //     let element = document.createElement(`${tagname}`);
-        //     element.setAttribute('class',`${classname}`);
-        //     element.setAttribute('id',`${idname}`);
-        //     return element;
-        // }
 
         function requestiPadAirJson() {
             iPadAirXHR.onload = function () {
                 iPadAirObject = JSON.parse(this.responseText);
+                showiPadAir();
             }
             iPadAirXHR.open('GET', iPadAirUrl);
             iPadAirXHR.send();
         }
 
-        btnShowiPadAir.addEventListener('click',showiPadAir);
+            // btnShowiPadAir.addEventListener('click',showiPadAir);
 
         function showiPadAir(){
             // alert('show')
             //創顏色
             createColors();
             //創圖片
+            ipadimg.setAttribute('src','https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-202009');
+            imgCol.appendChild(ipadimg);
             //創容量
             //創網路
             //創價格        
         }
 
         function createColors(){
-
-            iPadAirObject.colors.forEach((item)=>{
-                
-                console.log(item.zhtw);
-            })
+            let colorimg;
+            let colorp;
+            let colorbtn;
             let colorRow = $c('div','colorRow','row');
-                // console.log(iPadAirObject.colors[0].enus);
-                // console.log(typeof item);
-            let grayimg = $c('img','grayimg','w-25')
-            let graybtn = $c('div','graybtn','col-6 btn btn-secdonary');
-            graybtn.innerHTML = `<img src="${iPadAirObject.colors[1].colorimgurl}"><p>${iPadAirObject.colors[1].zhtw}</p>`;
-            colorRow.appendChild(graybtn);
-            chooseRow.appendChild(colorRow);
+            iPadAirObject.colors.forEach((item)=>{
+                colorimg = $c('img',`${item.enus}img`,'w-25 mx-auto');
+                colorimg.setAttribute('src',`${item.colorimgurl}`);
 
-        
+                colorp = $c('p',`${item.enus}text`,'d-block');
+                colorp.innerHTML =`${item.zhtw}`;
+
+                colorbtn = $c('div',`${item.enus}btn`,'col-4 btn btn-outline-secondary m-2');
+                colorbtn.setAttribute('style','border-radius:30px;')
+
+
+                colorbtn.appendChild(colorimg);
+                colorbtn.appendChild(colorp);
+                colorRow.appendChild(colorbtn);
+
+
+                colorbtn.addEventListener('click',function(){
+                    let changeimg = $c('img',`${item.enus}ipadimg`,'w-25 mx-auto');
+                    changeimg.setAttribute('src',`${item.ipadimgurlWiFi}`);
+                    imgCol.innerHTML = '';
+                    imgCol.appendChild(changeimg);
+                })
+                
+            })
+            chooseCol.appendChild(colorRow);
+            
+            
+        }
+
+        function addEvent_colorbtn(){
             
         }
 
