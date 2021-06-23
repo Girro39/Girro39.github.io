@@ -128,43 +128,67 @@
             storageh2.innerHTML = `儲存裝置`;
             storageRow.appendChild(storageh2);
             networkh2.innerHTML = `連線能力`
-
             networkRow.appendChild(networkh2);
-            iPadAirObject.storages.forEach((item)=>{
-                storageCPC = $c('p',`${item.capacity}text`);
+
+            iPadAirObject.storages.forEach((item,index)=>{
+                storageCPC = $c('p',`storageCPCtext`);
                 storageCPC.innerHTML = `${item.capacity}`;
 
-                storageSP = $c('p',`${item.startprice}text`);
+                storageSP = $c('p',`storageSPtext`);
                 storageSP.innerHTML =`${item.startprice}`;
 
-                storagebtn = $c('div',`${item.enus}btn`,'col-4 btn btn-outline-secondary m-2');
+                storagebtn = $c('div',`btn_storage${index+1}`,'col-4 btn btn-outline-secondary m-2');
                 storagebtn.setAttribute('style','border-radius:30px;');
 
+                
                 storagebtn.appendChild(storageCPC);
                 storagebtn.appendChild(storageSP);
                 storageRow.appendChild(storagebtn);
-
+                
                 // console.log(item.startprice);
             });
-
-            iPadAirObject.networks.forEach((item)=>{
-                networkAB = $c('p',`networkability`);
+            
+            iPadAirObject.networks.forEach((item,index)=>{
+                // console.log(item);
+                networkAB = $c('p',`networkABtext`);
                 networkAB.innerHTML = `${item.ability}`;
-console.log(item.ability)
-                networkSP = $c('p',`networktext`);
-                storageSP.innerHTML =`${item.startprice}`;
-
-                networkbtn = $c('div','','col-4 btn btn-outline-secondary m-2');
+                // console.log(item.ability);
+                networkSP = $c('p',`networkSPtext${index+1}`);
+                networkSP.innerHTML =`${item.startprice}`;
+                // console.log(item.startprice);
+                
+                networkbtn = $c('div',`btn_network${index+1}`,'col-4 btn btn-outline-secondary m-2');
                 networkbtn.setAttribute('style','border-radius:30px;');
-
+                
                 networkbtn.appendChild(networkAB);
                 networkbtn.appendChild(networkSP);
-                storageRow.appendChild(networkbtn);
+                networkRow.appendChild(networkbtn);
                 
                 // console.log(item);
             });
             
             chooseCol.appendChild(storageRow);
+            chooseCol.appendChild(networkRow);
+
+            //問為何以下擺這邊選到?
+            let networkSPtext1 = $g('#networkSPtext1');
+            let networkSPtext2 = $g('#networkSPtext2');
+            
+            let btn_storage1 =$g('#btn_storage1');
+            console.log(btn_storage1);
+            btn_storage1.addEventListener('click',function(){
+                networkSPtext1.innerHTML ='';
+                networkSPtext2.innerHTML ='';
+                networkSPtext1.innerHTML = `NT$18,900起`;
+                networkSPtext2.innerHTML = `NT$23,900起`;            
+            });
+            let btn_storage2 =$g('#btn_storage2');
+            btn_storage2.addEventListener('click',function(){
+                networkSPtext1.innerHTML ='';
+                networkSPtext2.innerHTML ='';
+                networkSPtext1.innerHTML = `NT$23,200起`;
+                networkSPtext2.innerHTML = `NT$28,200起`;
+            });
 
         }
 
