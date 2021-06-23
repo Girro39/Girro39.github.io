@@ -77,16 +77,20 @@
             ipadimg.setAttribute('src','https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-202009');
             imgCol.appendChild(ipadimg);
             //創容量
-            createStorages();
+            createSN();
             //創網路
             //創價格            
         }
-
+        
         function createColors(){ 
             let colorimg;
             let colorp;
             let colorbtn;
+            let colorh2;
             let colorRow = $c('div','colorRow','row');
+            colorh2 = $c('h2');
+            colorh2.innerHTML = `外觀`;
+            colorRow.appendChild(colorh2);
             iPadAirObject.colors.forEach((item)=>{
                 colorimg = $c('img',`${item.enus}img`,'w-25 mx-auto');
                 colorimg.setAttribute('src',`${item.colorimgurl}`);
@@ -101,8 +105,8 @@
                 colorbtn.appendChild(colorimg);
                 colorbtn.appendChild(colorp);
                 colorRow.appendChild(colorbtn);
-
-
+                
+                
                 colorbtn.addEventListener('click',function(){
                     let changeipadimg = $c('img',`${item.enus}ipadimg`,'w-50 mx-auto');
                     changeipadimg.setAttribute('src',`${item.ipadimgurlWiFi}`);
@@ -114,10 +118,29 @@
             chooseCol.appendChild(colorRow);
         }
 
-        function createStorages(){
+        function createSN(){
+            let storageRow = $c('div','storageRow','row');
+            let storageCPC,storageSP,storagebtn;
+
             iPadAirObject.storages.forEach((item)=>{
-                // console.log(item);
+                storageCPC = $c('p',`${item.capacity}text`);
+                storageCPC.innerHTML = `${item.capacity}`;
+
+                storageSP = $c('p',`${item.startprice}text`);
+                storageSP.innerHTML =`${item.startprice}`;
+
+                storagebtn = $c('div',`${item.enus}btn`,'col-4 btn btn-outline-secondary m-2');
+                storagebtn.setAttribute('style','border-radius:30px;');
+
+                storagebtn.appendChild(storageCPC);
+                storagebtn.appendChild(storageSP);
+                storageRow.appendChild(storagebtn);
+
+                // console.log(item.startprice);
             });
+
+            chooseCol.appendChild(storageRow);
+
         }
 
     </script>
