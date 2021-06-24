@@ -52,6 +52,7 @@
         let chooseCol = $g('#chooseCol');
         let imgCol = $g('#imgCol');
         let ipadimg = $c('img','ipadimg');
+        let changeipadimg;
         
         window.onload = function () {
             requestiPadAirJson();
@@ -108,12 +109,14 @@
                 
                 
                 colorbtn.addEventListener('click',function(){
-                    let changeipadimg = $c('img',`${item.enus}ipadimg`,'w-50 mx-auto');
+                    changeipadimg = $c('img',`${item.enus}ipadimg`,'w-50 mx-auto');
                     changeipadimg.setAttribute('src',`${item.ipadimgurlWiFi}`);
                     imgCol.innerHTML = '';
                     imgCol.appendChild(changeipadimg);
                 });
                 
+
+
             });
             chooseCol.appendChild(colorRow);
         }
@@ -121,14 +124,19 @@
         function createSN(){
             let storageRow = $c('div','storageRow','row');
             let networkRow = $c('div','networkRow','row');
+            let priceRow = $c('div','priceRow','row');
+
             let storageCPC,storageSP,storagebtn;
             let networkAB,networkSP,networkbtn;
             let storageh2 = $c('h2');
             let networkh2 = $c('h2');
+            let priceh2 = $c('h2');
             storageh2.innerHTML = `儲存裝置`;
             storageRow.appendChild(storageh2);
             networkh2.innerHTML = `連線能力`
             networkRow.appendChild(networkh2);
+            priceh2.innerHTML = `價格`
+            priceRow.appendChild(priceh2);
 
             iPadAirObject.storages.forEach((item,index)=>{
                 storageCPC = $c('p',`storageCPCtext`);
@@ -159,40 +167,64 @@
                 
                 networkbtn = $c('div',`btn_network${index+1}`,'col-4 btn btn-outline-secondary m-2');
                 networkbtn.setAttribute('style','border-radius:30px;');
-                
+
+                storagebtn.addEventListener('click',function(){
+                    networkSP.innerHTML = `${item.secondprice}`;
+                });
+
+
                 networkbtn.appendChild(networkAB);
                 networkbtn.appendChild(networkSP);
                 networkRow.appendChild(networkbtn);
-                
+
                 // console.log(item);
             });
-            
+
             chooseCol.appendChild(storageRow);
             chooseCol.appendChild(networkRow);
+            chooseCol.appendChild(priceRow);
 
-            //問為何以下擺這邊選到?
-            let networkSPtext1 = $g('#networkSPtext1');
-            let networkSPtext2 = $g('#networkSPtext2');
+            //問為何以下擺這邊才選到?
+            // let wifitext = $g('#networkSPtext1');
+            // let wificelltext = $g('#networkSPtext2');
+                        
+            // let btn_64GB =$g('#btn_storage1');
+            // btn_64GB.addEventListener('click',function(){
+            //     wifitext.innerHTML ='';
+            //     wificelltext.innerHTML ='';
+            //     wifitext.innerHTML = `NT$18,900起`;
+            //     wificelltext.innerHTML = `NT$23,900起`;            
+            // });
+            // let btn_256GB =$g('#btn_storage2');
+            // btn_256GB.addEventListener('click',function(){
+            //     wifitext.innerHTML ='';
+            //     wificelltext.innerHTML ='';
+            //     wifitext.innerHTML = `NT$23,200起`;
+            //     wificelltext.innerHTML = `NT$28,200起`;
+            // });
             
-            let btn_storage1 =$g('#btn_storage1');
-            console.log(btn_storage1);
-            btn_storage1.addEventListener('click',function(){
-                networkSPtext1.innerHTML ='';
-                networkSPtext2.innerHTML ='';
-                networkSPtext1.innerHTML = `NT$18,900起`;
-                networkSPtext2.innerHTML = `NT$23,900起`;            
+            
+
+            let btn_wifi = $g('#btn_network1');
+            btn_wifi.addEventListener('click',function(){
+                let pricep = $c('p','pricesum');
+                pricep.innerHTML = '';
+                if(true){
+                    pricep.innerHTML = 'NT$18,900';
+                }
+                else{
+                    pricep.innerHTML = 'NT$23,900';
+                }
+                priceRow.appendChild(pricep);
             });
-            let btn_storage2 =$g('#btn_storage2');
-            btn_storage2.addEventListener('click',function(){
-                networkSPtext1.innerHTML ='';
-                networkSPtext2.innerHTML ='';
-                networkSPtext1.innerHTML = `NT$23,200起`;
-                networkSPtext2.innerHTML = `NT$28,200起`;
+            let btn_wificell = $g('#btn_network2');
+            btn_wificell.addEventListener('click',function(){
+
             });
 
         }
-
     </script>
+
 
 </body>
 
