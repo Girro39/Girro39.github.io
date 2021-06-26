@@ -126,6 +126,7 @@
             let networkRow = $c('div','networkRow','row');
             let priceRow = $c('div','priceRow','row');
 
+            let networkSP1,networkSP2;
             let storageCPC,storageSP,storagebtn;
             let networkAB,networkSP,networkbtn;
             let storageh2 = $c('h2');
@@ -148,6 +149,11 @@
                 storagebtn = $c('div',`btn_storage${index+1}`,'col-4 btn btn-outline-secondary m-2');
                 storagebtn.setAttribute('style','border-radius:30px;');
 
+                storagebtn.addEventListener('click',function(){
+                    networkSP.innerHTML = '';
+                    networkSP.innerHTML = `${item.cellp}`;
+                });
+
                 
                 storagebtn.appendChild(storageCPC);
                 storagebtn.appendChild(storageSP);
@@ -164,17 +170,12 @@
                 networkSP = $c('p',`networkSPtext${index+1}`);
                 networkSP.innerHTML =`${item.startprice}`;
                 // console.log(item.startprice);
-                
                 networkbtn = $c('div',`btn_network${index+1}`,'col-4 btn btn-outline-secondary m-2');
                 networkbtn.setAttribute('style','border-radius:30px;');
 
-                storagebtn.addEventListener('click',function(){
-                    networkSP.innerHTML = `${item.secondprice}`;
-                });
-
-
                 networkbtn.appendChild(networkAB);
                 networkbtn.appendChild(networkSP);
+
                 networkRow.appendChild(networkbtn);
 
                 // console.log(item);
@@ -205,22 +206,22 @@
             
             
 
-            let btn_wifi = $g('#btn_network1');
-            btn_wifi.addEventListener('click',function(){
-                let pricep = $c('p','pricesum');
-                pricep.innerHTML = '';
-                if(true){
-                    pricep.innerHTML = 'NT$18,900';
-                }
-                else{
-                    pricep.innerHTML = 'NT$23,900';
-                }
-                priceRow.appendChild(pricep);
-            });
-            let btn_wificell = $g('#btn_network2');
-            btn_wificell.addEventListener('click',function(){
+            // let btn_wifi = $g('#btn_network1');
+            // btn_wifi.addEventListener('click',function(){
+            //     let pricep = $c('p','pricesum');
+            //     pricep.innerHTML = '';
+            //     if(true){
+            //         pricep.innerHTML = 'NT$18,900';
+            //     }
+            //     else{
+            //         pricep.innerHTML = 'NT$23,900';
+            //     }
+            //     priceRow.appendChild(pricep);
+            // });
+            // let btn_wificell = $g('#btn_network2');
+            // btn_wificell.addEventListener('click',function(){
 
-            });
+            // });
 
         }
     </script>

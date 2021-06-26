@@ -56,13 +56,14 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                                 <li class="nav-item p-2 fs-5">
-                                    <a class="nav-link text-light active" aria-current="page" href="#">iPad Pro</a>
+                                    <a id="iPad" class="nav-link text-light active" aria-current="page" href="#">
+                                        iPad Pro</a>
                                 </li>
                                 <li class="nav-item p-2 fs-5">
-                                    <a class="nav-link text-light" href="#">iPhone12 Pro</a>
+                                    <a id="iPhone12" class="nav-link text-light" href="#">iPhone12 Pro</a>
                                 </li>
                                 <li class="nav-item p-2 fs-5">
-                                    <a class="nav-link text-light" href="#">iMac</a>
+                                    <a id="iMac" class="nav-link text-light" href="#">iMac</a>
                                 </li>
                             </ul>
                         </div>
@@ -77,43 +78,57 @@
             <div class="col-12 col-md-6">
             </div>
             <div class="col-12 col-md-6">
-                <div class="row information_row">
+                <div class="row" id="information_row">
                     <span class="text-danger mt-5 mb-2">全新</span>
-                    <h2 class="fw-bolder fs-1">購買 iPhone 12 Pro</h2>
+                    <h2 class="fw-bolder fs-1"></h2>
                     <h2 class="choose_type">選擇機型。</h2>
                     <a href="#" class="text-decoration-none which_link"> 哪一款機型最適合你？</a>
                 </div>
-                <div class="row button_row">
-                    <button class="btn my-4">
-                        <div class="row button_inner_row">
-                            <div class="col-6">
-                                <h4 class="fw-bolder">iPhone 12 Pro</h4>
-                                <span>6.1吋顯示器</span>
-                            </div>
-                            <div class="col-6 my-auto">
-                                <label for="" class="fs-4">NT$33,900起</label>
-                            </div>
-                        </div>
-                    </button>
-
+                <div class="row" id="color_row">
+                    <h2 class="choose_type">外觀</h2>
                 </div>
-                <div class="row button_row border-bottom ">
-                    <button class="btn my-4">
-                        <div class="row button_inner_row">
-                            <div class="col-6">
-                                <h4 class="fw-bolder">iPhone 12 Pro Max</h4>
-                                <span>6.7吋顯示器</span>
-                            </div>
-                            <div class="col-6 my-auto">
-                                <label for="" class="fs-4">NT$37,900起</label>
-                            </div>
-                        </div>
+                <div class="row border-bottom" id="storage_row">
+                    <h2 class="choose_type">容量</h2>
+                </div>
+                <div class="row" id="total_row">
+                    <h2 class="choose_type">價格</h2>
                 </div>
             </div>
         </div>
     </div>
 
 
+
+    
+    <script>
+        let ipadbtn = document.getElementById('iPad');
+        let iphone12btn = document.getElementById('iPhone12');
+        let imacbtn = document.getElementById('iMac');
+
+        ipadbtn.addEventListener('click', createipad);
+        iphone12btn.addEventListener('click', createiphone12);
+        imacbtn.addEventListener('click', createimac);
+
+        let colorRow = document.getElementById('color_row');
+        let storageRow = document.getElementById('storage_row');
+        let totalRow = document.getElementById('total_row');
+
+        let ipadArray = [
+
+        ]
+
+        function createipad() {
+            //先做清空再放東西進去
+            //其他品項也一樣邏輯
+            colorRow.innerHTML = '';
+            storageRow.innerHTML = '';
+            totalRow.innerHTML = '';
+
+            createcolor();
+            createstorage();
+            createtotal();
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
