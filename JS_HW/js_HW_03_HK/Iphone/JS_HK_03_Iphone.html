@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="nav.scss">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
@@ -99,8 +98,27 @@
 
 
 
-    
+
     <script>
+        const appleurl =
+            'https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_03_HK/Iphone/products.json';
+
+        let applexhr = new XMLHttpRequest();
+        let appleObj;
+        window.onload = function () {
+            requestJson();
+        }
+
+        function requestJson() {
+            applexhr.onload = function () {
+                appleObj = JSON.parse(this.responseText);
+                console.log(appleObj);
+            }
+            applexhr.open('GET', appleurl);
+            applexhr.send();
+        }
+
+
         let ipadbtn = document.getElementById('iPad');
         let iphone12btn = document.getElementById('iPhone12');
         let imacbtn = document.getElementById('iMac');
@@ -113,11 +131,41 @@
         let storageRow = document.getElementById('storage_row');
         let totalRow = document.getElementById('total_row');
 
-        let ipadArray = [
 
-        ]
+        function createcolor(target) {
+
+            console.log(appleObj.filter(x => x.model == `${target}`));
+        }
+
+        function createstorage() {}
+
+        function createtotal() {}
 
         function createipad() {
+            //先做清空再放東西進去
+            //其他品項也一樣邏輯
+            colorRow.innerHTML = '';
+            storageRow.innerHTML = '';
+            totalRow.innerHTML = '';
+
+            createcolor();
+            createstorage();
+            createtotal();
+        }
+
+        function createiphone12() {
+            //先做清空再放東西進去
+            //其他品項也一樣邏輯
+            colorRow.innerHTML = '';
+            storageRow.innerHTML = '';
+            totalRow.innerHTML = '';
+
+            createcolor('iphone12pro');
+            createstorage();
+            createtotal();
+        }
+
+        function createimac() {
             //先做清空再放東西進去
             //其他品項也一樣邏輯
             colorRow.innerHTML = '';

@@ -1,6 +1,39 @@
 [
 
     {
+        "model": "ipadpro",
+        "color": [{
+                "color": "太空灰色",
+                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW"
+            },
+            {
+                "color": "銀色",
+                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW"
+            }
+        ],
+        "storage": [{
+                "storage": "128GB",
+                "price": "NT$24,900"
+            },
+            {
+                "storage": "256GB",
+                "price": "NT$28,000"
+            },
+            {
+                "storage": "512GB",
+                "price": "NT$34,200"
+            },
+            {
+                "storage": "1TB",
+                "price": "NT$46,600"
+            },
+            {
+                "storage": "2TB",
+                "price": "NT$59,000"
+            }
+        ]
+    },
+    {
         "model": "iphone12pro",
         "color": [{
                 "color": "石墨色",
@@ -32,12 +65,41 @@
                 "price": "NT$44,400"
             }
         ]
-    },
-    {
 
     },
     {
 
+        "model": "imac",
+        "color": [{
+                "color": "藍色",
+                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104"
+            },
+            {
+                "color": "綠色",
+                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-selection-hero-202104"
+            },
+            {
+                "color": "粉紅色",
+                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-selection-hero-202104"
+            },
+            {
+                "color": "銀色",
+                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-selection-hero-202104"
+            }
+        ],
+        "storage": [{
+                "storage": "256GB SSD",
+                "price": "NT$39,900"
+            },
+            {
+                "storage": "512GB SSD",
+                "price": "NT$45,900"
+            },
+            {
+                "storage": "1TB SSD",
+                "price": "NT$51,900"
+            }
+        ]
 
     }
 ]
