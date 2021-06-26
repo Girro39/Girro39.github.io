@@ -100,30 +100,30 @@
 
 
     <script>
-        const appleurl =
-            'https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_03_HK/Iphone/products.json';
+        // const appleurl =
+        //     'https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_03_HK/Iphone/products.json';
 
-        let applexhr = new XMLHttpRequest();
-        let appleObj;
-        window.onload = function () {
-            requestJson();
-        }
+        // let applexhr = new XMLHttpRequest();
+        // let appleObj;
+        // window.onload = function () {
+        //     requestJson();
+        // }
 
-        function requestJson() {
-            applexhr.onload = function () {
-                appleObj = JSON.parse(this.responseText);
-                console.log(appleObj);
-            }
-            applexhr.open('GET', appleurl);
-            applexhr.send();
-        }
+        // function requestJson() {
+        //     applexhr.onload = function () {
+        //         appleObj = JSON.parse(this.responseText);
+        //         console.log(appleObj);
+        //     }
+        //     applexhr.open('GET', appleurl);
+        //     applexhr.send();
+        // }
 
 
         let ipadbtn = document.getElementById('iPad');
         let iphone12btn = document.getElementById('iPhone12');
         let imacbtn = document.getElementById('iMac');
 
-        ipadbtn.addEventListener('click', createipad);
+        ipadbtn.addEventListener('click', createipadpro);
         iphone12btn.addEventListener('click', createiphone12);
         imacbtn.addEventListener('click', createimac);
 
@@ -134,21 +134,20 @@
 
         function createcolor(target) {
 
-            console.log(appleObj.filter(x => x.model == `${target}`));
         }
 
         function createstorage() {}
 
         function createtotal() {}
 
-        function createipad() {
+        function createipadpro() {
             //先做清空再放東西進去
             //其他品項也一樣邏輯
             colorRow.innerHTML = '';
             storageRow.innerHTML = '';
             totalRow.innerHTML = '';
 
-            createcolor();
+            createcolor('ipadpro');
             createstorage();
             createtotal();
         }
@@ -172,7 +171,7 @@
             storageRow.innerHTML = '';
             totalRow.innerHTML = '';
 
-            createcolor();
+            createcolor('imac');
             createstorage();
             createtotal();
         }
