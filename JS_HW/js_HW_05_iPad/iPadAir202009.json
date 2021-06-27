@@ -41,14 +41,7 @@
             "startprice": "NT$23,900起",
             "wifip": "NT$23,900",
             "cellp": "NT$28,200"
-        },
-        {
-            "capacity": "TEST",
-            "startprice": "NT$12,900起",
-            "wifip": "NT$34,900",
-            "cellp": "NT$56,200"
         }
-
     ],
     "networks": [{
             "ability": "WiFi",
@@ -59,13 +52,7 @@
             "ability": "WiFi+行動網路",
             "startprice": "NT$23,200起",
             "secondprice": "NT$28,200起"
-        },
-        {
-            "ability": "TEST+行動網路",
-            "startprice": "NT$12,200起",
-            "secondprice": "NT$34,200起"
         }
-
     ],
     "products": [{
             "id": "T001",

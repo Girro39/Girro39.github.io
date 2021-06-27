@@ -68,7 +68,7 @@
             iPadAirXHR.send();
         }
 
-            // btnShowiPadAir.addEventListener('click',showiPadAir);
+        // btnShowiPadAir.addEventListener('click',showiPadAir);
 
         function showiPadAir(){
             // alert('show')
@@ -138,6 +138,14 @@
             networkRow.appendChild(networkh2);
             priceh2.innerHTML = `價格`
             priceRow.appendChild(priceh2);
+
+                let storageList = iPadAirObject.products.map(x => {
+                    return {
+                        stroage:x.storage,
+                        price:x.price
+                    }
+                });
+                console.log(storageList);
 
             iPadAirObject.storages.forEach((item,index)=>{
                 storageCPC = $c('p',`storageCPCtext`);
