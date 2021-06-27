@@ -53,29 +53,22 @@
         let imgCol = $g('#imgCol');
         let ipadimg = $c('img','ipadimg');
         let changeipadimg;
-        
-        let storage =$c('h2');
-
-            let network=  $c('h2','netinit');
-
-            let totalinner= $c('h2');
 
         
         window.onload = function () {
             requestiPadAirJson();
         }
         
-
         function requestiPadAirJson() {
             iPadAirXHR.onload = function () {
                 iPadAirObject = JSON.parse(this.responseText);
                 showiPadAir();
+
+            
             }
             iPadAirXHR.open('GET', iPadAirUrl);
             iPadAirXHR.send();
         }
-
-        // btnShowiPadAir.addEventListener('click',showiPadAir);
 
         function showiPadAir(){
             // alert('show')
@@ -146,18 +139,6 @@
             priceh2.innerHTML = `價格`
             priceRow.appendChild(priceh2);
 
-            // let storage =$c('h2');
-            storage.setAttribute('value','init');
-
-            // let network=  $c('h2','netinit');
-            network.setAttribute('value','init');
-
-            // let totalinner= $c('h2');
-            storageRow.appendChild(storage);
-            networkRow.appendChild(network);
-            priceRow.appendChild(totalinner);
-
-
             iPadAirObject.storages.forEach((item,index)=>{
                 storageCPC = $c('p',`storageCPCtext`);
                 storageCPC.innerHTML = `${item.capacity}`;
@@ -200,15 +181,12 @@
                 // console.log(item);
             });
 
-
-            
-            
             chooseCol.appendChild(storageRow);
             chooseCol.appendChild(networkRow);
             chooseCol.appendChild(priceRow);
             
-            
-            //問為何以下擺這邊才選到?
+
+
             let wifitext = $g('#networkSPtext1');
             let wificelltext = $g('#networkSPtext2');
 
@@ -221,9 +199,8 @@
                 wificelltext.innerHTML ='';
                 wifitext.innerHTML = `NT$18,900起`;
                 wificelltext.innerHTML = `NT$23,900起`;
-                storage.innerHTML= '64GB';
-                storage.setAttribute('value','64GB');
-                // console.log(storage);         
+                storageh2.innerHTML= '64GB';
+                console.log(storageh2.textContent);
             });
             let btn_256GB =$g('#btn_storage2');
             btn_256GB.addEventListener('click',function(){
@@ -231,39 +208,29 @@
                 wificelltext.innerHTML ='';
                 wifitext.innerHTML = `NT$23,200起`;
                 wificelltext.innerHTML = `NT$28,200起`;
-                storage.innerHTML = '256GB';
-                storage.setAttribute('value','256GB');
-                // console.log(storage);         
-                
+                storageh2.innerHTML = '256GB';
+                console.log(storageh2.textContent);
             });
-            
+                
 
 
             let btn_wifi = $g('#btn_network1');
             btn_wifi.addEventListener('click',function(){
-                network.innerHTML='WiFi';
-                network.setAttribute('value','WiFi');
+                networkh2.innerHTML='WiFi';
 
-                // console.log(network);         
-
+                console.log(networkh2.textContent);
             });
             let btn_wificell = $g('#btn_network2');
             btn_wificell.addEventListener('click',function(){
-                network.innerHTML = 'WiFi+行動網路';
-                                
+                networkh2.innerHTML = 'WiFi+行動網路';
+                
+                console.log(networkh2.textContent);
             });
-            
-            console.log(network.textContent);        
-            // console.log($("netinit").attr("value"));         
-            // console.log(storage);         
-
-            let total = $c('p','total');
-            // console.log(totalinner);
-
-
-
 
         }
+
+
+
     </script>
 
 
