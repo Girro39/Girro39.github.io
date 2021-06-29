@@ -2,104 +2,309 @@
 
     {
         "model": "ipadpro",
-        "color": [{
-                "color": "太空灰色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW"
-            },
-            {
-                "color": "銀色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW"
-            }
-        ],
-        "storage": [{
-                "storage": "128GB",
-                "price": "NT$24,900"
-            },
-            {
-                "storage": "256GB",
-                "price": "NT$28,000"
-            },
-            {
-                "storage": "512GB",
-                "price": "NT$34,200"
-            },
-            {
-                "storage": "1TB",
-                "price": "NT$46,600"
-            },
-            {
-                "storage": "2TB",
-                "price": "NT$59,000"
-            }
-        ]
+        "products": {
+            "太空灰色": [{
+                    "sku": "A001",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "128GB",
+                    "network": "WiFi",
+                    "price": "24900"
+                }, {
+                    "sku": "A002",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "256GB",
+                    "network": "WiFi",
+                    "price": "28000"
+                }, {
+                    "sku": "A003",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "512GB",
+                    "network": "WiFi",
+                    "price": "34200"
+                }, {
+                    "sku": "A004",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "1TB",
+                    "network": "WiFi",
+                    "price": "46600"
+                }, {
+                    "sku": "A005",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "2TB",
+                    "network": "WiFi",
+                    "price": "59000"
+                },
+                {
+                    "sku": "A006",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "128GB",
+                    "network": "WiFi",
+                    "price": "34900"
+                }, {
+                    "sku": "A007",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "256GB",
+                    "network": "WiFi",
+                    "price": "38000"
+                }, {
+                    "sku": "A008",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "512GB",
+                    "network": "WiFi",
+                    "price": "44200"
+                }, {
+                    "sku": "A009",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "1TB",
+                    "network": "WiFi",
+                    "price": "56600"
+                }, {
+                    "sku": "A010",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "2TB",
+                    "network": "WiFi",
+                    "price": "69000"
+                }, {
+                    "sku": "A011",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "128GB",
+                    "network": "WiFi+行動網路",
+                    "price": "29900"
+                }, {
+                    "sku": "A012",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "256GB",
+                    "network": "WiFi+行動網路",
+                    "price": "33000"
+                }, {
+                    "sku": "A013",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "512GB",
+                    "network": "WiFi+行動網路",
+                    "price": "39200"
+                }, {
+                    "sku": "A014",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "1TB",
+                    "network": "WiFi+行動網路",
+                    "price": "51600"
+                }, {
+                    "sku": "A015",
+                    "size": "11吋",
+                    "color": "太空灰色",
+                    "storage": "2TB",
+                    "network": "WiFi+行動網路",
+                    "price": "64000"
+                },
+                {
+                    "sku": "A016",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "128GB",
+                    "network": "WiFi+行動網路",
+                    "price": "39900"
+                }, {
+                    "sku": "A017",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "256GB",
+                    "network": "WiFi+行動網路",
+                    "price": "43000"
+                }, {
+                    "sku": "A018",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "512GB",
+                    "network": "WiFi+行動網路",
+                    "price": "49200"
+                }, {
+                    "sku": "A019",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "1TB",
+                    "network": "WiFi+行動網路",
+                    "price": "61600"
+                }, {
+                    "sku": "A020",
+                    "size": "12.9吋",
+                    "color": "太空灰色",
+                    "storage": "2TB",
+                    "network": "WiFi+行動網路",
+                    "price": "74000"
+                }
+            ],
+            "銀色": [{
+                    "sku": "B001",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "128GB",
+                    "network": "WiFi",
+                    "price": "24900"
+                }, {
+                    "sku": "B002",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "256GB",
+                    "network": "WiFi",
+                    "price": "28000"
+                }, {
+                    "sku": "B003",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "512GB",
+                    "network": "WiFi",
+                    "price": "34200"
+                }, {
+                    "sku": "B004",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "1TB",
+                    "network": "WiFi",
+                    "price": "46600"
+                }, {
+                    "sku": "B005",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "2TB",
+                    "network": "WiFi",
+                    "price": "59000"
+                },
+                {
+                    "sku": "B006",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "128GB",
+                    "network": "WiFi",
+                    "price": "34900"
+                }, {
+                    "sku": "B007",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "256GB",
+                    "network": "WiFi",
+                    "price": "38000"
+                }, {
+                    "sku": "B008",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "512GB",
+                    "network": "WiFi",
+                    "price": "44200"
+                }, {
+                    "sku": "B009",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "1TB",
+                    "network": "WiFi",
+                    "price": "56600"
+                }, {
+                    "sku": "B010",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "2TB",
+                    "network": "WiFi",
+                    "price": "69000"
+                }, {
+                    "sku": "B011",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "128GB",
+                    "network": "WiFi+行動網路",
+                    "price": "29900"
+                }, {
+                    "sku": "B012",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "256GB",
+                    "network": "WiFi+行動網路",
+                    "price": "33000"
+                }, {
+                    "sku": "B013",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "512GB",
+                    "network": "WiFi+行動網路",
+                    "price": "39200"
+                }, {
+                    "sku": "B014",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "1TB",
+                    "network": "WiFi+行動網路",
+                    "price": "51600"
+                }, {
+                    "sku": "B015",
+                    "size": "11吋",
+                    "color": "銀色",
+                    "storage": "2TB",
+                    "network": "WiFi+行動網路",
+                    "price": "64000"
+                },
+                {
+                    "sku": "B016",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "128GB",
+                    "network": "WiFi+行動網路",
+                    "price": "39900"
+                }, {
+                    "sku": "B017",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "256GB",
+                    "network": "WiFi+行動網路",
+                    "price": "43000"
+                }, {
+                    "sku": "B018",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "512GB",
+                    "network": "WiFi+行動網路",
+                    "price": "49200"
+                }, {
+                    "sku": "B019",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "1TB",
+                    "network": "WiFi+行動網路",
+                    "price": "61600"
+                }, {
+                    "sku": "B020",
+                    "size": "12.9吋",
+                    "color": "銀色",
+                    "storage": "2TB",
+                    "network": "WiFi+行動網路",
+                    "price": "74000"
+                }
+            ]
+        }
+
+
     },
     {
         "model": "iphone12pro",
-        "color": [{
-                "color": "石墨色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-graphite-hero"
-            },
-            {
-                "color": "銀色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-silver-hero"
-            },
-            {
-                "color": "金色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-gold-hero"
-            },
-            {
-                "color": "太平洋藍色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-blue-hero"
-            }
-        ],
-        "storage": [{
-                "storage": "128GB",
-                "price": "NT$33,900"
-            },
-            {
-                "storage": "256GB",
-                "price": "NT$37,400"
-            },
-            {
-                "storage": "512GB",
-                "price": "NT$44,400"
-            }
+        "products": [{},
+            {}
         ]
-
     },
     {
-
         "model": "imac",
-        "color": [{
-                "color": "藍色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104"
-            },
-            {
-                "color": "綠色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-selection-hero-202104"
-            },
-            {
-                "color": "粉紅色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-selection-hero-202104"
-            },
-            {
-                "color": "銀色",
-                "imgurl": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-selection-hero-202104"
-            }
-        ],
-        "storage": [{
-                "storage": "256GB SSD",
-                "price": "NT$39,900"
-            },
-            {
-                "storage": "512GB SSD",
-                "price": "NT$45,900"
-            },
-            {
-                "storage": "1TB SSD",
-                "price": "NT$51,400"
-            }
+        "products": [{},
+            {}
         ]
-
     }
 ]

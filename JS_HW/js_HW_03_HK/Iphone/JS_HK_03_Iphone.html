@@ -33,6 +33,15 @@
             text-align: left;
         }
 
+        #infoSmall {
+            font-size: 12px;
+        }
+
+        .nav_container {
+            background-color: #000;
+            opacity: .8;
+        }
+
         /* * {
             outline: 1px solid #aaa;
         } */
@@ -41,7 +50,7 @@
 
 <body>
 
-    <div class="container bg-dark nav_container">
+    <div class="container nav_container">
         <div class="row">
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light ">
@@ -72,25 +81,51 @@
         </div>
     </div>
 
+    <div class="container"></div>
     <div class="container" id="productContainer">
         <div class="row">
             <div class="col-12 col-md-6">
+                <div class="row m-5">
+                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_TW?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864731000"
+                        alt="" class="mx-auto w-100" id='img'>
+                </div>
+                <div class="row m-5 d-flex justify-content-between text-center">
+                    <div class="col">
+                        <img src="./pic/nopaybuy.svg" alt="">
+                        <p id="infoSmall">免額外付費的運送服務 </p>
+                    </div>
+                    <div class="col">
+                        <img src="./pic/smile.svg" alt="">
+                        <p id="infoSmall">免額外付費的個人化鐫刻服務 </p>
+                    </div>
+                    <div class="col">
+                        <img src="./pic/nopayreturn.svg" alt="">
+                        <p id="infoSmall">免額外付費輕鬆退貨 </p>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="row" id="information_row">
                     <span class="text-danger mt-5 mb-2">全新</span>
-                    <h2 class="fw-bolder fs-1"></h2>
+                    <h2 class="fw-bolder fs-1" id="buy">購買iPad Pro</h2>
+                    <span>購買 iPad 可享免額外付費運送服務。 </span>
+                    <span>每位顧客限購 2 部 11 吋 iPad Pro 和 2 部 12.9 吋 iPad Pro。 </span>
                     <h2 class="choose_type">選擇機型。</h2>
                     <a href="#" class="text-decoration-none which_link"> 哪一款機型最適合你？</a>
                 </div>
-                <div class="row" id="color_row">
+                <div class="row" id="">
                     <h2 class="choose_type">外觀</h2>
+                    <div id="color_row"></div>
                 </div>
-                <div class="row border-bottom" id="storage_row">
-                    <h2 class="choose_type">容量</h2>
+                <div class="row border-bottom" id="">
+                    <h2 class="choose_type">儲存裝置</h2>
+                    <div id="storage_row"></div>
+
                 </div>
-                <div class="row" id="total_row">
+                <div class="row" id="">
                     <h2 class="choose_type">價格</h2>
+                    <div id="total_row"></div>
+
                 </div>
             </div>
         </div>
