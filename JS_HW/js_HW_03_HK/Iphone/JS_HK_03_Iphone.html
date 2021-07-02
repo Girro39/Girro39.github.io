@@ -50,9 +50,28 @@
             line-height: 20px;
         }
 
-        /* * {
-            outline: 1px solid #aaa;
-        } */
+        /* DOM CSS */
+        .sizeBtn {
+            display: flex;
+            justify-content: space-between;
+            margin: 1% .5%;
+            width: 99%;
+        }
+
+        .sizeBtn p,
+        .sizeBtn b {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+
+        .colorBtn,
+        .storageBtn,
+        .networkBtn {
+            margin: 1%;
+            width: 48%;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -76,7 +95,7 @@
                                         iPad Pro</a>
                                 </li>
                                 <li class="nav-item p-2 fs-5">
-                                    <a id="iPhone12" class="nav-link text-light" href="#">iPhone12 Pro</a>
+                                    <a id="iPhone12Pro" class="nav-link text-light" href="#">iPhone12 Pro</a>
                                 </li>
                                 <li class="nav-item p-2 fs-5">
                                     <a id="iMac" class="nav-link text-light" href="#">iMac</a>
@@ -90,14 +109,14 @@
     </div>
 
     <div class="container text-end totalct">
-        <p class="total">NT$00000</p>
+        <p class="total">NT$</p>
     </div>
+
     <div class="container" id="productContainer">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" style="visibility:hidden">
                 <div class="row m-5">
-                    <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_TW?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864731000"
-                        alt="" class="mx-auto w-100" id='img'>
+                    <img src="" alt="" class="mx-auto w-100" id='img'>
                 </div>
                 <div class="row m-5 d-flex justify-content-between text-center">
                     <div class="col">
@@ -114,7 +133,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" style="visibility:hidden">
                 <div class="row" id="information_row">
                     <span class="text-danger mt-5 mb-2">全新</span>
                     <h2 class="fw-bolder fs-1" id="buy">購買iPad Pro</h2>
@@ -147,47 +166,178 @@
     </div>
 
     <script>
+        // xhr
         const url =
             "https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_03_HK/Iphone/products.json";
         let AppleProducts = [];
-
         let xhr = new XMLHttpRequest();
         xhr.onload = function () {
             AppleProducts = JSON.parse(this.responseText);
-            console.log(AppleProducts);
-            createiPadPro();
+            iPad.addEventListener('click', createiPadPro);
+            iPhone12Pro.addEventListener('click', createiPhone12Pro);
+            iMac.addEventListener('click', createiMac);
         }
         xhr.open('GET', url);
         xhr.send();
 
+        //#region 宣告
+        // nav 上的 ipad ip12 imac
+        let iPad = idget('iPad');
+        let iPhone12Pro = idget('iPhone12Pro');
+        let iMac = idget('iMac');
+        let img = idget('img');
+        let buy = idget('buy');
+        // 機型 外觀 儲存裝置 連線能力 價格
+        let choose_type = idget('choose_type');
+        let choose_color = idget('choose_color');
+        let choose_storage = idget('choose_storage');
+        let choose_network = idget('choose_network');
+        let _price = idget('_price');
+        //機型 外觀 儲存裝置 連線能力 價格 個別下方row
         let type_row = idget('type_row');
         let color_row = idget('color_row');
         let storage_row = idget('storage_row');
         let network_row = idget('network_row');
         let total_row = idget('total_row');
+        //#endregion
 
+        //document getelementbyid
         function idget(id) {
             return document.getElementById(id);
         }
 
-        function createiPadPro() {
-            createSize();
+        //document createelement
+        function crel(element, clname) {
+            let ele = document.createElement(element);
+            ele.setAttribute('class', clname);
+            return ele
         }
 
-        function createSize() {
-            // let btn_12 = document.createElement('button');
-            // btn_12.setAttribute('class', 'btn');
-            // btn_12.innerHTML = `${AppleProducts[0].ipadpro12inch.model}`;
-            // type_row.appendChild(btn_12);
+        function visible() {
+            let productContainer = document.querySelectorAll('#productContainer .col-12');
+            productContainer.forEach((item) => {
+                item.setAttribute('style', 'visibility: visible')
+            });
+        }
+
+        function createiPadPro() {
+            visible();
+            buy.innerHTML = '';
+            buy.innerHTML = '購買iPad Pro'
+            img.src =
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_TW?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864731000'
+            createiPadProSize();
+            createiPadProColor();
+            createiPadProStorage();
+            createiPadProNetwork();
+        }
+
+        function createiPadProSize() {
+            type_row.innerHTML = '';
             Object.keys(AppleProducts[0]).forEach((item) => {
-                let sizeBtn = document.createElement('button');
-                sizeBtn.setAttribute('class', 'btn d-flex w-100 m-5');
-                sizeBtn.innerHTML = item;
+                let sizeBtn = crel('button', 'btn sizeBtn');
+                sizeBtn.innerHTML =
+                    `<p>
+                        ${item}
+                    </p>
+                    <b>NT$${ Object.values(AppleProducts[0])
+                                        .filter(x => x.model == item)[0]
+                                        .products.太空灰色[0]
+                                        .price}起
+                    </b>`;
                 type_row.appendChild(sizeBtn);
-                console.log(item)
             })
+        }
 
+        function concatColorsArray(colors) {
+            let gray_11 =
+                Object.values(Object.values(AppleProducts[0])[0].products)[0].map(x => {
+                    return {
+                        size: x.size,
+                        color: x.color,
+                        colordot: x.colordot,
+                        img: x.img
+                    }
+                })[0];
+            let silver_11 =
+                Object.values(Object.values(AppleProducts[0])[0].products)[1].map(x => {
+                    return {
+                        size: x.size,
+                        color: x.color,
+                        colordot: x.colordot,
+                        img: x.img
+                    }
+                })[0];
+            colors.push(gray_11);
+            colors.push(silver_11);
+        }
 
+        function createiPadProColor() {
+            color_row.innerHTML = '';
+            let colors = [];
+            concatColorsArray(colors);
+
+            colors.forEach((item) => {
+                let colorBtn = crel('button', 'btn colorBtn');
+                colorBtn.innerHTML = `
+                    <img src="${item.colordot}">
+                    <p>${item.color}</p>
+                `
+                color_row.appendChild(colorBtn);
+            });
+        }
+
+        function createiPadProStorage() {
+            storage_row.innerHTML = '';
+            let storages =
+                Object.values(Object.values(AppleProducts[0])[0].products)[0].filter(x => x.network == 'WiFi').map(
+                    x => {
+                        return {
+                            storage: x.storage,
+                            price: x.price
+                        }
+                    });
+            storages.forEach((item) => {
+                let storageBtn = crel('button', 'btn storageBtn');
+                storageBtn.innerHTML = `
+                    <b>${item.storage}</b>
+                `
+                storage_row.appendChild(storageBtn);
+            })
+        }
+
+        function createiPadProNetwork() {
+            let networks =
+                Object.values(Object.values(AppleProducts[0])[0].products)[0].filter(x => x.storage == '128GB').map(
+                    x => {
+                        return {
+                            network: x.network
+                        }
+                    });
+            networks.forEach((item) => {
+                let networkBtn = crel('button', 'btn networkBtn');
+                networkBtn.innerHTML = `
+                    <b>${item.network}</b>
+                `
+                network_row.appendChild(networkBtn);
+            })
+            console.log(networks);
+        }
+
+        function createiPhone12Pro() {
+            displayblock();
+            buy.innerHTML = '';
+            buy.innerHTML = '購買iPhone 12 Pro';
+            img.src =
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000';
+        }
+
+        function createiMac() {
+            displayblock();
+            buy.innerHTML = '';
+            buy.innerHTML = '購買iMac'
+            img.src =
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000'
         }
     </script>
 
