@@ -11,16 +11,14 @@
     <title>Apple</title>
 
     <style>
-        .choose_type {
+        #choose_type,
+        #choose_color,
+        #choose_storage,
+        #choose_network,
+        #_price {
             margin: 50px 0 12px;
             font-size: 18px;
             font-weight: bolder;
-        }
-
-        .which_link {
-            margin: 12px 0;
-            font-size: 18px;
-            font-weight: normal;
         }
 
         .btn {
@@ -40,6 +38,16 @@
         .nav_container {
             background-color: #000;
             opacity: .8;
+        }
+
+        .totalct {
+            background-color: rgba(188, 188, 188, .2)
+        }
+
+        .totalct>p {
+            padding: 20px;
+            font-size: 20px;
+            line-height: 20px;
         }
 
         /* * {
@@ -81,7 +89,9 @@
         </div>
     </div>
 
-    <div class="container"></div>
+    <div class="container text-end totalct">
+        <p class="total">NT$00000</p>
+    </div>
     <div class="container" id="productContainer">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -110,31 +120,67 @@
                     <h2 class="fw-bolder fs-1" id="buy">購買iPad Pro</h2>
                     <span>購買 iPad 可享免額外付費運送服務。 </span>
                     <span>每位顧客限購 2 部 11 吋 iPad Pro 和 2 部 12.9 吋 iPad Pro。 </span>
-                    <h2 class="choose_type">選擇機型。</h2>
-                    <a href="#" class="text-decoration-none which_link"> 哪一款機型最適合你？</a>
                 </div>
-                <div class="row" id="">
-                    <h2 class="choose_type">外觀</h2>
+                <div class="row">
+                    <h2 id="choose_type">機型</h2>
+                    <div id="type_row"></div>
+                </div>
+                <div class="row">
+                    <h2 id="choose_color">外觀</h2>
                     <div id="color_row"></div>
                 </div>
-                <div class="row border-bottom" id="">
-                    <h2 class="choose_type">儲存裝置</h2>
+                <div class="row">
+                    <h2 id="choose_storage">儲存裝置</h2>
                     <div id="storage_row"></div>
 
                 </div>
-                <div class="row" id="">
-                    <h2 class="choose_type">價格</h2>
+                <div class="row">
+                    <h2 id="choose_network">連線能力</h2>
+                    <div id="network_row"></div>
+                </div>
+                <div class="row">
+                    <h2 id="_price">價格</h2>
                     <div id="total_row"></div>
-
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
     <script>
+        const url =
+            "https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_03_HK/Iphone/products.json";
+        let AppleProducts = [];
+
+        let xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            AppleProducts = JSON.parse(this.responseText);
+            console.log(AppleProducts);
+            createiPadPro();
+        }
+        xhr.open('GET', url);
+        xhr.send();
+
+        let type_row = idget('type_row');
+        let color_row = idget('color_row');
+        let storage_row = idget('storage_row');
+        let network_row = idget('network_row');
+        let total_row = idget('total_row');
+
+        function idget(id) {
+            return document.getElementById(id);
+        }
+
+        function createiPadPro() {
+            createSize();
+        }
+
+        function createSize() {
+            let btn = document.createElement('button');
+            btn.setAttribute('class', 'btn');
+            btn.innerHTML = '';
+
+
+        }
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

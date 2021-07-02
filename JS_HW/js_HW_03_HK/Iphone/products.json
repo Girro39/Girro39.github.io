@@ -2,11 +2,11 @@
 
     {
         "ipadpro11inch": {
-            "model": "ipadpro11inch",
+            "model": "11吋顯示器",
             "products": {
                 "太空灰色": [{
                         "sku": "A001",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -15,7 +15,7 @@
                         "price": "24900"
                     }, {
                         "sku": "A002",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -24,7 +24,7 @@
                         "price": "28000"
                     }, {
                         "sku": "A003",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -33,7 +33,7 @@
                         "price": "34200"
                     }, {
                         "sku": "A004",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -42,7 +42,7 @@
                         "price": "46600"
                     }, {
                         "sku": "A005",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -52,7 +52,7 @@
                     },
                     {
                         "sku": "A011",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -61,7 +61,7 @@
                         "price": "29900"
                     }, {
                         "sku": "A012",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -70,7 +70,7 @@
                         "price": "33000"
                     }, {
                         "sku": "A013",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -79,7 +79,7 @@
                         "price": "39200"
                     }, {
                         "sku": "A014",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -88,7 +88,7 @@
                         "price": "51600"
                     }, {
                         "sku": "A015",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW",
@@ -99,7 +99,7 @@
                 ],
                 "銀色": [{
                         "sku": "B001",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -108,7 +108,7 @@
                         "price": "24900"
                     }, {
                         "sku": "B002",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -117,7 +117,7 @@
                         "price": "28000"
                     }, {
                         "sku": "B003",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -126,7 +126,7 @@
                         "price": "34200"
                     }, {
                         "sku": "B004",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -135,7 +135,7 @@
                         "price": "46600"
                     }, {
                         "sku": "B005",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -145,7 +145,7 @@
                     },
                     {
                         "sku": "B011",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -154,7 +154,7 @@
                         "price": "29900"
                     }, {
                         "sku": "B012",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -163,7 +163,7 @@
                         "price": "33000"
                     }, {
                         "sku": "B013",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -172,7 +172,7 @@
                         "price": "39200"
                     }, {
                         "sku": "B014",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -181,7 +181,7 @@
                         "price": "51600"
                     }, {
                         "sku": "B015",
-                        "size": "11吋",
+                        "size": "11吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW",
@@ -193,11 +193,11 @@
             }
         },
         "ipadpro12inch": {
-            "model": "ipadpro12inch",
+            "model": "12.9吋顯示器",
             "products": {
                 "太空灰色": [{
                         "sku": "A006",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -206,7 +206,7 @@
                         "price": "34900"
                     }, {
                         "sku": "A007",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -215,7 +215,7 @@
                         "price": "38000"
                     }, {
                         "sku": "A008",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -224,7 +224,7 @@
                         "price": "44200"
                     }, {
                         "sku": "A009",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -233,7 +233,7 @@
                         "price": "56600"
                     }, {
                         "sku": "A010",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -243,7 +243,7 @@
                     },
                     {
                         "sku": "A016",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -252,7 +252,7 @@
                         "price": "39900"
                     }, {
                         "sku": "A017",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -261,7 +261,7 @@
                         "price": "43000"
                     }, {
                         "sku": "A018",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -270,7 +270,7 @@
                         "price": "49200"
                     }, {
                         "sku": "A019",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -279,7 +279,7 @@
                         "price": "61600"
                     }, {
                         "sku": "A020",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "太空灰色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-spacegray-202104_GEO_TW",
@@ -290,7 +290,7 @@
                 ],
                 "銀色": [{
                         "sku": "B006",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -299,7 +299,7 @@
                         "price": "34900"
                     }, {
                         "sku": "B007",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -308,7 +308,7 @@
                         "price": "38000"
                     }, {
                         "sku": "B008",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -317,7 +317,7 @@
                         "price": "44200"
                     }, {
                         "sku": "B009",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -326,7 +326,7 @@
                         "price": "56600"
                     }, {
                         "sku": "B010",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -336,7 +336,7 @@
                     },
                     {
                         "sku": "B016",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -345,7 +345,7 @@
                         "price": "39900"
                     }, {
                         "sku": "B017",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -354,7 +354,7 @@
                         "price": "43000"
                     }, {
                         "sku": "B018",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -363,7 +363,7 @@
                         "price": "49200"
                     }, {
                         "sku": "B019",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
@@ -372,7 +372,7 @@
                         "price": "61600"
                     }, {
                         "sku": "B020",
-                        "size": "12.9吋",
+                        "size": "12.9吋顯示器",
                         "color": "銀色",
                         "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=64&amp;hei=64&amp;fmt=png-alpha&amp;.v=0",
                         "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-cell-silver-202104_GEO_TW",
