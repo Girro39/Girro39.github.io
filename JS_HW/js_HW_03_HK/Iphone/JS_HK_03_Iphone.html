@@ -175,9 +175,17 @@
         }
 
         function createSize() {
-            let btn = document.createElement('button');
-            btn.setAttribute('class', 'btn');
-            btn.innerHTML = '';
+            // let btn_12 = document.createElement('button');
+            // btn_12.setAttribute('class', 'btn');
+            // btn_12.innerHTML = `${AppleProducts[0].ipadpro12inch.model}`;
+            // type_row.appendChild(btn_12);
+            Object.keys(AppleProducts[0]).forEach((item) => {
+                let sizeBtn = document.createElement('button');
+                sizeBtn.setAttribute('class', 'btn d-flex w-100 m-5');
+                sizeBtn.innerHTML = item;
+                type_row.appendChild(sizeBtn);
+                console.log(item)
+            })
 
 
         }
