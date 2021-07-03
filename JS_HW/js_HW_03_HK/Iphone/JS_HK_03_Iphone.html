@@ -284,34 +284,63 @@
 
 
         function createSize(select) {
-            type_row.innerHTML = '';
-            Object.keys(AppleProducts[select]).forEach((item) => {
-                let sizeBtn = crel('button', 'btn sizeBtn');
-                sizeBtn.innerHTML =
-                    `<p>
+            if (select == 2) {
+                type_row.innerHTML = '';
+                choose_type.innerHTML = '記憶體';
+                let s = Object.values(Object.values(AppleProducts[2])[0].products)[0].filter(x => x.network == '無' && x
+                    .storage == '256GB SSD儲存裝置').map(x => {
+                    return {
+                        size: x.size,
+                        price: x.price
+                    }
+                });
+                s.forEach((item) => {
+                    let sizeBtn = crel('button', 'btn sizeBtn');
+                    sizeBtn.innerHTML =
+                        `<p>
+                        ${item.size}
+                        </p>
+                        <b>NT$
+                            ${item.price}起
+                        </b>`;
+                    type_row.appendChild(sizeBtn);
+                    sizeBtn.addEventListener('click', function () {
+                        size = item.size;
+                        console.log(size);
+                        getTotal(select);
+                    });
+
+                });
+            } else {
+                type_row.innerHTML = '';
+                Object.keys(AppleProducts[select]).forEach((item) => {
+                    let sizeBtn = crel('button', 'btn sizeBtn');
+                    sizeBtn.innerHTML =
+                        `<p>
                         ${item}
                     </p>
                     <b>NT$
                         ${Object.values(Object.values(Object.values(AppleProducts[select]).filter(x => x.model == item)[0].products)[0])[0].price}起
                     </b>`;
-                type_row.appendChild(sizeBtn);
-                sizeBtn.addEventListener('click', function () {
-                    size = item;
-                    console.log(size);
-                    let modelimgarray = Object.values(AppleProducts[select]).map(x => {
-                        return {
-                            model: x.model,
-                            img: x.img
-                        }
+                    type_row.appendChild(sizeBtn);
+                    sizeBtn.addEventListener('click', function () {
+                        size = item;
+                        console.log(size);
+                        let modelimgarray = Object.values(AppleProducts[select]).map(x => {
+                            return {
+                                model: x.model,
+                                img: x.img
+                            }
+                        });
+                        modelimgarray.forEach((item) => {
+                            if (item.model == size) {
+                                img.src = item.img;
+                            }
+                        });
+                        getTotal(select);
                     });
-                    modelimgarray.forEach((item) => {
-                        if (item.model == size) {
-                            img.src = item.img;
-                        }
-                    });
-                    getTotal();
                 });
-            });
+            }
 
         }
 
@@ -337,7 +366,7 @@
 
             colors.push(color1);
             colors.push(color2);
-            if (select == 1) {
+            if (select == 1 || select == 2) {
                 let color3 =
                     Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
                         return {
@@ -491,10 +520,94 @@
 
                 img.src = `
                 ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`
+            } else if (select == 2) {
+                let color1 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color2 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color3 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color4 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color5 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[3];
+                let color6 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[3];
+                let color7 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[3];
+                let color8 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[3];
+                imgcolor.push(color1);
+                imgcolor.push(color2);
+                imgcolor.push(color3);
+                imgcolor.push(color4);
+                imgcolor.push(color5);
+                imgcolor.push(color6);
+                imgcolor.push(color7);
+                imgcolor.push(color8);
+                console.log(imgcolor);
+                console.log(imgcolor.filter(x => x.size == size && x.color == color)[0].img);
+                img.src = `
+                ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`;
             }
-
             console.log(size);
-            console.log(color)
+            console.log(color);
         }
 
         function createColor(select) {
@@ -503,20 +616,29 @@
             concatBtnColorsArray(colors, select);
             colors.forEach((item) => {
                 let colorBtn = crel('button', 'btn colorBtn');
-                colorBtn.innerHTML = `
-                    <img src="${item.colordot}">
-                    <p>${item.color}</p>
-                `
+                if (select == 0 || select == 1) {
+
+                    colorBtn.innerHTML =
+                        `
+                            <img src="${item.colordot}">
+                            <p>${item.color}</p>
+                        `
+                } else if (select == 2) {
+                    colorBtn.innerHTML =
+                        `
+                            <p>${item.color}</p>
+                        `
+                }
                 color_row.appendChild(colorBtn);
                 colorBtn.addEventListener('click', function () {
                     let imgcolor = [];
                     color = item.color;
                     console.log(color);
                     findImg(imgcolor, select);
-                    getTotal();
+                    getTotal(select);
                 });
-
             });
+
         }
 
         function createStorage(select) {
