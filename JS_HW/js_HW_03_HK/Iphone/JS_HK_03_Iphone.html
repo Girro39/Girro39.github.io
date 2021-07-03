@@ -244,8 +244,8 @@
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_TW?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864731000'
             createSize(select);
             createColor(select);
-            createiPadProStorage();
-            createiPadProNetwork();
+            createStorage(select);
+            createNetwork(select);
         }
 
         function createiPhone12Pro() {
@@ -257,7 +257,8 @@
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000';
             createSize(select);
             createColor(select);
-            createiPhone12ProStorage();
+            createStorage(select);
+            createNetwork(select);
         }
 
         function createiMac() {
@@ -267,14 +268,14 @@
             buy.innerHTML = '購買iMac'
             img.src =
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000'
-            createiMacSize();
-            createiMacColor();
-            createiMacStorage();
+            // createiMacSize();
+            // createiMacColor();
+            // createiMacStorage();
         }
         //#endregion
         //#region 創造各種按鈕加事件
 
-        //#region iPadPro
+
         function createSize(select) {
             type_row.innerHTML = '';
             Object.keys(AppleProducts[select]).forEach((item) => {
@@ -301,7 +302,7 @@
                             img.src = item.img;
                         }
                     });
-                    getiPadTotal();
+                    getTotal();
                 });
             });
 
@@ -505,143 +506,114 @@
                     color = item.color;
                     console.log(color);
                     findImg(imgcolor, select);
-                    getiPadTotal();
+                    getTotal();
                 });
 
             });
         }
 
-        function createiPadProStorage() {
-            storage_row.innerHTML = '';
-            let storages =
-                Object.values(Object.values(AppleProducts[0])[0].products)[0].filter(x => x.network == 'WiFi').map(
-                    x => {
+        function createStorage(select) {
+            if (select == 0) {
+                storage_row.innerHTML = '';
+                let storages =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].filter(x => x.network == 'WiFi')
+                    .map(
+                        x => {
+                            return {
+                                storage: x.storage,
+                                price: x.price
+                            }
+                        });
+                storages.forEach((item) => {
+                    let storageBtn = crel('button', 'btn storageBtn');
+                    storageBtn.innerHTML = `
+                    <b>${item.storage}</b>
+                `
+                    storage_row.appendChild(storageBtn);
+                    storageBtn.addEventListener('click', function () {
+                        storage = item.storage;
+                        console.log(storage);
+                        getTotal(select);
+                    });
+                });
+            } else if (select == 1) {
+                storage_row.innerHTML = '';
+                let storages =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0]
+                    .map(x => {
                         return {
                             storage: x.storage,
                             price: x.price
                         }
                     });
-            storages.forEach((item) => {
-                let storageBtn = crel('button', 'btn storageBtn');
-                storageBtn.innerHTML = `
+                storages.forEach((item) => {
+                    let storageBtn = crel('button', 'btn storageBtn');
+                    storageBtn.innerHTML = `
                     <b>${item.storage}</b>
                 `
-                storage_row.appendChild(storageBtn);
-                storageBtn.addEventListener('click', function () {
-                    storage = item.storage;
-                    console.log(storage);
-                    getiPadTotal();
+                    storage_row.appendChild(storageBtn);
+                    storageBtn.addEventListener('click', function () {
+                        storage = item.storage;
+                        console.log(storage);
+                        getTotal(select);
+                    });
                 });
-            })
+            }
+
         }
 
-        function createiPadProNetwork() {
-            network_row.innerHTML = '';
-            let networks =
-                Object.values(Object.values(AppleProducts[0])[0].products)[0].filter(x => x.storage == '128GB').map(
-                    x => {
-                        return {
-                            network: x.network
-                        }
-                    });
-            networks.forEach((item) => {
-                let networkBtn = crel('button', 'btn networkBtn');
-                networkBtn.innerHTML = `
+        function createNetwork(select) {
+            if (select == 0) {
+                network_row.innerHTML = '';
+                choose_network.innerHTML = '機型';
+                let networks =
+                    Object.values(Object.values(AppleProducts[0])[0].products)[0].filter(x => x.storage == '128GB').map(
+                        x => {
+                            return {
+                                network: x.network
+                            }
+                        });
+                networks.forEach((item) => {
+                    let networkBtn = crel('button', 'btn networkBtn');
+                    networkBtn.innerHTML = `
                     <b>${item.network}</b>
                 `
-                network_row.appendChild(networkBtn);
-                networkBtn.addEventListener('click', function () {
-                    network = item.network;
-                    console.log(network);
-                    getiPadTotal();
+                    network_row.appendChild(networkBtn);
+                    networkBtn.addEventListener('click', function () {
+                        network = item.network;
+                        console.log(network);
+                        getTotal(select);
+                    });
                 });
-            })
+            } else if (select == 1) {
+                network_row.innerHTML = '';
+                choose_network.innerHTML = '';
+            }
         }
 
-        //#endregion
-        //#region iPhone12Pro
-        function createiPhone12ProSize() {
-            // type_row.innerHTML = '';
-            // Object.keys(AppleProducts[1]).forEach((item) => {
-            //     let sizeBtn = crel('button', 'btn sizeBtn');
-            //     sizeBtn.innerHTML =
-            //         `<p>
-            //             ${item}
-            //         </p>
-            //         <b>NT$${ Object.values(AppleProducts[1])
-            //                             .filter(x => x.model == item)[0]
-            //                             .products.石墨色[0]
-            //                             .price}起
-            //         </b>`;
-
-            //     type_row.appendChild(sizeBtn);
-            //     sizeBtn.addEventListener('click', function () {
-            //         size = item;
-            //         let modelimgarray = Object.values(AppleProducts[1]).map(x => {
-            //             return {
-            //                 model: x.model,
-            //                 img: x.img
-            //             }
-            //         });
-            //         modelimgarray.forEach((item) => {
-            //             if (item.model == size) {
-            //                 img.src = item.img;
-            //             }
-            //         });
-            //         getiPadTotal();
-            //     });
-            // });
-        };
-
-        function createiPhone12ProColor() {};
-
-        function createiPhone12ProStorage() {};
-
-        //#endregion
-        //#region iMac
-        function createiMacSize() {};
-
-        function createiMacColor() {};
-
-        function createiMacStorage() {};
-
-        //#endregion
 
         //#endregion
         //#region 計算總價
-        function getiPadTotal() {
-            if (size != '' && color != '' && storage != '' && network != '') {
+        function getTotal(select) {
+            if (select == 0 && size != '' && color != '' && storage != '' && network != '') {
                 final =
-                    (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products)).filter(
+                    (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products))
+                    .filter(
                         x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
                 price.innerHTML = 'NT$ ' + final[0].price;
                 total_row.appendChild(price);
                 topTotal.innerHTML = 'NT$ ' + final[0].price;
-            } else if (size != '' && color != '' && storage != '') {
+            } else if (select == 1 && size != '' && color != '' && storage != '') {
                 final =
-                    (Object.values(Object.values(AppleProducts[1]).filter(x => x.model == size)[0].products)).filter(
-                        x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
+                    (Object.values(Object.values(AppleProducts[1]).filter(x => x.model == size)[0].products))
+                    .filter(
+                        x => x[0].color == color)[0].filter(x => x.storage == storage);
                 price.innerHTML = 'NT$ ' + final[0].price;
                 total_row.appendChild(price);
                 topTotal.innerHTML = 'NT$ ' + final[0].price;
 
             }
         }
-
-        // function getiPhone12ProTotal() {
-        //     if (size != '' && color != '' && storage != '' && network != '') {
-        //         final =
-        //             (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products)).filter(
-        //                 x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
-        //         price.innerHTML = 'NT$ ' + final[0].price;
-        //         total_row.appendChild(price);
-        //         topTotal.innerHTML = 'NT$ ' + final[0].price;
-        //     }
-
-        // }
-
-
-
         //#endregion
     </script>
 
