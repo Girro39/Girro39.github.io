@@ -443,17 +443,14 @@
         //#endregion
         //#region 計算總價
         function getiPadTotal() {
-            // alert('aa');
-            final =
-                (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products))
-                .filter(x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
-
-            // console.log(final[0]);
-            // console.log(final[0] instanceof Object);
-            // console.log(final[0].price);
-            price.innerHTML = 'NT$ ' + final[0].price;
-            total_row.appendChild(price);
-            topTotal.innerHTML = 'NT$ ' + final[0].price;
+            if (size != '' && color != '' && storage != '' && network != '') {
+                final =
+                    (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products)).filter(
+                        x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
+                price.innerHTML = 'NT$ ' + final[0].price;
+                total_row.appendChild(price);
+                topTotal.innerHTML = 'NT$ ' + final[0].price;
+            }
         }
 
 
