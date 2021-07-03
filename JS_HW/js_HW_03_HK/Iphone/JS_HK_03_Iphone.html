@@ -103,7 +103,7 @@
                                     <a id="iPhone12Pro" class="nav-link text-light" href="#">iPhone12 Pro</a>
                                 </li>
                                 <li class="nav-item p-2 fs-5">
-                                    <a id="iMac" class="nav-link text-light" href="#">iMac</a>
+                                    <a id="iMac" class="nav-link text-light" href="#">iMac 24吋</a>
                                 </li>
                             </ul>
                         </div>
@@ -241,7 +241,9 @@
             buy.innerHTML = '';
             buy.innerHTML = '購買iPad Pro'
             img.src =
-                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_TW?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864731000'
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_TW?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864731000';
+            price.innerHTML = '';
+            topTotal.innerHTML = '';
             createSize(select);
             createColor(select);
             createStorage(select);
@@ -255,6 +257,8 @@
             buy.innerHTML = '購買iPhone 12 Pro';
             img.src =
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000';
+            price.innerHTML = '';
+            topTotal.innerHTML = '';
             createSize(select);
             createColor(select);
             createStorage(select);
@@ -267,10 +271,13 @@
             buy.innerHTML = '';
             buy.innerHTML = '購買iMac'
             img.src =
-                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000'
-            // createiMacSize();
-            // createiMacColor();
-            // createiMacStorage();
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000';
+            price.innerHTML = '';
+            topTotal.innerHTML = '';
+            createSize(select);
+            createColor(select);
+            createStorage(select);
+            createNetwork(select);
         }
         //#endregion
         //#region 創造各種按鈕加事件

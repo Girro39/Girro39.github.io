@@ -602,7 +602,471 @@
         }
     },
     {
-        "model": "imac",
-        "products": {}
+        "iMac 24吋": {
+            "model": "iMac 24吋",
+            "products": {
+                "藍色": [{
+                        "sku": "K001",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "39900"
+                    }, {
+                        "sku": "K002",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    },
+                    {
+                        "sku": "K003",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    }, {
+                        "sku": "K004",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    }, {
+                        "sku": "K005",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    },
+                    {
+                        "sku": "K006",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "57900"
+                    },
+                    {
+                        "sku": "K007",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "40900"
+                    }, {
+                        "sku": "K008",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    },
+                    {
+                        "sku": "K009",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    }, {
+                        "sku": "K010",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    }, {
+                        "sku": "K011",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    },
+                    {
+                        "sku": "K012",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "58900"
+                    }
+                ],
+                "綠色": [{
+                        "sku": "K001",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "39900"
+                    }, {
+                        "sku": "K002",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    },
+                    {
+                        "sku": "K003",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    }, {
+                        "sku": "K004",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    }, {
+                        "sku": "K005",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    },
+                    {
+                        "sku": "K006",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "57900"
+                    },
+                    {
+                        "sku": "K007",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "40900"
+                    }, {
+                        "sku": "K008",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    },
+                    {
+                        "sku": "K009",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    }, {
+                        "sku": "K010",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    }, {
+                        "sku": "K011",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    },
+                    {
+                        "sku": "K012",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "58900"
+                    }
+                ],
+                "粉紅色": [{
+                        "sku": "K001",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "39900"
+                    }, {
+                        "sku": "K002",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    },
+                    {
+                        "sku": "K003",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    }, {
+                        "sku": "K004",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    }, {
+                        "sku": "K005",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    },
+                    {
+                        "sku": "K006",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "57900"
+                    },
+                    {
+                        "sku": "K007",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "40900"
+                    }, {
+                        "sku": "K008",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    },
+                    {
+                        "sku": "K009",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    }, {
+                        "sku": "K010",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    }, {
+                        "sku": "K011",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    },
+                    {
+                        "sku": "K012",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "58900"
+                    }
+                ],
+                "銀色": [{
+                        "sku": "K001",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "39900"
+                    }, {
+                        "sku": "K002",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    },
+                    {
+                        "sku": "K003",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    }, {
+                        "sku": "K004",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    }, {
+                        "sku": "K005",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    },
+                    {
+                        "sku": "K006",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "57900"
+                    },
+                    {
+                        "sku": "K007",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "40900"
+                    }, {
+                        "sku": "K008",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    },
+                    {
+                        "sku": "K009",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    }, {
+                        "sku": "K010",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    }, {
+                        "sku": "K011",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    },
+                    {
+                        "sku": "K012",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "58900"
+                    }
+                ]
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-feature-colors-202104?wid=467&hei=203&fmt=png-alpha&.v=1617213642000"
+        }
     }
 ]
