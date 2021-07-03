@@ -237,57 +237,60 @@
         //#region 總呼叫func
         function createiPadPro() {
             visible();
+            let select = 0;
             buy.innerHTML = '';
             buy.innerHTML = '購買iPad Pro'
             img.src =
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_TW?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864731000'
-            createiPadProSize();
-            createiPadProColor();
+            createSize(select);
+            createColor(select);
             createiPadProStorage();
             createiPadProNetwork();
         }
 
         function createiPhone12Pro() {
             visible();
+            let select = 1;
             buy.innerHTML = '';
             buy.innerHTML = '購買iPhone 12 Pro';
             img.src =
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000';
-            // createiPadProSize();
-            // createiPadProColor();
-            // createiPadProStorage();
+            createSize(select);
+            createColor(select);
+            createiPhone12ProStorage();
         }
 
         function createiMac() {
             visible();
+            let select = 2;
             buy.innerHTML = '';
             buy.innerHTML = '購買iMac'
             img.src =
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000'
-            // createiPadProSize();
-            // createiPadProColor();
-            // createiPadProStorage();
-            // createiPadProNetwork();
+            createiMacSize();
+            createiMacColor();
+            createiMacStorage();
         }
         //#endregion
         //#region 創造各種按鈕加事件
-        function createiPadProSize() {
+
+        //#region iPadPro
+        function createSize(select) {
             type_row.innerHTML = '';
-            Object.keys(AppleProducts[0]).forEach((item) => {
+            Object.keys(AppleProducts[select]).forEach((item) => {
                 let sizeBtn = crel('button', 'btn sizeBtn');
                 sizeBtn.innerHTML =
                     `<p>
                         ${item}
                     </p>
-                    <b>NT$${ Object.values(AppleProducts[0])
-                                        .filter(x => x.model == item)[0]
-                                        .products.太空灰色[0]
-                                        .price}起
+                    <b>NT$
+                        ${Object.values(Object.values(Object.values(AppleProducts[select]).filter(x => x.model == item)[0].products)[0])[0].price}起
                     </b>`;
                 type_row.appendChild(sizeBtn);
                 sizeBtn.addEventListener('click', function () {
                     size = item;
-                    let modelimgarray = Object.values(AppleProducts[0]).map(x => {
+                    console.log(size);
+                    let modelimgarray = Object.values(AppleProducts[select]).map(x => {
                         return {
                             model: x.model,
                             img: x.img
@@ -300,12 +303,13 @@
                     });
                     getiPadTotal();
                 });
-            })
+            });
+
         }
 
-        function concatBtnColorsArray(colors) {
-            let gray_11 =
-                Object.values(Object.values(AppleProducts[0])[0].products)[0].map(x => {
+        function concatBtnColorsArray(colors, select) {
+            let color1 =
+                Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
                     return {
                         size: x.size,
                         color: x.color,
@@ -313,8 +317,8 @@
                         img: x.img
                     }
                 })[0];
-            let silver_11 =
-                Object.values(Object.values(AppleProducts[0])[0].products)[1].map(x => {
+            let color2 =
+                Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
                     return {
                         size: x.size,
                         color: x.color,
@@ -323,59 +327,172 @@
                     }
                 })[0];
 
-            colors.push(gray_11);
-            colors.push(silver_11);
+            colors.push(color1);
+            colors.push(color2);
+            if (select == 1) {
+                let color3 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color4 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                colors.push(color3);
+                colors.push(color4);
+            }
         }
 
-        function findimgiPadPro(imgcolor) {
-            let gray_11 =
-                Object.values(Object.values(AppleProducts[0])[0].products)[0].map(x => {
-                    return {
-                        size: x.size,
-                        color: x.color,
-                        colordot: x.colordot,
-                        img: x.img
-                    }
-                })[0];
-            let silver_11 =
-                Object.values(Object.values(AppleProducts[0])[0].products)[1].map(x => {
-                    return {
-                        size: x.size,
-                        color: x.color,
-                        colordot: x.colordot,
-                        img: x.img
-                    }
-                })[0];
-            let gray_12 =
-                Object.values(Object.values(AppleProducts[0])[1].products)[0].map(x => {
-                    return {
-                        size: x.size,
-                        color: x.color,
-                        colordot: x.colordot,
-                        img: x.img
-                    }
-                })[0];
-            let silver_12 =
-                Object.values(Object.values(AppleProducts[0])[1].products)[1].map(x => {
-                    return {
-                        size: x.size,
-                        color: x.color,
-                        colordot: x.colordot,
-                        img: x.img
-                    }
-                })[0];
-            imgcolor.push(gray_11);
-            imgcolor.push(silver_11);
-            imgcolor.push(gray_12);
-            imgcolor.push(silver_12);
-            img.src = `
-            ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`
+        function findImg(imgcolor, select) {
+            if (select == 0) {
+                let color1 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color2 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color3 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color4 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                imgcolor.push(color1);
+                imgcolor.push(color2);
+                imgcolor.push(color3);
+                imgcolor.push(color4);
+                img.src = `
+                ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`
+            } else if (select == 1) {
+                let color1 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color2 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color3 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color4 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+
+                let color5 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color6 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color7 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color8 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+
+                imgcolor.push(color1);
+                imgcolor.push(color2);
+                imgcolor.push(color3);
+                imgcolor.push(color4);
+                imgcolor.push(color5);
+                imgcolor.push(color6);
+                imgcolor.push(color7);
+                imgcolor.push(color8);
+
+                img.src = `
+                ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`
+            }
+
+            console.log(size);
+            console.log(color)
         }
 
-        function createiPadProColor() {
+        function createColor(select) {
             color_row.innerHTML = '';
             let colors = [];
-            concatBtnColorsArray(colors);
+            concatBtnColorsArray(colors, select);
             colors.forEach((item) => {
                 let colorBtn = crel('button', 'btn colorBtn');
                 colorBtn.innerHTML = `
@@ -387,7 +504,7 @@
                     let imgcolor = [];
                     color = item.color;
                     console.log(color);
-                    findimgiPadPro(imgcolor);
+                    findImg(imgcolor, select);
                     getiPadTotal();
                 });
 
@@ -440,6 +557,56 @@
                 });
             })
         }
+
+        //#endregion
+        //#region iPhone12Pro
+        function createiPhone12ProSize() {
+            // type_row.innerHTML = '';
+            // Object.keys(AppleProducts[1]).forEach((item) => {
+            //     let sizeBtn = crel('button', 'btn sizeBtn');
+            //     sizeBtn.innerHTML =
+            //         `<p>
+            //             ${item}
+            //         </p>
+            //         <b>NT$${ Object.values(AppleProducts[1])
+            //                             .filter(x => x.model == item)[0]
+            //                             .products.石墨色[0]
+            //                             .price}起
+            //         </b>`;
+
+            //     type_row.appendChild(sizeBtn);
+            //     sizeBtn.addEventListener('click', function () {
+            //         size = item;
+            //         let modelimgarray = Object.values(AppleProducts[1]).map(x => {
+            //             return {
+            //                 model: x.model,
+            //                 img: x.img
+            //             }
+            //         });
+            //         modelimgarray.forEach((item) => {
+            //             if (item.model == size) {
+            //                 img.src = item.img;
+            //             }
+            //         });
+            //         getiPadTotal();
+            //     });
+            // });
+        };
+
+        function createiPhone12ProColor() {};
+
+        function createiPhone12ProStorage() {};
+
+        //#endregion
+        //#region iMac
+        function createiMacSize() {};
+
+        function createiMacColor() {};
+
+        function createiMacStorage() {};
+
+        //#endregion
+
         //#endregion
         //#region 計算總價
         function getiPadTotal() {
@@ -450,8 +617,29 @@
                 price.innerHTML = 'NT$ ' + final[0].price;
                 total_row.appendChild(price);
                 topTotal.innerHTML = 'NT$ ' + final[0].price;
+            } else if (size != '' && color != '' && storage != '') {
+                final =
+                    (Object.values(Object.values(AppleProducts[1]).filter(x => x.model == size)[0].products)).filter(
+                        x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
+                price.innerHTML = 'NT$ ' + final[0].price;
+                total_row.appendChild(price);
+                topTotal.innerHTML = 'NT$ ' + final[0].price;
+
             }
         }
+
+        // function getiPhone12ProTotal() {
+        //     if (size != '' && color != '' && storage != '' && network != '') {
+        //         final =
+        //             (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products)).filter(
+        //                 x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
+        //         price.innerHTML = 'NT$ ' + final[0].price;
+        //         total_row.appendChild(price);
+        //         topTotal.innerHTML = 'NT$ ' + final[0].price;
+        //     }
+
+        // }
+
 
 
         //#endregion
