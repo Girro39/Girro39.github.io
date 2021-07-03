@@ -41,15 +41,11 @@
         }
 
         .totalct {
-            background-color: rgba(188, 188, 188, .2)
-        }
-
-        .totalct>p {
+            background-color: rgba(188, 188, 188, .2);
             padding: 20px;
             font-size: 20px;
             line-height: 20px;
         }
-
 
         /* DOM CSS */
         .sizeBtn {
@@ -72,6 +68,11 @@
             margin: 1%;
             width: 48%;
             font-size: 20px;
+        }
+
+        .totalPrice {
+            font-size: 25px;
+            text-align: end;
         }
     </style>
 </head>
@@ -109,9 +110,7 @@
         </div>
     </div>
 
-    <div class="container text-end totalct">
-        <p class="total">NT$</p>
-    </div>
+    <div class="container text-end totalct" id="topTotal"></div>
 
     <div class="container" id="productContainer">
         <div class="row">
@@ -181,7 +180,15 @@
         xhr.open('GET', url);
         xhr.send();
 
+        //#region 存結果變數宣告
+        let size = '';
+        let storage = '';
+        let color = '';
+        let network = '';
+        //#endregion
+
         //#region 宣告
+        let topTotal = idget('topTotal');
         // nav 上的 ipad ip12 imac
         let iPad = idget('iPad');
         let iPhone12Pro = idget('iPhone12Pro');
@@ -200,6 +207,7 @@
         let storage_row = idget('storage_row');
         let network_row = idget('network_row');
         let total_row = idget('total_row');
+        let price = crel('p', 'totalPrice');
         //#endregion
 
         //document getelementbyid
@@ -233,6 +241,20 @@
             createiPadProNetwork();
         }
 
+        function getiPadTotal() {
+            // alert('aa');
+            let final =
+                (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products))
+                .filter(x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
+
+            // console.log(final[0]);
+            // console.log(final[0] instanceof Object);
+            // console.log(final[0].price);
+            price.innerHTML = 'NT$ ' + final[0].price;
+            total_row.appendChild(price);
+            topTotal.innerHTML = 'NT$ ' + final[0].price;
+        }
+
         function createiPadProSize() {
             type_row.innerHTML = '';
             Object.keys(AppleProducts[0]).forEach((item) => {
@@ -247,6 +269,11 @@
                                         .price}起
                     </b>`;
                 type_row.appendChild(sizeBtn);
+                sizeBtn.addEventListener('click', function () {
+                    size = item;
+                    console.log(size);
+                    getiPadTotal();
+                });
             })
         }
 
@@ -277,7 +304,6 @@
             color_row.innerHTML = '';
             let colors = [];
             concatColorsArray(colors);
-
             colors.forEach((item) => {
                 let colorBtn = crel('button', 'btn colorBtn');
                 colorBtn.innerHTML = `
@@ -285,6 +311,12 @@
                     <p>${item.color}</p>
                 `
                 color_row.appendChild(colorBtn);
+                colorBtn.addEventListener('click', function () {
+                    color = item.color;
+                    console.log(color);
+                    getiPadTotal();
+                });
+
             });
         }
 
@@ -304,10 +336,16 @@
                     <b>${item.storage}</b>
                 `
                 storage_row.appendChild(storageBtn);
+                storageBtn.addEventListener('click', function () {
+                    storage = item.storage;
+                    console.log(storage);
+                    getiPadTotal();
+                });
             })
         }
 
         function createiPadProNetwork() {
+            network_row.innerHTML = '';
             let networks =
                 Object.values(Object.values(AppleProducts[0])[0].products)[0].filter(x => x.storage == '128GB').map(
                     x => {
@@ -321,24 +359,35 @@
                     <b>${item.network}</b>
                 `
                 network_row.appendChild(networkBtn);
+                networkBtn.addEventListener('click', function () {
+                    network = item.network;
+                    console.log(network);
+                    getiPadTotal();
+                });
             })
-            console.log(networks);
         }
 
         function createiPhone12Pro() {
-            displayblock();
+            visible();
             buy.innerHTML = '';
             buy.innerHTML = '購買iPhone 12 Pro';
             img.src =
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000';
+            // createiPadProSize();
+            // createiPadProColor();
+            // createiPadProStorage();
         }
 
         function createiMac() {
-            displayblock();
+            visible();
             buy.innerHTML = '';
             buy.innerHTML = '購買iMac'
             img.src =
                 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000'
+            // createiPadProSize();
+            // createiPadProColor();
+            // createiPadProStorage();
+            // createiPadProNetwork();
         }
     </script>
 

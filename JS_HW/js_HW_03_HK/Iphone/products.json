@@ -190,7 +190,8 @@
                         "price": "64000"
                     }
                 ]
-            }
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-202104_GEO_TW"
         },
         "12.9吋顯示器": {
             "model": "12.9吋顯示器",
@@ -381,7 +382,8 @@
                         "price": "74000"
                     }
                 ]
-            }
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-202104_GEO_TW"
         }
 
     },
@@ -489,7 +491,8 @@
                     "storage": "512GB",
                     "price": "44400"
                 }]
-            }
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero-all"
         },
         "iPhone 12 Pro Max": {
             "model": "iPhone 12 Pro Max",
@@ -594,7 +597,8 @@
                     "storage": "512GB",
                     "price": "48400"
                 }]
-            }
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-family-hero-all"
         }
     },
     {
