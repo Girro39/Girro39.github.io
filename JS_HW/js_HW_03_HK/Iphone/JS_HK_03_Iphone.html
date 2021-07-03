@@ -45,7 +45,10 @@
             padding: 20px;
             font-size: 20px;
             line-height: 20px;
+            position: sticky;
+            top: 0;
         }
+
 
         /* DOM CSS */
         .sizeBtn {
@@ -166,7 +169,7 @@
     </div>
 
     <script>
-        // xhr
+        //#region xhr
         const url =
             "https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_03_HK/Iphone/products.json";
         let AppleProducts = [];
@@ -179,14 +182,14 @@
         }
         xhr.open('GET', url);
         xhr.send();
-
+        //#endregion
         //#region 存結果變數宣告
         let size = '';
         let storage = '';
         let color = '';
         let network = '';
+        let final;
         //#endregion
-
         //#region 宣告
         let topTotal = idget('topTotal');
         // nav 上的 ipad ip12 imac
@@ -209,12 +212,12 @@
         let total_row = idget('total_row');
         let price = crel('p', 'totalPrice');
         //#endregion
+        //#region 自創function
 
         //document getelementbyid
         function idget(id) {
             return document.getElementById(id);
         }
-
         //document createelement
         function crel(element, clname) {
             let ele = document.createElement(element);
@@ -222,13 +225,16 @@
             return ele
         }
 
+        //#endregion 
+        //#region 為了上面 NAV(iPadpro iPhone12Pro iMac) CLICK事件=>顯現該產品頁面使用 的function
         function visible() {
             let productContainer = document.querySelectorAll('#productContainer .col-12');
             productContainer.forEach((item) => {
                 item.setAttribute('style', 'visibility: visible')
             });
         }
-
+        //#endregion
+        //#region 總呼叫func
         function createiPadPro() {
             visible();
             buy.innerHTML = '';
@@ -241,20 +247,30 @@
             createiPadProNetwork();
         }
 
-        function getiPadTotal() {
-            // alert('aa');
-            let final =
-                (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products))
-                .filter(x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
-
-            // console.log(final[0]);
-            // console.log(final[0] instanceof Object);
-            // console.log(final[0].price);
-            price.innerHTML = 'NT$ ' + final[0].price;
-            total_row.appendChild(price);
-            topTotal.innerHTML = 'NT$ ' + final[0].price;
+        function createiPhone12Pro() {
+            visible();
+            buy.innerHTML = '';
+            buy.innerHTML = '購買iPhone 12 Pro';
+            img.src =
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000';
+            // createiPadProSize();
+            // createiPadProColor();
+            // createiPadProStorage();
         }
 
+        function createiMac() {
+            visible();
+            buy.innerHTML = '';
+            buy.innerHTML = '購買iMac'
+            img.src =
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000'
+            // createiPadProSize();
+            // createiPadProColor();
+            // createiPadProStorage();
+            // createiPadProNetwork();
+        }
+        //#endregion
+        //#region 創造各種按鈕加事件
         function createiPadProSize() {
             type_row.innerHTML = '';
             Object.keys(AppleProducts[0]).forEach((item) => {
@@ -271,13 +287,23 @@
                 type_row.appendChild(sizeBtn);
                 sizeBtn.addEventListener('click', function () {
                     size = item;
-                    console.log(size);
+                    let modelimgarray = Object.values(AppleProducts[0]).map(x => {
+                        return {
+                            model: x.model,
+                            img: x.img
+                        }
+                    });
+                    modelimgarray.forEach((item) => {
+                        if (item.model == size) {
+                            img.src = item.img;
+                        }
+                    });
                     getiPadTotal();
                 });
             })
         }
 
-        function concatColorsArray(colors) {
+        function concatBtnColorsArray(colors) {
             let gray_11 =
                 Object.values(Object.values(AppleProducts[0])[0].products)[0].map(x => {
                     return {
@@ -296,14 +322,60 @@
                         img: x.img
                     }
                 })[0];
+
             colors.push(gray_11);
             colors.push(silver_11);
+        }
+
+        function findimgiPadPro(imgcolor) {
+            let gray_11 =
+                Object.values(Object.values(AppleProducts[0])[0].products)[0].map(x => {
+                    return {
+                        size: x.size,
+                        color: x.color,
+                        colordot: x.colordot,
+                        img: x.img
+                    }
+                })[0];
+            let silver_11 =
+                Object.values(Object.values(AppleProducts[0])[0].products)[1].map(x => {
+                    return {
+                        size: x.size,
+                        color: x.color,
+                        colordot: x.colordot,
+                        img: x.img
+                    }
+                })[0];
+            let gray_12 =
+                Object.values(Object.values(AppleProducts[0])[1].products)[0].map(x => {
+                    return {
+                        size: x.size,
+                        color: x.color,
+                        colordot: x.colordot,
+                        img: x.img
+                    }
+                })[0];
+            let silver_12 =
+                Object.values(Object.values(AppleProducts[0])[1].products)[1].map(x => {
+                    return {
+                        size: x.size,
+                        color: x.color,
+                        colordot: x.colordot,
+                        img: x.img
+                    }
+                })[0];
+            imgcolor.push(gray_11);
+            imgcolor.push(silver_11);
+            imgcolor.push(gray_12);
+            imgcolor.push(silver_12);
+            img.src = `
+            ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`
         }
 
         function createiPadProColor() {
             color_row.innerHTML = '';
             let colors = [];
-            concatColorsArray(colors);
+            concatBtnColorsArray(colors);
             colors.forEach((item) => {
                 let colorBtn = crel('button', 'btn colorBtn');
                 colorBtn.innerHTML = `
@@ -312,8 +384,10 @@
                 `
                 color_row.appendChild(colorBtn);
                 colorBtn.addEventListener('click', function () {
+                    let imgcolor = [];
                     color = item.color;
                     console.log(color);
+                    findimgiPadPro(imgcolor);
                     getiPadTotal();
                 });
 
@@ -366,29 +440,24 @@
                 });
             })
         }
+        //#endregion
+        //#region 計算總價
+        function getiPadTotal() {
+            // alert('aa');
+            final =
+                (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products))
+                .filter(x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
 
-        function createiPhone12Pro() {
-            visible();
-            buy.innerHTML = '';
-            buy.innerHTML = '購買iPhone 12 Pro';
-            img.src =
-                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000';
-            // createiPadProSize();
-            // createiPadProColor();
-            // createiPadProStorage();
+            // console.log(final[0]);
+            // console.log(final[0] instanceof Object);
+            // console.log(final[0].price);
+            price.innerHTML = 'NT$ ' + final[0].price;
+            total_row.appendChild(price);
+            topTotal.innerHTML = 'NT$ ' + final[0].price;
         }
 
-        function createiMac() {
-            visible();
-            buy.innerHTML = '';
-            buy.innerHTML = '購買iMac'
-            img.src =
-                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000'
-            // createiPadProSize();
-            // createiPadProColor();
-            // createiPadProStorage();
-            // createiPadProNetwork();
-        }
+
+        //#endregion
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
