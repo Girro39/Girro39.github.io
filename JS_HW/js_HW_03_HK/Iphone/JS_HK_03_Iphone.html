@@ -43,12 +43,15 @@
         .totalct {
             background-color: rgba(188, 188, 188, .2);
             padding: 20px;
-            font-size: 20px;
+            font-size: 30px;
             line-height: 20px;
             position: sticky;
             top: 0;
         }
 
+        #total_row {
+            padding: 20px;
+        }
 
         /* DOM CSS */
         .sizeBtn {
@@ -74,7 +77,8 @@
         }
 
         .totalPrice {
-            font-size: 25px;
+            font-size: 30px;
+            font-weight: bold;
             text-align: end;
         }
     </style>
@@ -126,7 +130,7 @@
                         <img src="./pic/nopaybuy.svg" alt="">
                         <p id="infoSmall">免額外付費的運送服務 </p>
                     </div>
-                    <div class="col">
+                    <div class="col" id="del">
                         <img src="./pic/smile.svg" alt="">
                         <p id="infoSmall">免額外付費的個人化鐫刻服務 </p>
                     </div>
@@ -140,8 +144,6 @@
                 <div class="row" id="information_row">
                     <span class="text-danger mt-5 mb-2">全新</span>
                     <h2 class="fw-bolder fs-1" id="buy">購買iPad Pro</h2>
-                    <span>購買 iPad 可享免額外付費運送服務。 </span>
-                    <span>每位顧客限購 2 部 11 吋 iPad Pro 和 2 部 12.9 吋 iPad Pro。 </span>
                 </div>
                 <div class="row">
                     <h2 id="choose_type">機型</h2>
@@ -238,6 +240,8 @@
         function createiPadPro() {
             visible();
             let select = 0;
+            let del = idget('del');
+            del.style = 'display:block';
             buy.innerHTML = '';
             buy.innerHTML = '購買iPad Pro'
             img.src =
@@ -253,6 +257,8 @@
         function createiPhone12Pro() {
             visible();
             let select = 1;
+            let del = idget('del');
+            del.style = 'display:block';
             buy.innerHTML = '';
             buy.innerHTML = '購買iPhone 12 Pro';
             img.src =
@@ -268,10 +274,12 @@
         function createiMac() {
             visible();
             let select = 2;
+            let del = idget('del');
+            del.style = 'display:none';
             buy.innerHTML = '';
-            buy.innerHTML = '購買iMac'
+            buy.innerHTML = '購買iMac 24吋'
             img.src =
-                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-selection-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617492405000';
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-feature-colors-202104?wid=467&hei=203&fmt=png-alpha&.v=1617213642000';
             price.innerHTML = '';
             topTotal.innerHTML = '';
             createSize(select);
@@ -687,6 +695,28 @@
                         getTotal(select);
                     });
                 });
+            } else if (select == 2) {
+                storage_row.innerHTML = '';
+                let storages =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0]
+                    .map(x => {
+                        return {
+                            storage: x.storage
+                        }
+                    }).slice(9);
+                storages.forEach((item) => {
+                    let storageBtn = crel('button', 'btn storageBtn');
+                    storageBtn.innerHTML =
+                        `
+                            <b>${item.storage}</b>
+                        `
+                    storage_row.appendChild(storageBtn);
+                    storageBtn.addEventListener('click', function () {
+                        storage = item.storage;
+                        console.log(storage);
+                        getTotal(select);
+                    });
+                });
             }
 
         }
@@ -694,7 +724,7 @@
         function createNetwork(select) {
             if (select == 0) {
                 network_row.innerHTML = '';
-                choose_network.innerHTML = '機型';
+                choose_network.innerHTML = '連線能力';
                 let networks =
                     Object.values(Object.values(AppleProducts[0])[0].products)[0].filter(x => x.storage == '128GB').map(
                         x => {
@@ -717,6 +747,31 @@
             } else if (select == 1) {
                 network_row.innerHTML = '';
                 choose_network.innerHTML = '';
+            } else if (select == 2) {
+                network_row.innerHTML = '';
+                // choose_network.innerHTML = '連線能力';
+                let networks =
+                    Object.values(Object.values(AppleProducts[2])[0].products)[0].filter(x => x.storage ==
+                        '256GB SSD儲存裝置' && x.size == '8GB 統一記憶體').map(
+                        x => {
+                            return {
+                                network: x.network
+                            }
+                        });
+                networks.forEach((item) => {
+                    let networkBtn = crel('button', 'btn networkBtn');
+                    networkBtn.innerHTML =
+                        `
+                            <b>${item.network}</b>
+                        `
+                    network_row.appendChild(networkBtn);
+                    networkBtn.addEventListener('click', function () {
+                        network = item.network;
+                        console.log(network);
+                        getTotal(select);
+                    });
+                });
+
             }
         }
 
@@ -740,7 +795,14 @@
                 price.innerHTML = 'NT$ ' + final[0].price;
                 total_row.appendChild(price);
                 topTotal.innerHTML = 'NT$ ' + final[0].price;
-
+            } else if (select == 2 && size != '' && color != '' && storage != '' && network != '') {
+                let a = [];
+                final =
+                    Object.values(AppleProducts[2])[0].products[color].filter(x => x.storage == storage && x.size ==
+                        size && x.network == network);
+                price.innerHTML = 'NT$ ' + final[0].price;
+                total_row.appendChild(price);
+                topTotal.innerHTML = 'NT$ ' + final[0].price;
             }
         }
         //#endregion
