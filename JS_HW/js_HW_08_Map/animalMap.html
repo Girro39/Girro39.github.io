@@ -197,10 +197,6 @@
                 let marker = L.marker([data[0].Lat, data[0].Lng]);
                 //find Animals In this CountyCity
                 let findAInCC = animalData.filter(x => x.shelter_CountyCity == data[0].CountyCity);
-                marker.addEventListener('click', function () {
-                    console.log(findAInCC);
-                    // alert(`${findAInCC.length}`)
-                });
                 marker.bindPopup(`
                         <h4>
                             ${data[0].CountyCity}
