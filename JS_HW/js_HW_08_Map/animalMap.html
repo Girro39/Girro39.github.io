@@ -30,6 +30,36 @@
         #map {
             height: 100%;
         }
+
+        #animalRow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: auto; */
+        }
+
+        .card {
+            margin: 10px;
+
+        }
+
+        .card:hover {
+            background-color: #afd5d6;
+            transform: translateY(20px);
+            transition: .5s;
+        }
+
+        .card-img-top {
+            overflow: hidden;
+        }
+
+        .card-body {
+            height: 150%;
+        }
+
+        .card-title {
+            text-align: center;
+        }
     </style>
 
     <title>收編地圖</title>
@@ -47,7 +77,7 @@
                 <div class="row">
                     <!-- 下拉式選單=>縣市 -->
                     <div class="form-group col-6 mx-auto text-center">
-                        <label class="fs-4 m-4" for="county">你位於哪個縣/市?</label>
+                        <label class="m-4" for="county">你位於哪個縣/市?</label>
                         <select id="county" class="form-control">
                             <!-- options 動態產生 -->
                         </select>
@@ -71,6 +101,37 @@
             <!-- 動物卡片 -->
         </div>
     </div>
+    <template id="tempCard_Animal">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="..." class="aniimg w-100" alt="..."
+                        onerror="this.src=`https://i.ytimg.com/vi/6uMFC5z9Jqs/maxresdefault.jpg`">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </template>
+    <!-- <div class="card mx-auto m-3" style="width: 18rem;">
+            <div class="card-header">
+            </div>
+            <img src="..." class="card-img-top w-100" alt="..."
+                >
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div> -->
 
     <!-- axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
@@ -119,6 +180,8 @@
         let areaData; //存行政區
         let animalData; //存動物資料
         let animalAreaData; //存行政區+動物資料
+        let tempCard_Animal = document.getElementById('tempCard_Animal');
+        let animalRow = document.getElementById('animalRow');
         let markers = L.markerClusterGroup(); //marker叢集物件
 
         function setMarker() {
@@ -140,7 +203,7 @@
                             ${data[0].CountyCity}
                         </h4>
                         <b class='text-danger'>
-                            這裡有啥收容所?
+                            這裡有啥收編所?
                         </b>
                         <p>
                             ${findAInCC[0].shelter_name}
@@ -201,15 +264,12 @@
                         }
                     }).filter(x => x.Lat != undefined).groupBy('CountyCity');
 
-                    // console.log(animalAreaData);
-                    // console.log(Object.values(animalAreaData));
-                    // console.log(Object.values(animalAreaData) instanceof Array);
-
                     setMarker();
 
                     let countySelect = document.querySelector('#county');
                     ['請選擇縣市'].concat([...new Set(areaData.map(x => x.City))]).forEach(city => {
                         let option = document.createElement('option');
+                        console.log(city);
                         option.innerText = city;
                         option.value = city == '請選擇縣市' ? '' : city;
                         countySelect.appendChild(option);
@@ -251,18 +311,51 @@
                                 })
                         } else {
                             pointsSelect.style = "visibility: hidden;"
-                            document.querySelector('strong').innerText = `欸幹嘛?要收編了捏!快選縣市`
+                            document.querySelector('strong').innerText = `選縣市才能看浪浪所在地ㄛ~`
                         }
                     });
                     document.querySelector('#points').addEventListener('change', function () {
                         console.log(this.value);
-                        let a = animalData.filter(x => x.shelter_name == this.value)[0]
-                            .shelter_CountyCity;
-                        map.setView([animalAreaData[a][0].Lat, animalAreaData[a][0].Lng], 16);
+                        let Shelter = animalData.filter(x => x.shelter_name == this.value);
+                        //Shelter in CountyCity
+                        let SCC = Shelter[0].shelter_CountyCity;
+                        map.setView([animalAreaData[SCC][0].Lat, animalAreaData[SCC]
+                            [0].Lng
+                        ], 16);
+                        window.scroll({
+                            top: 900,
+                            behavior: 'smooth'
+                        });
+                        createCard(Shelter);
                     });
                 });
         }
 
+        function createCard(Shelter) {
+            animalRow.innerHTML = '';
+            Shelter.forEach((item, index) => {
+                let cloneCard = tempCard_Animal.content.cloneNode(true);
+                cloneCard.querySelector('.card-title').innerHTML = `<h4>浪浪 ${index + 1} 號資料</h4>`;
+                cloneCard.querySelector('.aniimg').src = item.album_file;
+                cloneCard.querySelector('.card-text').innerHTML =
+                    `
+                    <p><b>動物類型</b>:${item.animal_kind}</p>
+                    <p><b>性別</b>:${item.animal_sex=='F'?'女森':'男森'}</p>
+                    <p><b>毛色</b>:${item.animal_colour}</p>
+                    <p><b>是否絕育</b>:${item.animal_sterilization == 'T'?'是':'否'}</p>
+                    <p><b>是否施打狂犬病疫苗</b>:${item.animal_bacterin == 'T'?'是':'否'}</p>
+                    
+                    <p><b>開放領養日</b>:${item.animal_opendate}</p>
+                    <p><b>所在位置</b>:${item.shelter_name}</p>
+                    <p><b>地址</b>:${item.shelter_address}</p>
+                    <p><b>連絡電話</b>:${item.shelter_tel}</p>
+                    <b>把我帶走吧~</b>
+                `;
+                cloneCard.querySelector('.text-muted').innerHTML = `Last updated : ${item.cDate}`;
+                animalRow.append(cloneCard);
+            });
+
+        }
         //arraygroupby方法註冊
 
 
