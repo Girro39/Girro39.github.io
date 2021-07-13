@@ -1,103 +1,99 @@
-let history = document.getElementById('history');
-let current = document.getElementById('current');
+let historyText = document.getElementById('history');
+let currentText = document.getElementById('current');
+
 let numbers = document.querySelectorAll('[btnnum]');
+let operations = document.querySelectorAll('[operation]');
 let del = document.querySelector('[del]');
 let clr = document.querySelector('[clr]');
 let percent = document.querySelector('[percent]');
-let plus = document.querySelector('[plus]');
-let less = document.querySelector('[less]');
-let multiply = document.querySelector('[multiply]');
-let except = document.querySelector('[except]');
 let equal = document.querySelector('[equal]');
-let currentNum = 0;
-let historyNum = 0;
+let currentNum ='';
+let historyNum ='';
 let answer;
 let operate;
+//數字0-9 . 按鈕 個別創造click監聽事件
 numbers.forEach((item) => {
     item.addEventListener('click', function () {
-        currentDisplay(item.innerHTML);
+        //顯示到目前
+        appendNumber(item.textContent);
+        numDisplay();
     });
 });
-function currentDisplay(number){
-    if(current.textContent === '0') current.textContent='';
-    current.textContent += number;
-    currentNum = parseFloat(current.textContent);
-    // historyNum = parseFloat(current.textContent);
-    //只能有一個小數點怎辦?
+//+-*/按鈕 個別創造click監聽事件
+operations.forEach((item)=>{
+    item.addEventListener('click',function(){
+        console.log(item.textContent);
+        chooseOperation(item.textContent);
+        numDisplay();
+    });
+});
+function appendNumber(number){
+    if(number === '.' && currentText.innerHTML.includes('.')) return;
+    currentNum =currentNum.toString()+ number.toString();
 }
+function numDisplay(){
+    currentText.textContent = currentNum;
+    if(operate !== undefined){
+        historyText.textContent = `${historyNum} ${operate}`;
+    }
+    
+}
+function chooseOperation(operation){
+    if(currentNum ==='') return;
+    else if(historyNum !=='') calculate();
+    operate = operation;
+    historyNum = currentNum ;
+    currentNum = '';
+}
+
 clr.addEventListener('click', function () {
     //恢復一開始數值
     //清除歷史紀錄
-    current.textContent = '0';  
-    history.textContent = '';
-    currentNum = '';
-    historyNum = '';
-    answer = '';
-    // console.log(currentNum);
-    // console.log(historyNum);
-    // console.log(current.textContent);
-    // console.log(history.textContent);
+    clearAll();
+    numDisplay();
 });
 del.addEventListener('click', function () {
     //倒退一個數字
-
+    deleteOne();
+    console.log(currentNum);
+    numDisplay();
 });
 equal.addEventListener('click',function(){
-    //做計算動作
-    //按+-*/=把數字放上history
+    calculate();
+    numDisplay();
 });
 percent.addEventListener('click',function(){
-    current.textContent = current.textContent/100;
+    
 });
-multiply.addEventListener('click',function(){
-    historyDisplay(multiply.textContent);
-});
-plus.addEventListener('click',function(){
-    historyDisplay(plus.textContent);
-    console.log(answer);
-});
-less.addEventListener('click',function(){
-    historyDisplay(less.textContent);
-});
-except.addEventListener('click',function(){
-    historyDisplay(except.textContent);
-});
-function calculate(operation){
-    switch(operation){
+function calculate(){
+    const his = parseFloat(historyNum);
+    const curr = parseFloat(currentNum);
+    if(isNaN(his)||isNaN(curr)) return;
+    switch(operate){
         case'+':
-            if(history.textContent!=='' && current.textContent!=='' ){
-                answer= historyNum+currentNum;
-                answer = parseFloat(current.textContent);
-
-                if(answer){
-                    history.textContent = answer + operation;
-                    current.textContent = answer+currentNum;
-                } 
-            }
+            answer = his + curr;
             break;
         case'-':
-        if(history.textContent!=='' && current.textContent!=='' ){
-            answer = historyNum-currentNum;}
-        break;
+            answer = his - curr;
+            break;
         case'×':
-        if(history.textContent!=='' && current.textContent!=='' ){
-            answer = historyNum*currentNum;}
+            answer = his * curr;
             break;
         case'÷':
-        if(history.textContent!=='' && current.textContent!=='' ){
-            answer = historyNum/currentNum;}
+            answer = his / curr;
             break;
     }
+    currentNum = answer.toString();
+    historyNum = '';
+    operate = '';
 }
-function historyDisplay(operation){
-    while(!current.textContent.includes(operation) 
-    && !history.textContent.includes(operation)){
-        current.textContent = '';
-        operate = operation;
-        history.textContent = currentNum + operate;
-        historyNum = currentNum;
-        // console.log(currentNum);
-        // console.log(historyNum);
-        }
-        calculate(operation);
+
+function clearAll(){
+    currentNum ='';
+    historyNum ='';
+    operate ='';
+}
+
+function deleteOne(){
+    currentNum = currentNum.toString().slice(0,-1);
 }
