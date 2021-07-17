@@ -1,0 +1,66 @@
+// 共用
+
+.row {
+    font-family: 'Exo', sans-serif;
+
+    .col {
+        border: .5px solid #61661a;
+        font-size: 20px;
+        height: 130px;
+    }
+
+}
+
+.year_month {
+    .col-8 {
+        font-size: 45px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .col-1 {
+        margin: auto;
+
+        .btn {
+            text-align: center;
+            margin: auto;
+            font-size: 30px;
+            background-color: #61661a;
+            border: transparent;
+            border-radius: 60px;
+        }
+
+        .btn:hover {
+            background-color: #5255538c;
+        }
+    }
+
+}
+
+.weekrow {
+    .weekday {
+        font-size: 14px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+
+    .date {
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+}
+
+.nrow {
+    .date {
+        font-size: 18px;
+        box-sizing: border-box;
+        padding-top: 15px;
+    }
+}
+
+.nrow,
+.weekrow {
+    .col:hover {
+        background-color: #5255538c;
+    }
+}
