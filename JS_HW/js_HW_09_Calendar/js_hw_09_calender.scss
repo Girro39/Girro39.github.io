@@ -1,66 +1,59 @@
-// 共用
-
-.row {
+div.container {
     font-family: 'Exo', sans-serif;
+    height: 98vh;
 
-    .col {
-        border: .5px solid #61661a;
-        font-size: 20px;
-        height: 130px;
-    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        height: 14vh;
 
-}
+        button {
+            font-size: 28px;
+            background-color: #d6da6e;
+        }
 
-.year_month {
-    .col-8 {
-        font-size: 45px;
-        text-align: center;
-        margin: auto;
-    }
-
-    .col-1 {
-        margin: auto;
-
-        .btn {
+        .col {
             text-align: center;
-            margin: auto;
-            font-size: 30px;
-            background-color: #61661a;
-            border: transparent;
-            border-radius: 60px;
-        }
-
-        .btn:hover {
-            background-color: #5255538c;
         }
     }
-
 }
 
-.weekrow {
-    .weekday {
-        font-size: 14px;
-        padding-top: 5px;
-        box-sizing: border-box;
+table {
+    margin: auto;
+    width: 100%;
+
+    thead,
+    tbody {
+        tr {
+            .PNMonth {
+                color: #aaa;
+            }
+
+            td {
+                width: 14.2857%;
+                outline: 2px solid #ea4d5e;
+                height: 14vh;
+            }
+        }
     }
 
-    .date {
-        font-size: 18px;
-        box-sizing: border-box;
+    thead {
+        tr {
+            td {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
     }
-}
 
-.nrow {
-    .date {
-        font-size: 18px;
-        box-sizing: border-box;
-        padding-top: 15px;
-    }
-}
-
-.nrow,
-.weekrow {
-    .col:hover {
-        background-color: #5255538c;
+    tbody {
+        tr {
+            td {
+                font-size: 20px;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+        }
     }
 }

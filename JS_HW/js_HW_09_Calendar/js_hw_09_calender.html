@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./reset.css">
     <!-- SCSS -->
     <link rel="stylesheet" href="./js_hw_09_calender.css">
-
+    <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -24,147 +24,83 @@
 
 <body>
     <div class="container">
-        <div class="row year_month">
-            <div class="col-1 ">
-                <div class="btn btn-secondary" id="previous_btn">
-                    Previous
-                </div>
-            </div>
-            <div class="col-8">
-                <span id="year">2021年</span>
-                <span id="month">7月</span>
-            </div>
-            <div class="col-1">
-                <div class="btn btn-secondary" id="next_btn">
-                    Next
-                </div>
-            </div>
-        </div>
-        <div class="row weekrow">
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="weekday">週日</p>
-                <p class="date">27</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="weekday">週一</p>
-                <p class="date">28</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="weekday">週二</p>
-                <p class="date">29</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="weekday">週三</p>
-                <p class="date">30</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="weekday">週四</p>
-                <p class="date">1</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="weekday">週五</p>
-                <p class="date">2</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="weekday">週六</p>
-                <p class="date">3</p>
-            </div>
-        </div>
-        <div class="row nrow">
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">4</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">5</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">6</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">7</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">8</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">9</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">10</p>
-            </div>
+        <div class="row">
+            <button class="year_month col" id="year_month"></button>
+            <button class="today col" id="today">
+                Today
+            </button>
+            <button class="previous_btn col-2" id="previous_btn">
+                Previous
+            </button>
 
+            <button class="next_btn col-2" id="next_btn">
+                Next
+            </button>
         </div>
-        <div class="row nrow">
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">11</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">12</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">13</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">14</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">15</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">16</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">17</p>
-            </div>
-        </div>
-        <div class="row nrow">
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">18</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">19</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">20</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">21</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">22</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">23</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">24</p>
-            </div>
-        </div>
-        <div class="row nrow">
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">25</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">26</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">27</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">28</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">29</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">30</p>
-            </div>
-            <div class="col" data-toggle="modal" data-target="#exampleModal">
-                <p class="date">31</p>
-            </div>
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Monday</td>
+                        <td>Tuesday</td>
+                        <td>Wednesday</td>
+                        <td>Thursday</td>
+                        <td>Friday</td>
+                        <td>Saturday</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
     </div>
-
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

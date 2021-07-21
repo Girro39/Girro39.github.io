@@ -1,58 +1,53 @@
-.row {
+div.container {
   font-family: 'Exo', sans-serif;
+  height: 98vh;
 }
 
-.row .col {
-  border: .5px solid #61661a;
+div.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 14vh;
+}
+
+div.container .row button {
+  font-size: 28px;
+  background-color: #d6da6e;
+}
+
+div.container .row .col {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  width: 100%;
+}
+
+table thead tr .PNMonth,
+table tbody tr .PNMonth {
+  color: #aaa;
+}
+
+table thead tr td,
+table tbody tr td {
+  width: 14.2857%;
+  outline: 2px solid #ea4d5e;
+  height: 14vh;
+}
+
+table thead tr td {
+  text-align: center;
   font-size: 20px;
-  height: 130px;
+  font-weight: bold;
 }
 
-.year_month .col-8 {
-  font-size: 45px;
-  text-align: center;
-  margin: auto;
-}
-
-.year_month .col-1 {
-  margin: auto;
-}
-
-.year_month .col-1 .btn {
-  text-align: center;
-  margin: auto;
-  font-size: 30px;
-  background-color: #61661a;
-  border: transparent;
-  border-radius: 60px;
-}
-
-.year_month .col-1 .btn:hover {
-  background-color: #5255538c;
-}
-
-.weekrow .weekday {
-  font-size: 14px;
-  padding-top: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.weekrow .date {
-  font-size: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.nrow .date {
-  font-size: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-top: 15px;
-}
-
-.nrow .col:hover,
-.weekrow .col:hover {
-  background-color: #5255538c;
+table tbody tr td {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=js_hw_09_calender.css.map */
