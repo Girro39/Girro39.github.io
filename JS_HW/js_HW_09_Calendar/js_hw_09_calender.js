@@ -7,13 +7,11 @@ let dateObj_current = new Date();//依據電腦位置照，找出現在日期時
 // console.log(current_date);
 // console.log(current_day);
 //#endregion
-
 let year_month = document.getElementById('year_month');
 let previous_btn = document.getElementById('previous_btn');
 let next_btn = document.getElementById('next_btn');
 let today_btn =document.getElementById('today');
 let tds = document.querySelectorAll('tbody td');
-
 window.onload=function(){
     init();
     today_btn.addEventListener('click',function(){
