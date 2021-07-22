@@ -10,12 +10,16 @@ div.container .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 14vh;
+  background-color: #94aa4d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.container .row button {
   font-size: 28px;
-  background-color: #d6da6e;
+  border: 1px solid transparent;
+  background-color: transparent;
 }
 
 div.container .row .col {
@@ -25,29 +29,33 @@ div.container .row .col {
 table {
   margin: auto;
   width: 100%;
+  margin-top: 7vh;
 }
 
-table thead tr .PNMonth,
-table tbody tr .PNMonth {
-  color: #aaa;
-}
-
-table thead tr td,
-table tbody tr td {
+table thead tr th {
   width: 14.2857%;
-  outline: 2px solid #ea4d5e;
-  height: 14vh;
-}
-
-table thead tr td {
+  outline: .5px solid #023359ad;
   text-align: center;
+  padding: 20px;
   font-size: 20px;
   font-weight: bold;
+  height: 10vh;
+  color: #002c2f;
+  background-color: #b2a59f;
+}
+
+table tbody tr .PNMonth {
+  color: #94aa4d;
 }
 
 table tbody tr td {
+  width: 14.2857%;
+  outline: .5px solid #023359ad;
   font-size: 20px;
   padding-left: 10px;
   padding-top: 10px;
+  height: 13vh;
+  background-color: #f8e58c;
+  color: #614f25;
 }
 /*# sourceMappingURL=js_hw_09_calender.css.map */
