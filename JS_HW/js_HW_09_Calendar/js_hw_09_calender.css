@@ -1,54 +1,69 @@
 div.container {
   font-family: 'Exo', sans-serif;
-  height: 98vh;
 }
 
-div.container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #94aa4d;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+div.container .row:nth-child(1) {
+  background-color: #94aa4d8f;
 }
 
-div.container .row button {
+div.container .row:nth-child(1) .btn {
+  margin: 5px 10px;
   font-size: 28px;
-  border: 1px solid transparent;
-  background-color: transparent;
-}
-
-div.container .row .col {
   text-align: center;
 }
 
-table {
-  margin: auto;
-  width: 100%;
-  margin-top: 7vh;
+div.container .row:nth-child(1) .year_month_btn {
+  background-color: #5f7096;
+  color: #fff;
 }
 
-table thead tr th {
+div.container .row:nth-child(1) .return_btn {
+  margin-left: auto;
+  background-color: #5f7096;
+  color: #fff;
+  border-radius: 40px;
+}
+
+div.container .row:nth-child(1) .previous_btn,
+div.container .row:nth-child(1) .next_btn {
+  border: 1px solid transparent;
+  background-color: #5f7096;
+  color: #fff;
+  border-radius: 100%;
+}
+
+div.container .row:nth-child(1) .previous_btn:hover,
+div.container .row:nth-child(1) .next_btn:hover,
+div.container .row:nth-child(1) .today:hover {
+  background-color: #023359ad;
+}
+
+div.container .row:nth-child(2) table {
+  margin: auto;
+  width: 100%;
+}
+
+div.container .row:nth-child(2) table thead tr th {
   width: 14.2857%;
   outline: .5px solid #023359ad;
   text-align: center;
   padding: 20px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   height: 10vh;
-  color: #002c2f;
-  background-color: #b2a59f;
+  color: #fff;
+  background-color: #5f7096;
 }
 
-table tbody tr .PNMonth {
-  color: #94aa4d;
+div.container .row:nth-child(2) table tbody tr .PNMonth {
+  color: #94aa4d8f;
 }
 
-table tbody tr td {
+div.container .row:nth-child(2) table tbody tr .today {
+  background-color: #ff8a8a;
+}
+
+div.container .row:nth-child(2) table tbody tr td {
   width: 14.2857%;
   outline: .5px solid #023359ad;
   font-size: 20px;
@@ -56,6 +71,10 @@ table tbody tr td {
   padding-top: 10px;
   height: 13vh;
   background-color: #f8e58c;
-  color: #614f25;
+  color: #023359;
+}
+
+div.container .row:nth-child(2) table tbody tr td:hover {
+  background-color: #5f709657;
 }
 /*# sourceMappingURL=js_hw_09_calender.css.map */

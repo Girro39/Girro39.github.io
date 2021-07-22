@@ -1,62 +1,93 @@
 div.container {
     font-family: 'Exo', sans-serif;
-    height: 98vh;
 
-    .row {
-        display: flex;
-        justify-content: space-between;
-        background-color: #94aa4d;
-        align-items: center;
+    .row:nth-child(1) {
+        background-color: #94aa4d8f;
 
-        button {
+        .btn {
+            margin: 5px 10px;
             font-size: 28px;
-            border: 1px solid transparent;
-            background-color: transparent;
-        }
-
-        .col {
             text-align: center;
         }
+
+        .year_month_btn {
+            background-color: #5f7096;
+            color: #fff;
+        }
+
+        .return_btn {
+            margin-left: auto;
+            background-color: #5f7096;
+            color: #fff;
+            border-radius: 40px;
+        }
+
+        .previous_btn,
+        .next_btn {
+            border: 1px solid transparent;
+            background-color: #5f7096;
+            color: #fff;
+            border-radius: 100%;
+        }
+
+        .previous_btn:hover,
+        .next_btn:hover,
+        .today:hover {
+            background-color: #023359ad;
+        }
+
+
     }
-}
 
-table {
-    margin: auto;
-    width: 100%;
-    margin-top: 7vh;
+    .row:nth-child(2) {
+        table {
+            margin: auto;
+            width: 100%;
 
-    thead {
-        tr {
-            th {
-                width: 14.2857%;
-                outline: .5px solid #023359ad;
-                text-align: center;
-                padding: 20px;
-                font-size: 20px;
-                font-weight: bold;
-                height: 10vh;
-                color: #002c2f;
-                background-color: #b2a59f;
+            thead {
+                tr {
+                    th {
+                        width: 14.2857%;
+                        outline: .5px solid #023359ad;
+                        text-align: center;
+                        padding: 20px;
+                        font-size: 24px;
+                        font-weight: bold;
+                        height: 10vh;
+                        color: #fff;
+                        background-color: #5f7096;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    .PNMonth {
+                        color: #94aa4d8f;
+                    }
+
+                    .today {
+                        background-color: #ff8a8a;
+                    }
+
+                    td {
+                        width: 14.2857%;
+                        outline: .5px solid #023359ad;
+                        font-size: 20px;
+                        padding-left: 10px;
+                        padding-top: 10px;
+                        height: 13vh;
+                        background-color: #f8e58c;
+                        color: #023359;
+                    }
+
+                    td:hover {
+                        background-color: #5f709657;
+                    }
+                }
             }
         }
     }
 
-    tbody {
-        tr {
-            .PNMonth {
-                color: #94aa4d;
-            }
 
-            td {
-                width: 14.2857%;
-                outline: .5px solid #023359ad;
-                font-size: 20px;
-                padding-left: 10px;
-                padding-top: 10px;
-                height: 13vh;
-                background-color: #f8e58c;
-                color: #614f25;
-            }
-        }
-    }
 }
