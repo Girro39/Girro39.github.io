@@ -65,33 +65,25 @@ function init(){
                 td.setAttribute('data-toggle','modal');
                 td.setAttribute('data-target','#addItineraryModal');
             }
-        
             modalCurrentDate.innerHTML = 
             `${td.getAttribute('Year')}/${parseInt(td.getAttribute('Month'))+1}/${td.getAttribute('Date')}`; 
         });
 
-        let gi = localStorage.getItem(`${td.getAttribute('Year')}/${parseInt(td.getAttribute('Month'))+1}/${td.getAttribute('Date')}`);
+        let Itineraries = JSON.parse(localStorage.getItem(`${td.getAttribute('Year')}/${parseInt(td.getAttribute('Month'))+1}/${td.getAttribute('Date')}`));
 
-        let li = document.createElement('li');
-        if(gi!==null){
-            input.forEach(item=>{
-                item.value='';
-            });
-            console.log(gi);
-            // console.log(JSON.parse(gi)[0].Title);
-            li.innerHTML = JSON.parse(gi)[0].Title;
-            li.style.backgroundColor = JSON.parse(gi)[0].Color;
-            li.style.color = '#fff';
-            li.style.textAlign = 'center';
-            td.appendChild(li); 
+        if(Itineraries!==null){
+            console.log(Itineraries);
+            Itineraries.forEach(Itinerary=>{
+                console.log(Itinerary);
+                let li = document.createElement('li');
+                li.style.backgroundColor = Itinerary.Color;
+                li.style.textAlign = 'center';
+                li.style.margin = '3px auto';
+                li.innerHTML = Itinerary.Title;
+                td.appendChild(li); 
+            })
         }
 
-        // li.append(Ititle);
-        // li.style.backgroundColor=Icolor;
-        // let tds = Array.from(document.querySelectorAll('tbody td'));
-        // if(localStorage.getItem()!=null){
-        //     td.appendChild(li);
-        // }
     });
 
 }
@@ -165,13 +157,14 @@ function saveItinerary(){
         Color:Icolor
     };
     let todoList = [];
-    if(Ititle&&Icontent){
+    if(localStorage.getItem(Idate) === null){
         todoList.push(todoObj);
-        localStorage.setItem(Idate,JSON.stringify(todoList));
         SAVE.setAttribute('data-dismiss','modal');
-    }else if(!Ititle||!Icontent){
-        alert('請輸入完整');
+    }else{
+        todoList = JSON.parse(localStorage.getItem(Idate));
+        todoList.push(todoObj);
     }
+    localStorage.setItem(Idate,JSON.stringify(todoList));
 
     init();
 }
