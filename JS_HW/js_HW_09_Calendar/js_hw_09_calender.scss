@@ -1,6 +1,5 @@
 div.container {
     font-family: 'Exo', sans-serif;
-
     .row:nth-child(1) {
         background-color: #94aa4d8f;
 
@@ -86,10 +85,14 @@ div.container {
                         background-color: #f8e58c;
                         color: #023359;
 
-                        li {
-                            list-style: none;
-                            margin: auto;
-                            width: 80%;
+                        .event_btn {
+                            width: 94%;
+                            padding: 0;
+                            margin: 1px 0;
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
                         }
                     }
 
@@ -101,3 +104,9 @@ div.container {
         }
     }
 }
+
+#addItineraryModal,
+#DeleteEditModal {
+    font-family: 'Exo', sans-serif;
+}
+

@@ -70,23 +70,14 @@
                 <div class="modal-body">
                     <div class="col-12">
                         <span>Date :</span>
-                        <span id="modalCurrentDate"></span>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="text">Title :</label>
+                        <span id="addmodalCurrentDate"></span>
+                        <p for="text">Title:</p>
                         <input type="text" placeholder="7 words at most" maxlength="7" id="Ititle">
-                    </div>
-                    <div class="col-12">
-                        <label for="text">Content :</label>
+                        <p for="text">Content:</p>
                         <input type="text" placeholder="description" id="Icontent">
-                    </div>
-                    <div class="col-12">
-                        <label for="color">Color :</label>
+                        <p for="color">Color:</p>
                         <input type="color" id="Icolor">
                     </div>
-
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="SAVE">SAVE</button>
@@ -101,25 +92,32 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="DeleteEditModalLabel">
-                        Add Itinerary</h5>
+                        Edit Or Delete Itinerary</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="col-12">
-                        <label for="text">Title :</label>
-                        <input type="text">
+                        <span>Date :</span>
+                        <span id="EDmodalCurrentDate"></span>
+                    </div>
+                    <div class="col-12">
+                        <p id="NowTitle"></p>
+                        <p id="NowContent"></p>
+                    </div>
+                    <div class="col-12">
                     </div>
                     <div class="col-12">
                         <label for="color">Color :</label>
-                        <input type="color">
+                        <input type="color" id="EDcolor">
                     </div>
+
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-                    <input type="submit" class="btn btn-primary" data-dismiss="modal">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="edit">修改</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="del">刪除</button>
                 </div>
             </div>
         </div>

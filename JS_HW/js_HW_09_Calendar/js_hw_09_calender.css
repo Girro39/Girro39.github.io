@@ -80,13 +80,27 @@ div.container .row:nth-child(2) table tbody tr td {
   color: #023359;
 }
 
-div.container .row:nth-child(2) table tbody tr td li {
-  list-style: none;
-  margin: auto;
-  width: 80%;
+div.container .row:nth-child(2) table tbody tr td .event_btn {
+  width: 94%;
+  padding: 0;
+  margin: 1px 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 div.container .row:nth-child(2) table tbody tr td:hover {
   background-color: #5f709657;
+}
+
+#addItineraryModal,
+#DeleteEditModal {
+  font-family: 'Exo', sans-serif;
 }
 /*# sourceMappingURL=js_hw_09_calender.css.map */

@@ -5,7 +5,9 @@ const next_btn = document.getElementById('next_btn');
 const return_btn =document.getElementById('return_btn');
 const tbody = document.querySelector('tbody');
 const table = document.querySelector('table');
-const modalCurrentDate = document.getElementById('modalCurrentDate');
+const addmodalCurrentDate = document.getElementById('addmodalCurrentDate');
+const DeleteEditModal = document.getElementById('DeleteEditModal');
+const addItineraryModal = document.getElementById('addItineraryModal');
 let _Ititle = document.getElementById('Ititle');
 let _Icontent = document.getElementById('Icontent');
 let _Icolor = document.getElementById('Icolor');
@@ -42,7 +44,7 @@ function init(){
     let _r = Math.ceil(
                         (firstDate.getDay()+daysInCurrentMonth.getDate())/7
                     );
-
+    //做表格迴圈術 
     for(let i = 1;i <= _r; i++){ 
         tr = document.createElement('tr');
         for(let j = 0;j<=6;j++){
@@ -51,12 +53,12 @@ function init(){
         }
         tbody.append(tr);
     }
+
     const tds = document.querySelectorAll('tbody td');
     year_month_btn.innerHTML =`${controller.getFullYear()}/
     ${controller.getMonth()+1}`;
     firstDate.setDate(firstDate.getDate()-firstDate.getDay());
     tds.forEach(td=>{
-
         setTdsAttribute(td);
         findTodayTd(td);
         firstDate.setDate(firstDate.getDate()+1);
@@ -65,25 +67,33 @@ function init(){
                 td.setAttribute('data-toggle','modal');
                 td.setAttribute('data-target','#addItineraryModal');
             }
-            modalCurrentDate.innerHTML = 
+            _Ititle.value='';
+            _Icontent.value='';
+            _Icolor.value='';
+            addmodalCurrentDate.innerHTML = 
             `${td.getAttribute('Year')}/${parseInt(td.getAttribute('Month'))+1}/${td.getAttribute('Date')}`; 
         });
-
         let Itineraries = JSON.parse(localStorage.getItem(`${td.getAttribute('Year')}/${parseInt(td.getAttribute('Month'))+1}/${td.getAttribute('Date')}`));
 
         if(Itineraries!==null){
-            console.log(Itineraries);
             Itineraries.forEach(Itinerary=>{
-                console.log(Itinerary);
-                let li = document.createElement('li');
-                li.style.backgroundColor = Itinerary.Color;
-                li.style.textAlign = 'center';
-                li.style.margin = '3px auto';
-                li.innerHTML = Itinerary.Title;
-                td.appendChild(li); 
-            })
+                let div = document.createElement('div');
+                div.style.backgroundColor = Itinerary.Color;
+                div.setAttribute('class','btn event_btn');
+                div.innerHTML = Itinerary.Title;
+                td.appendChild(div); 
+            });
         }
-
+        let event_btns = document.querySelectorAll('.event_btn');
+        event_btns.forEach(event_btn=>{
+            event_btn.addEventListener('click',function(e){
+                if(event_btn.attributes.class.value === 'btn event_btn'){
+                    td.removeAttribute('data-target');
+                    event_btn.setAttribute('data-toggle','modal');
+                    event_btn.setAttribute('data-target','#DeleteEditModal');
+                }
+            });
+        });
     });
 
 }
@@ -146,8 +156,7 @@ function turnMouseEvent(event){
 
 function saveItinerary(){
     SAVE.removeAttribute('data-dismiss');
-
-    let Idate = modalCurrentDate.textContent;
+    let Idate = addmodalCurrentDate.textContent;
     let Ititle = _Ititle.value;
     let Icontent = _Icontent.value;
     let Icolor = _Icolor.value;
@@ -157,14 +166,21 @@ function saveItinerary(){
         Color:Icolor
     };
     let todoList = [];
-    if(localStorage.getItem(Idate) === null){
-        todoList.push(todoObj);
-        SAVE.setAttribute('data-dismiss','modal');
-    }else{
-        todoList = JSON.parse(localStorage.getItem(Idate));
-        todoList.push(todoObj);
-    }
-    localStorage.setItem(Idate,JSON.stringify(todoList));
+    if(Ititle&&Icontent){
+        if(localStorage.getItem(Idate) === null){
+            todoList.push(todoObj);
+            SAVE.setAttribute('data-dismiss','modal');
+        }else{
+            todoList = JSON.parse(localStorage.getItem(Idate));
+            todoList.push(todoObj);
+            SAVE.setAttribute('data-dismiss','modal');
+        }
+        localStorage.setItem(Idate,JSON.stringify(todoList));
 
-    init();
+        init();
+    }else{
+        alert('標題內容都要輸入');
+    }
+
 }
+
