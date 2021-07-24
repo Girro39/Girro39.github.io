@@ -27,6 +27,7 @@
         <div class="row">
             <div class="year_month_btn btn" id="year_month_btn">
             </div>
+            <div class="timer" id="timer"></div>
             <div class=" return_btn btn" id="return_btn">
                 Return
             </div>
@@ -51,55 +52,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                 </tbody>
             </table>
         </div>
-        <div class="timer row" id="timer"></div>
     </div>
     <!-- Modal -->
     <div class="modal fade" id="addItineraryModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
@@ -114,23 +69,27 @@
                 </div>
                 <div class="modal-body">
                     <div class="col-12">
-                        <label for="text">Title :</label>
-                        <input type="text" placeholder="7 words at most" maxlength="7">
+                        <span>Date :</span>
+                        <span id="modalCurrentDate"></span>
                     </div>
+
                     <div class="col-12">
-                        <label for="color">Color :</label>
-                        <input type="color">
+                        <label for="text">Title :</label>
+                        <input type="text" placeholder="7 words at most" maxlength="7" id="Ititle">
                     </div>
                     <div class="col-12">
                         <label for="text">Content :</label>
-                        <input type="text" placeholder="description">
+                        <input type="text" placeholder="description" id="Icontent">
+                    </div>
+                    <div class="col-12">
+                        <label for="color">Color :</label>
+                        <input type="color" id="Icolor">
                     </div>
 
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
-                    <input type="submit" class="btn btn-primary" data-dismiss="modal">
+                    <button type="button" class="btn btn-secondary" id="SAVE">SAVE</button>
                 </div>
             </div>
         </div>

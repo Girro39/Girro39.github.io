@@ -12,16 +12,22 @@ div.container .row:nth-child(1) .btn {
   text-align: center;
 }
 
-div.container .row:nth-child(1) .year_month_btn {
+div.container .row:nth-child(1) .year_month_btn,
+div.container .row:nth-child(1) .return_btn {
   background-color: #5f7096;
   color: #fff;
+  border-radius: 40px;
+}
+
+div.container .row:nth-child(1) .timer {
+  color: #fff;
+  margin: auto 0 auto auto;
+  font-size: 28px;
+  border-radius: 15px;
 }
 
 div.container .row:nth-child(1) .return_btn {
   margin-left: auto;
-  background-color: #5f7096;
-  color: #fff;
-  border-radius: 40px;
 }
 
 div.container .row:nth-child(1) .previous_btn,
@@ -72,6 +78,12 @@ div.container .row:nth-child(2) table tbody tr td {
   height: 13vh;
   background-color: #f8e58c;
   color: #023359;
+}
+
+div.container .row:nth-child(2) table tbody tr td li {
+  list-style: none;
+  margin: auto;
+  width: 80%;
 }
 
 div.container .row:nth-child(2) table tbody tr td:hover {

@@ -10,16 +10,22 @@ div.container {
             text-align: center;
         }
 
-        .year_month_btn {
+        .year_month_btn,
+        .return_btn {
             background-color: #5f7096;
             color: #fff;
+            border-radius: 40px;
+        }
+
+        .timer {
+            color: #fff;
+            margin: auto 0 auto auto;
+            font-size: 28px;
+            border-radius: 15px;
         }
 
         .return_btn {
             margin-left: auto;
-            background-color: #5f7096;
-            color: #fff;
-            border-radius: 40px;
         }
 
         .previous_btn,
@@ -79,6 +85,12 @@ div.container {
                         height: 13vh;
                         background-color: #f8e58c;
                         color: #023359;
+
+                        li {
+                            list-style: none;
+                            margin: auto;
+                            width: 80%;
+                        }
                     }
 
                     td:hover {
@@ -88,6 +100,4 @@ div.container {
             }
         }
     }
-
-
 }
