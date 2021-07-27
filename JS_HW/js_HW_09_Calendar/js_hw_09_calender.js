@@ -8,11 +8,24 @@ const table = document.querySelector('table');
 const addmodalCurrentDate = document.getElementById('addmodalCurrentDate');
 const DeleteEditModal = document.getElementById('DeleteEditModal');
 const addItineraryModal = document.getElementById('addItineraryModal');
+const SAVE = document.getElementById('SAVE');
+const edit = document.getElementById('edit');
+const del = document.getElementById('del');
+let toEditDelDate;
+let toEditDelTitle;
+let toEditDelContent;
+
 let _Ititle = document.getElementById('Ititle');
 let _Icontent = document.getElementById('Icontent');
 let _Icolor = document.getElementById('Icolor');
 let input = document.querySelectorAll('input');
-const SAVE = document.getElementById('SAVE');
+
+let NowTitle = document.getElementById('NowTitle');
+let NowContent = document.getElementById('NowContent');
+let EditTitle = document.getElementById('EditTitle');
+let EditContent = document.getElementById('EditContent');
+
+
 const today = new Date();
 let tr;
 let td;
@@ -31,7 +44,7 @@ return_btn.addEventListener('click',returnCurrentMonth);
 previous_btn.addEventListener('click',previousMonth);
 next_btn.addEventListener('click',nextMonth);
 SAVE.addEventListener('click',saveItinerary);
-
+del.addEventListener('click',DeleteItinerary);
 function init(){
     tbody.innerHTML ='';
     //判斷幾列
@@ -62,18 +75,21 @@ function init(){
         setTdsAttribute(td);
         findTodayTd(td);
         firstDate.setDate(firstDate.getDate()+1);
-        td.addEventListener('click',function(){
-            if(td.getAttribute('class')===null||td.getAttribute('class')=='today'){    
-                td.setAttribute('data-toggle','modal');
-                td.setAttribute('data-target','#addItineraryModal');
+        td.addEventListener('click',function(e){
+            if(e.target.localName==='td' && td.getAttribute('class')===null){    
+                $('#addItineraryModal').modal('show');
+            }else if(td.getAttribute('class')==='today'){
+                $('#addItineraryModal').modal('show');
             }
             _Ititle.value='';
             _Icontent.value='';
             _Icolor.value='';
             addmodalCurrentDate.innerHTML = 
             `${td.getAttribute('Year')}/${parseInt(td.getAttribute('Month'))+1}/${td.getAttribute('Date')}`; 
+            EDmodalCurrentDate.innerHTML = `${td.getAttribute('Year')}/${parseInt(td.getAttribute('Month'))+1}/${td.getAttribute('Date')}`
         });
-        let Itineraries = JSON.parse(localStorage.getItem(`${td.getAttribute('Year')}/${parseInt(td.getAttribute('Month'))+1}/${td.getAttribute('Date')}`));
+        let Itineraries = JSON.parse(localStorage.getItem(`${td.getAttribute('YMD')}`));
+
 
         if(Itineraries!==null){
             Itineraries.forEach(Itinerary=>{
@@ -84,17 +100,27 @@ function init(){
                 td.appendChild(div); 
             });
         }
-        let event_btns = document.querySelectorAll('.event_btn');
-        event_btns.forEach(event_btn=>{
-            event_btn.addEventListener('click',function(e){
-                if(event_btn.attributes.class.value === 'btn event_btn'){
-                    td.removeAttribute('data-target');
-                    event_btn.setAttribute('data-toggle','modal');
-                    event_btn.setAttribute('data-target','#DeleteEditModal');
-                }
-            });
+    });
+    let event_btns = Array.from(document.querySelectorAll('.event_btn'));
+    event_btns.forEach(event_btn=>{
+        event_btn.addEventListener('click',function(e){
+            if(event_btn.attributes.class.value === 'btn event_btn'){
+                $('#DeleteEditModal').modal('show');
+            }
+            let eventsArray = JSON.parse(localStorage.getItem(`${event_btn.parentNode.getAttribute('YMD')}`));
+            let ev = eventsArray.filter(ev=>ev.Title===event_btn.textContent);
+            NowContent.innerHTML=`Content:${ev[0].Content}`;
+            NowTitle.innerHTML=`Title:${ev[0].Title}`;
+            toEditDelDate = event_btn.parentNode.getAttribute('YMD');
+            toEditDelTitle = ev[0].Title;
+            toEditDelContent = ev[0].Content;
         });
     });
+
+
+
+
+    
 
 }
 
@@ -142,7 +168,7 @@ function findTodayTd(eachTd){
     {
         let span=document.createElement('span');
         span.innerHTML = `today`;
-        span.setAttribute('class','pl-5')
+        span.setAttribute('class','pl-2')
         eachTd.append(span);
         eachTd.setAttribute('class','today');
     }
@@ -182,5 +208,14 @@ function saveItinerary(){
         alert('標題內容都要輸入');
     }
 
+}
+
+function DeleteItinerary() {
+    console.log(toEditDelDate);
+    let EDeventArray =JSON.parse(localStorage.getItem(toEditDelDate));
+    let index = EDeventArray.findIndex(edev=>edev.Title === toEditDelTitle && edev.Content === toEditDelContent);
+    EDeventArray.splice(index,1);
+    localStorage.setItem(toEditDelDate,JSON.stringify(EDeventArray));
+    Init();
 }
 
