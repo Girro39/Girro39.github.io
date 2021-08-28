@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Apple</title>
+
+    <style>
+        #choose_type,
+        #choose_color,
+        #choose_storage,
+        #choose_network,
+        #_price {
+            margin: 50px 0 12px;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .btn {
+            border: 2px solid #eee;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .button_inner_row .col-6:nth-of-type(1) {
+            text-align: left;
+        }
+
+        #infoSmall {
+            font-size: 12px;
+        }
+
+        .nav_container {
+            background-color: #000;
+            opacity: .8;
+        }
+
+        .totalct {
+            background-color: rgba(188, 188, 188, .2);
+            padding: 20px;
+            font-size: 30px;
+            line-height: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        #total_row {
+            padding: 20px;
+        }
+
+        /* DOM CSS */
+        .sizeBtn {
+            display: flex;
+            justify-content: space-between;
+            margin: 1% .5%;
+            width: 99%;
+        }
+
+        .sizeBtn p,
+        .sizeBtn b {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+
+        .colorBtn,
+        .storageBtn,
+        .networkBtn {
+            margin: 1%;
+            width: 48%;
+            font-size: 20px;
+        }
+
+        .totalPrice {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container nav_container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon bg-white"></span>
+                        </button>
+                        <!-- <a class="navbar-brand text-white" href="#">Apple</a> -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item p-2 fs-5">
+                                    <a id="iPad" class="nav-link text-light active" aria-current="page" href="#">
+                                        iPad Pro</a>
+                                </li>
+                                <li class="nav-item p-2 fs-5">
+                                    <a id="iPhone12Pro" class="nav-link text-light" href="#">iPhone12 Pro</a>
+                                </li>
+                                <li class="nav-item p-2 fs-5">
+                                    <a id="iMac" class="nav-link text-light" href="#">iMac 24吋</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-end totalct" id="topTotal"></div>
+
+    <div class="container" id="productContainer">
+        <div class="row">
+            <div class="col-12 col-md-6" style="visibility:hidden">
+                <div class="row m-5">
+                    <img src="" alt="" class="mx-auto w-100" id='img'>
+                </div>
+                <div class="row m-5 d-flex justify-content-between text-center colstic">
+                    <div class="col">
+                        <img src="./pic/nopaybuy.svg" alt="">
+                        <p id="infoSmall">免額外付費的運送服務 </p>
+                    </div>
+                    <div class="col" id="del">
+                        <img src="./pic/smile.svg" alt="">
+                        <p id="infoSmall">免額外付費的個人化鐫刻服務 </p>
+                    </div>
+                    <div class="col">
+                        <img src="./pic/nopayreturn.svg" alt="">
+                        <p id="infoSmall">免額外付費輕鬆退貨 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6" style="visibility:hidden">
+                <div class="row" id="information_row">
+                    <span class="text-danger mt-5 mb-2">全新</span>
+                    <h2 class="fw-bolder fs-1" id="buy">購買iPad Pro</h2>
+                </div>
+                <div class="row">
+                    <h2 id="choose_type">機型</h2>
+                    <div id="type_row"></div>
+                </div>
+                <div class="row">
+                    <h2 id="choose_color">外觀</h2>
+                    <div id="color_row"></div>
+                </div>
+                <div class="row">
+                    <h2 id="choose_storage">儲存裝置</h2>
+                    <div id="storage_row"></div>
+
+                </div>
+                <div class="row">
+                    <h2 id="choose_network">連線能力</h2>
+                    <div id="network_row"></div>
+                </div>
+                <div class="row">
+                    <h2 id="_price">價格</h2>
+                    <div id="total_row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //#region xhr
+        const url =
+            "https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_03_HK/Iphone/products.json";
+        let AppleProducts = [];
+        let xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            AppleProducts = JSON.parse(this.responseText);
+            iPad.addEventListener('click', createiPadPro);
+            iPhone12Pro.addEventListener('click', createiPhone12Pro);
+            iMac.addEventListener('click', createiMac);
+        }
+        xhr.open('GET', url);
+        xhr.send();
+        //#endregion
+        //#region 存結果變數宣告
+        let size = '';
+        let storage = '';
+        let color = '';
+        let network = '';
+        let final;
+        //#endregion
+        //#region 宣告
+        let topTotal = idget('topTotal');
+        // nav 上的 ipad ip12 imac
+        let iPad = idget('iPad');
+        let iPhone12Pro = idget('iPhone12Pro');
+        let iMac = idget('iMac');
+        let img = idget('img');
+        let buy = idget('buy');
+        // 機型 外觀 儲存裝置 連線能力 價格
+        let choose_type = idget('choose_type');
+        let choose_color = idget('choose_color');
+        let choose_storage = idget('choose_storage');
+        let choose_network = idget('choose_network');
+        let _price = idget('_price');
+        //機型 外觀 儲存裝置 連線能力 價格 個別下方row
+        let type_row = idget('type_row');
+        let color_row = idget('color_row');
+        let storage_row = idget('storage_row');
+        let network_row = idget('network_row');
+        let total_row = idget('total_row');
+        let price = crel('p', 'totalPrice');
+        //#endregion
+        //#region 自創function
+
+        //document getelementbyid
+        function idget(id) {
+            return document.getElementById(id);
+        }
+        //document createelement
+        function crel(element, clname) {
+            let ele = document.createElement(element);
+            ele.setAttribute('class', clname);
+            return ele
+        }
+
+        //#endregion 
+        //#region 為了上面 NAV(iPadpro iPhone12Pro iMac) CLICK事件=>顯現該產品頁面使用 的function
+        function visible() {
+            let productContainer = document.querySelectorAll('#productContainer .col-12');
+            productContainer.forEach((item) => {
+                item.setAttribute('style', 'visibility: visible')
+            });
+        }
+        //#endregion
+        //#region 總呼叫func
+        function createiPadPro() {
+            visible();
+            let select = 0;
+            let del = idget('del');
+            del.style = 'display:block';
+            buy.innerHTML = '';
+            buy.innerHTML = '購買iPad Pro'
+            img.src =
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_TW?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864731000';
+            price.innerHTML = '';
+            topTotal.innerHTML = '';
+            createSize(select);
+            createColor(select);
+            createStorage(select);
+            createNetwork(select);
+        }
+
+        function createiPhone12Pro() {
+            visible();
+            let select = 1;
+            let del = idget('del');
+            del.style = 'display:block';
+            buy.innerHTML = '';
+            buy.innerHTML = '購買iPhone 12 Pro';
+            img.src =
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1604021663000';
+            price.innerHTML = '';
+            topTotal.innerHTML = '';
+            createSize(select);
+            createColor(select);
+            createStorage(select);
+            createNetwork(select);
+        }
+
+        function createiMac() {
+            visible();
+            let select = 2;
+            let del = idget('del');
+            del.style = 'display:none';
+            buy.innerHTML = '';
+            buy.innerHTML = '購買iMac 24吋'
+            img.src =
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-feature-colors-202104?wid=467&hei=203&fmt=png-alpha&.v=1617213642000';
+            price.innerHTML = '';
+            topTotal.innerHTML = '';
+            createSize(select);
+            createColor(select);
+            createStorage(select);
+            createNetwork(select);
+        }
+        //#endregion
+        //#region 創造各種按鈕加事件
+
+
+        function createSize(select) {
+            if (select == 2) {
+                type_row.innerHTML = '';
+                choose_type.innerHTML = '記憶體';
+                let s = Object.values(Object.values(AppleProducts[2])[0].products)[0].filter(x => x.network == '無' && x
+                    .storage == '256GB SSD儲存裝置').map(x => {
+                    return {
+                        size: x.size,
+                        price: x.price
+                    }
+                });
+                s.forEach((item) => {
+                    let sizeBtn = crel('button', 'btn sizeBtn');
+                    sizeBtn.innerHTML =
+                        `<p>
+                        ${item.size}
+                        </p>
+                        <b>NT$
+                            ${item.price}起
+                        </b>`;
+                    type_row.appendChild(sizeBtn);
+                    sizeBtn.addEventListener('click', function () {
+                        size = item.size;
+                        console.log(size);
+                        getTotal(select);
+                    });
+
+                });
+            } else {
+                type_row.innerHTML = '';
+                Object.keys(AppleProducts[select]).forEach((item) => {
+                    let sizeBtn = crel('button', 'btn sizeBtn');
+                    sizeBtn.innerHTML =
+                        `<p>
+                        ${item}
+                    </p>
+                    <b>NT$
+                        ${Object.values(Object.values(Object.values(AppleProducts[select]).filter(x => x.model == item)[0].products)[0])[0].price}起
+                    </b>`;
+                    type_row.appendChild(sizeBtn);
+                    sizeBtn.addEventListener('click', function () {
+                        size = item;
+                        console.log(size);
+                        let modelimgarray = Object.values(AppleProducts[select]).map(x => {
+                            return {
+                                model: x.model,
+                                img: x.img
+                            }
+                        });
+                        modelimgarray.forEach((item) => {
+                            if (item.model == size) {
+                                img.src = item.img;
+                            }
+                        });
+                        getTotal(select);
+                    });
+                });
+            }
+
+        }
+
+        function concatBtnColorsArray(colors, select) {
+            let color1 =
+                Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                    return {
+                        size: x.size,
+                        color: x.color,
+                        colordot: x.colordot,
+                        img: x.img
+                    }
+                })[0];
+            let color2 =
+                Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                    return {
+                        size: x.size,
+                        color: x.color,
+                        colordot: x.colordot,
+                        img: x.img
+                    }
+                })[0];
+
+            colors.push(color1);
+            colors.push(color2);
+            if (select == 1 || select == 2) {
+                let color3 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color4 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                colors.push(color3);
+                colors.push(color4);
+            }
+        }
+
+        function findImg(imgcolor, select) {
+            if (select == 0) {
+                let color1 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color2 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color3 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color4 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                imgcolor.push(color1);
+                imgcolor.push(color2);
+                imgcolor.push(color3);
+                imgcolor.push(color4);
+                img.src = `
+                ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`
+            } else if (select == 1) {
+                let color1 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color2 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color3 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color4 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+
+                let color5 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color6 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color7 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color8 =
+                    Object.values(Object.values(AppleProducts[select])[1].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+
+                imgcolor.push(color1);
+                imgcolor.push(color2);
+                imgcolor.push(color3);
+                imgcolor.push(color4);
+                imgcolor.push(color5);
+                imgcolor.push(color6);
+                imgcolor.push(color7);
+                imgcolor.push(color8);
+
+                img.src = `
+                ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`
+            } else if (select == 2) {
+                let color1 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color2 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color3 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color4 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[0];
+                let color5 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[3];
+                let color6 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[1].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[3];
+                let color7 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[2].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[3];
+                let color8 =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[3].map(x => {
+                        return {
+                            size: x.size,
+                            color: x.color,
+                            colordot: x.colordot,
+                            img: x.img
+                        }
+                    })[3];
+                imgcolor.push(color1);
+                imgcolor.push(color2);
+                imgcolor.push(color3);
+                imgcolor.push(color4);
+                imgcolor.push(color5);
+                imgcolor.push(color6);
+                imgcolor.push(color7);
+                imgcolor.push(color8);
+                console.log(imgcolor);
+                console.log(imgcolor.filter(x => x.size == size && x.color == color)[0].img);
+                img.src = `
+                ${imgcolor.filter(x => x.size == size && x.color == color)[0].img}`;
+            }
+            console.log(size);
+            console.log(color);
+        }
+
+        function createColor(select) {
+            color_row.innerHTML = '';
+            let colors = [];
+            concatBtnColorsArray(colors, select);
+            colors.forEach((item) => {
+                let colorBtn = crel('button', 'btn colorBtn');
+                if (select == 0 || select == 1) {
+
+                    colorBtn.innerHTML =
+                        `
+                            <img src="${item.colordot}">
+                            <p>${item.color}</p>
+                        `
+                } else if (select == 2) {
+                    colorBtn.innerHTML =
+                        `
+                            <p>${item.color}</p>
+                        `
+                }
+                color_row.appendChild(colorBtn);
+                colorBtn.addEventListener('click', function () {
+                    let imgcolor = [];
+                    color = item.color;
+                    console.log(color);
+                    findImg(imgcolor, select);
+                    getTotal(select);
+                });
+            });
+
+        }
+
+        function createStorage(select) {
+            if (select == 0) {
+                storage_row.innerHTML = '';
+                let storages =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0].filter(x => x.network == 'WiFi')
+                    .map(
+                        x => {
+                            return {
+                                storage: x.storage,
+                                price: x.price
+                            }
+                        });
+                storages.forEach((item) => {
+                    let storageBtn = crel('button', 'btn storageBtn');
+                    storageBtn.innerHTML = `
+                    <b>${item.storage}</b>
+                `
+                    storage_row.appendChild(storageBtn);
+                    storageBtn.addEventListener('click', function () {
+                        storage = item.storage;
+                        console.log(storage);
+                        getTotal(select);
+                    });
+                });
+            } else if (select == 1) {
+                storage_row.innerHTML = '';
+                let storages =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0]
+                    .map(x => {
+                        return {
+                            storage: x.storage,
+                            price: x.price
+                        }
+                    });
+                storages.forEach((item) => {
+                    let storageBtn = crel('button', 'btn storageBtn');
+                    storageBtn.innerHTML = `
+                    <b>${item.storage}</b>
+                `
+                    storage_row.appendChild(storageBtn);
+                    storageBtn.addEventListener('click', function () {
+                        storage = item.storage;
+                        console.log(storage);
+                        getTotal(select);
+                    });
+                });
+            } else if (select == 2) {
+                storage_row.innerHTML = '';
+                let storages =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0]
+                    .map(x => {
+                        return {
+                            storage: x.storage
+                        }
+                    }).slice(9);
+                storages.forEach((item) => {
+                    let storageBtn = crel('button', 'btn storageBtn');
+                    storageBtn.innerHTML =
+                        `
+                            <b>${item.storage}</b>
+                        `
+                    storage_row.appendChild(storageBtn);
+                    storageBtn.addEventListener('click', function () {
+                        storage = item.storage;
+                        console.log(storage);
+                        getTotal(select);
+                    });
+                });
+            }
+
+        }
+
+        function createNetwork(select) {
+            if (select == 0) {
+                network_row.innerHTML = '';
+                choose_network.innerHTML = '連線能力';
+                let networks =
+                    Object.values(Object.values(AppleProducts[0])[0].products)[0].filter(x => x.storage == '128GB').map(
+                        x => {
+                            return {
+                                network: x.network
+                            }
+                        });
+                networks.forEach((item) => {
+                    let networkBtn = crel('button', 'btn networkBtn');
+                    networkBtn.innerHTML = `
+                    <b>${item.network}</b>
+                `
+                    network_row.appendChild(networkBtn);
+                    networkBtn.addEventListener('click', function () {
+                        network = item.network;
+                        console.log(network);
+                        getTotal(select);
+                    });
+                });
+            } else if (select == 1) {
+                network_row.innerHTML = '';
+                choose_network.innerHTML = '';
+            } else if (select == 2) {
+                network_row.innerHTML = '';
+                // choose_network.innerHTML = '連線能力';
+                let networks =
+                    Object.values(Object.values(AppleProducts[2])[0].products)[0].filter(x => x.storage ==
+                        '256GB SSD儲存裝置' && x.size == '8GB 統一記憶體').map(
+                        x => {
+                            return {
+                                network: x.network
+                            }
+                        });
+                networks.forEach((item) => {
+                    let networkBtn = crel('button', 'btn networkBtn');
+                    networkBtn.innerHTML =
+                        `
+                            <b>${item.network}</b>
+                        `
+                    network_row.appendChild(networkBtn);
+                    networkBtn.addEventListener('click', function () {
+                        network = item.network;
+                        console.log(network);
+                        getTotal(select);
+                    });
+                });
+
+            }
+        }
+
+
+        //#endregion
+        //#region 計算總價
+        function getTotal(select) {
+            if (select == 0 && size != '' && color != '' && storage != '' && network != '') {
+                final =
+                    (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products))
+                    .filter(
+                        x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
+                price.innerHTML = 'NT$ ' + final[0].price;
+                total_row.appendChild(price);
+                topTotal.innerHTML = 'NT$ ' + final[0].price;
+            } else if (select == 1 && size != '' && color != '' && storage != '') {
+                final =
+                    (Object.values(Object.values(AppleProducts[1]).filter(x => x.model == size)[0].products))
+                    .filter(
+                        x => x[0].color == color)[0].filter(x => x.storage == storage);
+                price.innerHTML = 'NT$ ' + final[0].price;
+                total_row.appendChild(price);
+                topTotal.innerHTML = 'NT$ ' + final[0].price;
+            } else if (select == 2 && size != '' && color != '' && storage != '' && network != '') {
+                let a = [];
+                final =
+                    Object.values(AppleProducts[2])[0].products[color].filter(x => x.storage == storage && x.size ==
+                        size && x.network == network);
+                price.innerHTML = 'NT$ ' + final[0].price;
+                total_row.appendChild(price);
+                topTotal.innerHTML = 'NT$ ' + final[0].price;
+            }
+        }
+        //#endregion
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

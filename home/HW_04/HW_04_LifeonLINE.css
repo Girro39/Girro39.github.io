@@ -1,0 +1,271 @@
+.introdcution {
+    text-align: center;
+    line-height: 1.5;
+}   
+
+.introdcution h2 {
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: 70px;    
+}
+
+.introdcution p{
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 240px;
+}
+
+.lifecontent{
+    position: relative;
+}
+.lifecontent ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lifecontent ul li{
+    margin-right: 5px;
+}
+.lifecontent ul a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+    border: 1px solid rgb(224,224,224);
+    border-radius: 6px;
+    padding: 20px;
+}
+
+
+.lifetxt {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 1.5;
+    position: relative;
+}
+
+
+
+.lifetxt h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 0;
+}
+.lifetxt p {
+    font-size: 17px;
+    padding: 10px 0 50px;
+    color: #777777;
+}
+
+.lifetxt small {
+    display: block;
+    font-size: 16px;
+    color:#00aa22;
+}
+
+.introdcution p{
+    color: #777777;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.lifepic{
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.lifepic img:nth-of-type(2){
+    display: none;
+}
+
+.phonenav{
+    display: none;
+}
+
+
+@media screen and (min-width: 879px){
+    .life_on_LINE{
+        width: 100%;
+    }
+    
+    .lifecontent {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+    }
+    .lifeitem{
+        padding: 80px 0;
+    }
+
+    .lifeitem ul li a:hover{
+        background-color: #00aa22;
+        color: #fff;
+    }    
+    
+    .lifetxt {
+        width: 50%;   
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        line-height: 1.5;
+    }
+
+    .lifetxt img{
+        width: 92px;
+        height: 92px;
+        border: 1px solid #aaa;
+        border-radius:15px;
+    }
+    
+    .lifecontainer{
+        width: 100%;
+    }
+    .lifecontainer :nth-of-type(even){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .lifecontainer :nth-of-type(odd) .lifepic{
+        border-left:1px dashed #aaa ;
+    }
+    .lifecontainer :nth-of-type(odd) .lifetxt{
+        box-sizing: border-box;
+        padding-right: 70px;
+        padding-left: 80px;
+    }
+    
+    .lifecontainer :nth-of-type(even) .lifetxt{
+        border-left:1px dashed #aaa ;
+        position: relative;
+        padding-left: 80px;
+    }
+    .unreverseimg{
+        width: 90%;
+        position: relative;
+        right: 250px;
+        z-index: -1;
+    }
+    .reverseimg{
+        width: 90%;
+        position: relative;
+        right: 130px;
+        z-index: -1;
+    }
+
+
+}
+
+@media screen and (max-width:878px){
+    .introdcution{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .introdcution h2{
+        opacity: 0;
+    }
+    .introdcution p{
+        font-size: 14px;
+        text-align: center;
+        line-height: 2.5;
+    }
+
+
+    .lifecontent{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+        margin: 0px 0;
+    }
+
+    .lifecontent ul a{
+        font-size: 9px;
+        font-weight: bolder;
+        padding: 14px;
+    }
+    .lifecontent ul a i{
+        font-size: 9px;
+    }
+    
+    .lifetxt {
+        margin:0 40px;
+        padding: 20px 40px 50px;
+        box-sizing: border-box;
+        border-left: 1px dashed #aaa;
+    }
+    .lifetxt img{
+        width: 40px;
+        height: 40px;        
+        border-radius:10px;
+        position: absolute;
+        top: 20px;
+        left: -20px;
+    }
+
+    .lifecontainer :last-child img:first-child{
+        border: 1px solid #ddd;
+    }
+
+
+    .lifetxt h3 {
+        font-size: 18px;
+    }
+    .lifetxt p {
+        font-size: 12px;
+    }
+    
+    
+    .lifetxt small {
+        font-size: 14px;
+    }
+
+
+    .lifepic{
+        width: 100%;
+    }
+    .lifepic img{
+        width: 100%;
+    }
+
+    .lifepic img:nth-of-type(1){
+        display: none;
+    }
+
+    .lifepic img:nth-of-type(2){
+        padding: 0 20px;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+    }
+
+    .phonenav{
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 4;
+        background-color: #fff;
+    }
+
+    .navitem {
+        font-size: 15px;
+        color: #1E1E1E;
+        margin: 10px 10px 0;
+        padding: 10px 0 15px;
+    }
+
+    .navwrap a ~ a{
+        color: #777;
+    }
+
+    
+
+
+}

@@ -1,0 +1,32 @@
+.computer {
+    width: 70px;
+    height: 50px;
+}
+
+.computer>p {
+    color: red;
+    transform: rotate(138deg);
+    font-size: 56px;
+    font-weight: bolder;
+    margin-left: 5px;
+    line-height: 50px;
+}
+
+.angle {
+    width: 0;
+    border-top: 12px solid #000;
+    border-right: 14px solid transparent;
+    border-left: 14px solid transparent;
+}
+
+.mainrow :last-child .item p {
+    box-sizing: border-box;
+    padding: 20px 30px 0px;
+    text-justify: auto;
+}
+
+@media screen and (max-width:575px) {
+    .mainrow div:first-child {
+        margin-bottom: 40px;
+    }
+}

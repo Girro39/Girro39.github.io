@@ -1,0 +1,41 @@
+.messanger {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fa52a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+    bottom: 25px;
+    right: 25px;
+}
+
+.smallball {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+}
+
+.smallball .icon {
+    font-size: 95px;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    top: -55px;
+}
+
+.messanger a {
+    color: #9d6;
+}
+
+.rotangle {
+    position: absolute;
+    left: 13px;
+    bottom: 13px;
+    border-left: 10px solid #fff;
+    border-top: 10px solid transparent;
+    /* border-radius: 2px; */
+}

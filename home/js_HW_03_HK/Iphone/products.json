@@ -1,0 +1,1072 @@
+[
+
+    {
+        "11吋顯示器": {
+            "model": "11吋顯示器",
+            "products": {
+                "太空灰色": [{
+                        "sku": "A001",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "128GB",
+                        "network": "WiFi",
+                        "price": "24900"
+                    }, {
+                        "sku": "A002",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "256GB",
+                        "network": "WiFi",
+                        "price": "28000"
+                    }, {
+                        "sku": "A003",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "512GB",
+                        "network": "WiFi",
+                        "price": "34200"
+                    }, {
+                        "sku": "A004",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "1TB",
+                        "network": "WiFi",
+                        "price": "46600"
+                    }, {
+                        "sku": "A005",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "2TB",
+                        "network": "WiFi",
+                        "price": "59000"
+                    },
+                    {
+                        "sku": "A011",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "128GB",
+                        "network": "WiFi+行動網路",
+                        "price": "29900"
+                    }, {
+                        "sku": "A012",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "256GB",
+                        "network": "WiFi+行動網路",
+                        "price": "33000"
+                    }, {
+                        "sku": "A013",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "512GB",
+                        "network": "WiFi+行動網路",
+                        "price": "39200"
+                    }, {
+                        "sku": "A014",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "1TB",
+                        "network": "WiFi+行動網路",
+                        "price": "51600"
+                    }, {
+                        "sku": "A015",
+                        "size": "11吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-spacegray-202104_GEO_TW?wid=470&hei=556&fmt=p-jpg&qlt=95&.v=1617925790000",
+                        "storage": "2TB",
+                        "network": "WiFi+行動網路",
+                        "price": "64000"
+                    }
+                ],
+                "銀色": [{
+                        "sku": "B001",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "128GB",
+                        "network": "WiFi",
+                        "price": "24900"
+                    }, {
+                        "sku": "B002",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "256GB",
+                        "network": "WiFi",
+                        "price": "28000"
+                    }, {
+                        "sku": "B003",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "512GB",
+                        "network": "WiFi",
+                        "price": "34200"
+                    }, {
+                        "sku": "B004",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "1TB",
+                        "network": "WiFi",
+                        "price": "46600"
+                    }, {
+                        "sku": "B005",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "2TB",
+                        "network": "WiFi",
+                        "price": "59000"
+                    },
+                    {
+                        "sku": "B011",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "128GB",
+                        "network": "WiFi+行動網路",
+                        "price": "29900"
+                    }, {
+                        "sku": "B012",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "256GB",
+                        "network": "WiFi+行動網路",
+                        "price": "33000"
+                    }, {
+                        "sku": "B013",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "512GB",
+                        "network": "WiFi+行動網路",
+                        "price": "39200"
+                    }, {
+                        "sku": "B014",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "1TB",
+                        "network": "WiFi+行動網路",
+                        "price": "51600"
+                    }, {
+                        "sku": "B015",
+                        "size": "11吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-cell-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617912663000",
+                        "storage": "2TB",
+                        "network": "WiFi+行動網路",
+                        "price": "64000"
+                    }
+                ]
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-11-select-202104_GEO_TW?wid=970&amp;hei=1020&amp;fmt=png-alpha&amp;.v=1617899803000"
+        },
+        "12.9吋顯示器": {
+            "model": "12.9吋顯示器",
+            "products": {
+                "太空灰色": [{
+                        "sku": "A006",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "128GB",
+                        "network": "WiFi",
+                        "price": "34900"
+                    }, {
+                        "sku": "A007",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "256GB",
+                        "network": "WiFi",
+                        "price": "38000"
+                    }, {
+                        "sku": "A008",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "512GB",
+                        "network": "WiFi",
+                        "price": "44200"
+                    }, {
+                        "sku": "A009",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "1TB",
+                        "network": "WiFi",
+                        "price": "56600"
+                    }, {
+                        "sku": "A010",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "2TB",
+                        "network": "WiFi",
+                        "price": "69000"
+                    },
+                    {
+                        "sku": "A016",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "128GB",
+                        "network": "WiFi+行動網路",
+                        "price": "39900"
+                    }, {
+                        "sku": "A017",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "256GB",
+                        "network": "WiFi+行動網路",
+                        "price": "43000"
+                    }, {
+                        "sku": "A018",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "512GB",
+                        "network": "WiFi+行動網路",
+                        "price": "49200"
+                    }, {
+                        "sku": "A019",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "1TB",
+                        "network": "WiFi+行動網路",
+                        "price": "61600"
+                    }, {
+                        "sku": "A020",
+                        "size": "12.9吋顯示器",
+                        "color": "太空灰色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-space-gray-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617923136000",
+                        "storage": "2TB",
+                        "network": "WiFi+行動網路",
+                        "price": "74000"
+                    }
+                ],
+                "銀色": [{
+                        "sku": "B006",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "128GB",
+                        "network": "WiFi",
+                        "price": "34900"
+                    }, {
+                        "sku": "B007",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "256GB",
+                        "network": "WiFi",
+                        "price": "38000"
+                    }, {
+                        "sku": "B008",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "512GB",
+                        "network": "WiFi",
+                        "price": "44200"
+                    }, {
+                        "sku": "B009",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "1TB",
+                        "network": "WiFi",
+                        "price": "56600"
+                    }, {
+                        "sku": "B010",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "2TB",
+                        "network": "WiFi",
+                        "price": "69000"
+                    },
+                    {
+                        "sku": "B016",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "128GB",
+                        "network": "WiFi+行動網路",
+                        "price": "39900"
+                    }, {
+                        "sku": "B017",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "256GB",
+                        "network": "WiFi+行動網路",
+                        "price": "43000"
+                    }, {
+                        "sku": "B018",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "512GB",
+                        "network": "WiFi+行動網路",
+                        "price": "49200"
+                    }, {
+                        "sku": "B019",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "1TB",
+                        "network": "WiFi+行動網路",
+                        "price": "61600"
+                    }, {
+                        "sku": "B020",
+                        "size": "12.9吋顯示器",
+                        "color": "銀色",
+                        "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/finish-silver-201508?wid=50&amp;hei=50&amp;fmt=png-alpha&amp;.v=0",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-silver-202104_GEO_TW?wid=940&hei=1112&fmt=p-jpg&qlt=95&.v=1617922058000",
+                        "storage": "2TB",
+                        "network": "WiFi+行動網路",
+                        "price": "74000"
+                    }
+                ]
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-202104_GEO_TW?wid=970&amp;hei=1020&amp;fmt=png-alpha&amp;.v=1617903458000"
+        }
+
+    },
+    {
+        "iPhone 12 Pro": {
+            "model": "iPhone 12 Pro",
+            "products": {
+                "石墨色": [{
+                    "sku": "C001",
+                    "size": "iPhone 12 Pro",
+                    "color": "石墨色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-graphite-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021660000",
+                    "storage": "128GB",
+                    "price": "33900"
+                }, {
+                    "sku": "C002",
+                    "size": "iPhone 12 Pro",
+                    "color": "石墨色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-graphite-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021660000",
+                    "storage": "256GB",
+                    "price": "37400"
+                }, {
+                    "sku": "C003",
+                    "size": "iPhone 12 Pro",
+                    "color": "石墨色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-graphite-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021660000",
+                    "storage": "512GB",
+                    "price": "44400"
+                }],
+                "銀色": [{
+                    "sku": "D001",
+                    "size": "iPhone 12 Pro",
+                    "color": "銀色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-silver-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-silver-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021661000",
+                    "storage": "128GB",
+                    "price": "33900"
+                }, {
+                    "sku": "D002",
+                    "size": "iPhone 12 Pro",
+                    "color": "銀色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-silver-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-silver-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021661000",
+                    "storage": "256GB",
+                    "price": "37400"
+                }, {
+                    "sku": "D003",
+                    "size": "iPhone 12 Pro",
+                    "color": "銀色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-silver-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-silver-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021661000",
+                    "storage": "512GB",
+                    "price": "44400"
+                }],
+                "金色": [{
+                    "sku": "E001",
+                    "size": "iPhone 12 Pro",
+                    "color": "金色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-gold-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-gold-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021659000",
+                    "storage": "128GB",
+                    "price": "33900"
+                }, {
+                    "sku": "E002",
+                    "size": "iPhone 12 Pro",
+                    "color": "金色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-gold-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-gold-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021659000",
+                    "storage": "256GB",
+                    "price": "37400"
+                }, {
+                    "sku": "E003",
+                    "size": "iPhone 12 Pro",
+                    "color": "金色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-gold-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-gold-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021659000",
+                    "storage": "512GB",
+                    "price": "44400"
+                }],
+                "太平洋藍色": [{
+                    "sku": "F001",
+                    "size": "iPhone 12 Pro",
+                    "color": "太平洋藍色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-blue-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054547000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021661000",
+                    "storage": "128GB",
+                    "price": "33900"
+                }, {
+                    "sku": "F002",
+                    "size": "iPhone 12 Pro",
+                    "color": "太平洋藍色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-blue-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054547000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021661000",
+                    "storage": "256GB",
+                    "price": "37400"
+                }, {
+                    "sku": "F003",
+                    "size": "iPhone 12 Pro",
+                    "color": "太平洋藍色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-blue-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054547000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-blue-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021661000",
+                    "storage": "512GB",
+                    "price": "44400"
+                }]
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-family-hero-all?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;.v=1604021662000"
+        },
+        "iPhone 12 Pro Max": {
+            "model": "iPhone 12 Pro Max",
+            "products": {
+                "石墨色": [{
+                    "sku": "G001",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "石墨色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-graphite-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "128GB",
+                    "price": "37900"
+                }, {
+                    "sku": "G002",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "石墨色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-graphite-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "256GB",
+                    "price": "41400"
+                }, {
+                    "sku": "G003",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "石墨色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-graphite-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-graphite-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "512GB",
+                    "price": "48400"
+                }],
+                "銀色": [{
+                    "sku": "H001",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "銀色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-silver-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-silver-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "128GB",
+                    "price": "37900"
+                }, {
+                    "sku": "H002",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "銀色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-silver-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-silver-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "256GB",
+                    "price": "41400"
+                }, {
+                    "sku": "H003",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "銀色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-silver-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-silver-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "512GB",
+                    "price": "48400"
+                }],
+                "金色": [{
+                    "sku": "I001",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "金色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-gold-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-gold-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021660000",
+                    "storage": "128GB",
+                    "price": "37900"
+                }, {
+                    "sku": "I002",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "金色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-gold-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-gold-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021660000",
+                    "storage": "256GB",
+                    "price": "41400"
+                }, {
+                    "sku": "I003",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "金色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-gold-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054548000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-gold-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021660000",
+                    "storage": "512GB",
+                    "price": "48400"
+                }],
+                "太平洋藍色": [{
+                    "sku": "J001",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "太平洋藍色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-blue-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054547000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-blue-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "128GB",
+                    "price": "37900"
+                }, {
+                    "sku": "J002",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "太平洋藍色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-blue-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054547000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-blue-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "256GB",
+                    "price": "41400"
+                }, {
+                    "sku": "J003",
+                    "size": "iPhone 12 Pro Max",
+                    "color": "太平洋藍色",
+                    "colordot": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-finish-blue-2020?wid=50&amp;hei=50&amp;fmt=jpeg&amp;qlt=80&amp;.v=1601054547000",
+                    "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-blue-hero?wid=940&hei=1112&fmt=png-alpha&.v=1604021658000",
+                    "storage": "512GB",
+                    "price": "48400"
+                }]
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-12-pro-max-family-hero-all?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;.v=1604021663000"
+        }
+    },
+    {
+        "iMac 24吋": {
+            "model": "iMac 24吋",
+            "products": {
+                "藍色": [{
+                        "sku": "K001",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "39900"
+                    }, {
+                        "sku": "K002",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    },
+                    {
+                        "sku": "K003",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    }, {
+                        "sku": "K004",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    }, {
+                        "sku": "K005",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    },
+                    {
+                        "sku": "K006",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "57900"
+                    },
+                    {
+                        "sku": "K007",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "40900"
+                    }, {
+                        "sku": "K008",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    },
+                    {
+                        "sku": "K009",
+                        "size": "8GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    }, {
+                        "sku": "K010",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    }, {
+                        "sku": "K011",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    },
+                    {
+                        "sku": "K012",
+                        "size": "16GB 統一記憶體",
+                        "color": "藍色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "58900"
+                    }
+                ],
+                "綠色": [{
+                        "sku": "K001",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "39900"
+                    }, {
+                        "sku": "K002",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    },
+                    {
+                        "sku": "K003",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    }, {
+                        "sku": "K004",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    }, {
+                        "sku": "K005",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    },
+                    {
+                        "sku": "K006",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "57900"
+                    },
+                    {
+                        "sku": "K007",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "40900"
+                    }, {
+                        "sku": "K008",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    },
+                    {
+                        "sku": "K009",
+                        "size": "8GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    }, {
+                        "sku": "K010",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    }, {
+                        "sku": "K011",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    },
+                    {
+                        "sku": "K012",
+                        "size": "16GB 統一記憶體",
+                        "color": "綠色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-green-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "58900"
+                    }
+                ],
+                "粉紅色": [{
+                        "sku": "K001",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "39900"
+                    }, {
+                        "sku": "K002",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    },
+                    {
+                        "sku": "K003",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    }, {
+                        "sku": "K004",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    }, {
+                        "sku": "K005",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    },
+                    {
+                        "sku": "K006",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "57900"
+                    },
+                    {
+                        "sku": "K007",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "40900"
+                    }, {
+                        "sku": "K008",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    },
+                    {
+                        "sku": "K009",
+                        "size": "8GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    }, {
+                        "sku": "K010",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    }, {
+                        "sku": "K011",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    },
+                    {
+                        "sku": "K012",
+                        "size": "16GB 統一記憶體",
+                        "color": "粉紅色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "58900"
+                    }
+                ],
+                "銀色": [{
+                        "sku": "K001",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "39900"
+                    }, {
+                        "sku": "K002",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    },
+                    {
+                        "sku": "K003",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    }, {
+                        "sku": "K004",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "45900"
+                    }, {
+                        "sku": "K005",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "無",
+                        "price": "51900"
+                    },
+                    {
+                        "sku": "K006",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "無",
+                        "price": "57900"
+                    },
+                    {
+                        "sku": "K007",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "40900"
+                    }, {
+                        "sku": "K008",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    },
+                    {
+                        "sku": "K009",
+                        "size": "8GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    }, {
+                        "sku": "K010",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "256GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "46900"
+                    }, {
+                        "sku": "K011",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "512GB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "52900"
+                    },
+                    {
+                        "sku": "K012",
+                        "size": "16GB 統一記憶體",
+                        "color": "銀色",
+                        "colordot": "",
+                        "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-24-silver-cto-hero-202104?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1617479508000",
+                        "storage": "1TB SSD儲存裝置",
+                        "network": "Gigabit 乙太網路",
+                        "price": "58900"
+                    }
+                ]
+            },
+            "img": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-feature-colors-202104?wid=467&hei=203&fmt=png-alpha&.v=1617213642000"
+        }
+    }
+]

@@ -1,0 +1,87 @@
+[calrow] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ada; */
+    height: 100vh;
+}
+
+[calcol] {
+    background-color: #ada;
+    border-radius: 50px;
+}
+
+[numberrow] {
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.col-9>.row>.btn {
+    background-color: #ffa;
+    border: 3px solid #ffffff;
+    border-radius: 35%;
+    width: 31.3%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin: 1%;
+}
+
+[col3btn] {
+    background-color: #ffa;
+    border: 3px solid #ffffff;
+    border-radius: 35%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    width: 97%;
+    margin: 3%;
+}
+
+[col3btn_bbig] {
+    background-color: #fe8;
+    border: 3px solid #ffffff;
+    border-radius: 35%;
+    box-sizing: border-box;
+    padding: 63px 0;
+    width: 97%;
+    margin: 3%;
+}
+
+
+#outdiv {
+    height: 130px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #6b857a;
+    /* padding: 20px; */
+    /* outline: .5px solid blue; */
+    text-align: end;
+
+}
+
+#current {
+    font-size: 40px;
+    overflow: hidden;
+    color: #fff;
+}
+
+#history {
+    height: 21px;
+    /* outline: .5px solid blue; */
+    margin-top: 10px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+[inputrow] {
+    /* background-color: #ddf; */
+    padding: 40px 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+* {
+    /* outline: .5px solid blue; */
+    font-size: 25px;
+}
