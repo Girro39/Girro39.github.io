@@ -14,17 +14,18 @@ const del = document.getElementById('del');
 let toEditDelDate;
 let toEditDelTitle;
 let toEditDelContent;
+let toEditDelColor;
 
-let _Ititle = document.getElementById('Ititle');
-let _Icontent = document.getElementById('Icontent');
-let _Icolor = document.getElementById('Icolor');
-let input = document.querySelectorAll('input');
+const _Ititle = document.getElementById('Ititle');
+const _Icontent = document.getElementById('Icontent');
+const _Icolor = document.getElementById('Icolor');
+const input = document.querySelectorAll('input');
 
-let NowTitle = document.getElementById('NowTitle');
-let NowContent = document.getElementById('NowContent');
-let EditTitle = document.getElementById('EditTitle');
-let EditContent = document.getElementById('EditContent');
-
+const NowTitle = document.getElementById('NowTitle');
+const NowContent = document.getElementById('NowContent');
+const EditTitle = document.getElementById('EditTitle');
+const EditContent = document.getElementById('EditContent');
+const EditColor = document.getElementById('EditColor');
 
 const today = new Date();
 let tr;
@@ -45,6 +46,7 @@ previous_btn.addEventListener('click',previousMonth);
 next_btn.addEventListener('click',nextMonth);
 SAVE.addEventListener('click',saveItinerary);
 del.addEventListener('click',DeleteItinerary);
+edit.addEventListener('click',EditItinerary);
 function init(){
     tbody.innerHTML ='';
     //判斷幾列
@@ -114,6 +116,7 @@ function init(){
             toEditDelDate = event_btn.parentNode.getAttribute('YMD');
             toEditDelTitle = ev[0].Title;
             toEditDelContent = ev[0].Content;
+            toEditDelColor = ev[0].Color;
         });
     });
 
@@ -210,12 +213,25 @@ function saveItinerary(){
 
 }
 
-function DeleteItinerary() {
-    console.log(toEditDelDate);
+function DeleteItinerary() {        
     let EDeventArray =JSON.parse(localStorage.getItem(toEditDelDate));
     let index = EDeventArray.findIndex(edev=>edev.Title === toEditDelTitle && edev.Content === toEditDelContent);
     EDeventArray.splice(index,1);
-    localStorage.setItem(toEditDelDate,JSON.stringify(EDeventArray));
-    Init();
+    localStorage.removeItem(toEditDelDate,JSON.stringify(EDeventArray[index]));
+    init();
+}
+
+function EditItinerary(){
+    let editArray = JSON.parse(localStorage.getItem(toEditDelDate));
+    let index = editArray.findIndex(editem=>editem.Title===toEditDelTitle&&editem.Content===toEditDelContent&&editem.Color===toEditDelColor);
+    editArray.splice(index,1);
+    let editObj={
+        Title:EditTitle.value,
+        Content:EditContent.value,
+        Color:EditColor.value
+    };
+    editArray[index] = editObj;
+    localStorage.setItem(toEditDelDate,JSON.stringify(editArray));
+    init();
 }
 
