@@ -22,7 +22,6 @@ numbers.forEach((item) => {
 //+-*/按鈕 個別創造click監聽事件
 operations.forEach((item)=>{
     item.addEventListener('click',function(){
-        console.log(item.textContent);
         chooseOperation(item.textContent);
         numDisplay();
     });
@@ -55,7 +54,6 @@ clr.addEventListener('click', function () {
 del.addEventListener('click', function () {
     //倒退一個數字
     deleteOne();
-    console.log(currentNum);
     numDisplay();
 });
 equal.addEventListener('click',function(){
@@ -63,7 +61,11 @@ equal.addEventListener('click',function(){
     numDisplay();
 });
 percent.addEventListener('click',function(){
-    
+    answer = parseFloat(currentNum)/100;
+    currentNum = answer.toString();
+    historyNum = '';
+    operate = '';
+    numDisplay();
 });
 function calculate(){
     const his = parseFloat(historyNum);
