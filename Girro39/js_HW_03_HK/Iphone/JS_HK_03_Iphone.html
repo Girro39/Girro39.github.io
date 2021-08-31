@@ -173,7 +173,7 @@
     <script>
         //#region xhr
         const url =
-            "https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/JS_HW/js_HW_03_HK/Iphone/products.json";
+            "https://raw.githubusercontent.com/Girro39/Girro39.github.io/main/Girro39/js_HW_03_HK/Iphone/products.json";
         let AppleProducts = [];
         let xhr = new XMLHttpRequest();
         xhr.onload = function () {
@@ -297,11 +297,11 @@
                 choose_type.innerHTML = '記憶體';
                 let s = Object.values(Object.values(AppleProducts[2])[0].products)[0].filter(x => x.network == '無' && x
                     .storage == '256GB SSD儲存裝置').map(x => {
-                    return {
-                        size: x.size,
-                        price: x.price
-                    }
-                });
+                        return {
+                            size: x.size,
+                            price: x.price
+                        }
+                    });
                 s.forEach((item) => {
                     let sizeBtn = crel('button', 'btn sizeBtn');
                     sizeBtn.innerHTML =
@@ -654,8 +654,30 @@
                 storage_row.innerHTML = '';
                 let storages =
                     Object.values(Object.values(AppleProducts[select])[0].products)[0].filter(x => x.network == 'WiFi')
-                    .map(
-                        x => {
+                        .map(
+                            x => {
+                                return {
+                                    storage: x.storage,
+                                    price: x.price
+                                }
+                            });
+                storages.forEach((item) => {
+                    let storageBtn = crel('button', 'btn storageBtn');
+                    storageBtn.innerHTML = `
+                    <b>${item.storage}</b>
+                `
+                    storage_row.appendChild(storageBtn);
+                    storageBtn.addEventListener('click', function () {
+                        storage = item.storage;
+                        console.log(storage);
+                        getTotal(select);
+                    });
+                });
+            } else if (select == 1) {
+                storage_row.innerHTML = '';
+                let storages =
+                    Object.values(Object.values(AppleProducts[select])[0].products)[0]
+                        .map(x => {
                             return {
                                 storage: x.storage,
                                 price: x.price
@@ -673,37 +695,15 @@
                         getTotal(select);
                     });
                 });
-            } else if (select == 1) {
-                storage_row.innerHTML = '';
-                let storages =
-                    Object.values(Object.values(AppleProducts[select])[0].products)[0]
-                    .map(x => {
-                        return {
-                            storage: x.storage,
-                            price: x.price
-                        }
-                    });
-                storages.forEach((item) => {
-                    let storageBtn = crel('button', 'btn storageBtn');
-                    storageBtn.innerHTML = `
-                    <b>${item.storage}</b>
-                `
-                    storage_row.appendChild(storageBtn);
-                    storageBtn.addEventListener('click', function () {
-                        storage = item.storage;
-                        console.log(storage);
-                        getTotal(select);
-                    });
-                });
             } else if (select == 2) {
                 storage_row.innerHTML = '';
                 let storages =
                     Object.values(Object.values(AppleProducts[select])[0].products)[0]
-                    .map(x => {
-                        return {
-                            storage: x.storage
-                        }
-                    }).slice(9);
+                        .map(x => {
+                            return {
+                                storage: x.storage
+                            }
+                        }).slice(9);
                 storages.forEach((item) => {
                     let storageBtn = crel('button', 'btn storageBtn');
                     storageBtn.innerHTML =
@@ -753,11 +753,11 @@
                 let networks =
                     Object.values(Object.values(AppleProducts[2])[0].products)[0].filter(x => x.storage ==
                         '256GB SSD儲存裝置' && x.size == '8GB 統一記憶體').map(
-                        x => {
-                            return {
-                                network: x.network
-                            }
-                        });
+                            x => {
+                                return {
+                                    network: x.network
+                                }
+                            });
                 networks.forEach((item) => {
                     let networkBtn = crel('button', 'btn networkBtn');
                     networkBtn.innerHTML =
@@ -782,16 +782,16 @@
             if (select == 0 && size != '' && color != '' && storage != '' && network != '') {
                 final =
                     (Object.values(Object.values(AppleProducts[0]).filter(x => x.model == size)[0].products))
-                    .filter(
-                        x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
+                        .filter(
+                            x => x[0].color == color)[0].filter(x => x.storage == storage && x.network == network);
                 price.innerHTML = 'NT$ ' + final[0].price;
                 total_row.appendChild(price);
                 topTotal.innerHTML = 'NT$ ' + final[0].price;
             } else if (select == 1 && size != '' && color != '' && storage != '') {
                 final =
                     (Object.values(Object.values(AppleProducts[1]).filter(x => x.model == size)[0].products))
-                    .filter(
-                        x => x[0].color == color)[0].filter(x => x.storage == storage);
+                        .filter(
+                            x => x[0].color == color)[0].filter(x => x.storage == storage);
                 price.innerHTML = 'NT$ ' + final[0].price;
                 total_row.appendChild(price);
                 topTotal.innerHTML = 'NT$ ' + final[0].price;
@@ -810,7 +810,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
+        </script>
 
 </body>
 
