@@ -1,9 +1,9 @@
 div.container {
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 div.container .row:nth-child(1) {
-  background-color: #94aa4d8f;
+  background-color: #5f7096;
 }
 
 div.container .row:nth-child(1) .btn {
@@ -51,7 +51,6 @@ div.container .row:nth-child(2) table {
 
 div.container .row:nth-child(2) table thead tr th {
   width: 14.2857%;
-  outline: .5px solid #023359ad;
   text-align: center;
   padding: 20px;
   font-size: 24px;
@@ -71,7 +70,6 @@ div.container .row:nth-child(2) table tbody tr .today {
 
 div.container .row:nth-child(2) table tbody tr td {
   width: 14.2857%;
-  outline: .5px solid #023359ad;
   font-size: 20px;
   padding-left: 10px;
   padding-top: 10px;
@@ -101,6 +99,6 @@ div.container .row:nth-child(2) table tbody tr td:hover {
 
 #addItineraryModal,
 #DeleteEditModal {
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
 }
-/*# sourceMappingURL=js_hw_09_calender.css.map */
+/*# sourceMappingURL=js_hw_09_calendar.css.map */
